@@ -1273,16 +1273,17 @@ section,
 ------------------------------*/
 .clients {
   display: flex;
-  flex-wrap: wrap; /* Wraps items to next line on small screens */
-  justify-content: space-between; /* Spacing between elements */
-  padding: 10px 0;
+  flex-wrap: wrap; 
+  justify-content: center;
 }
 
-.clients .client-logo {
+.clients .client-logo,
+.clients [role="progressbar"] {
+  flex: 0 0 25%
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .clients .client-logo img {
@@ -1306,11 +1307,11 @@ section,
   /* Add more styles here to represent the progress, such as a background color */
 }
 
-.client-graph-label {
-  position: absolute; /* Allows positioning relative to progress-bar container */
-  width: 100%; /* Full width of the progress bar */
-  bottom: -30px; /* Adjust as needed for positioning below the bar */
-  left: 0; /* Align to the left of the progress bar container */
+.clients .client-graph-label {
+  display: block; /* Use block to allow for width and margin attributes */
+  width: 100%; /* Label takes the full width of its parent */
+  margin-top: 10px; /* Adjust as needed for space above the label */
+  text-align: center; /* Center aligns the text horizontally */
 }
 
 
