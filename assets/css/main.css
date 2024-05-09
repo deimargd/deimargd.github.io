@@ -1272,6 +1272,9 @@ section,
 /* Clients Section - Home Page
 ------------------------------*/
 .clients {
+  display: flex;
+  flex-wrap: wrap; /* Wraps items to next line on small screens */
+  justify-content: space-between; /* Spacing between elements */
   padding: 10px 0;
 }
 
@@ -1294,6 +1297,22 @@ section,
   filter: none;
   opacity: 1;
 }
+
+.progress-bar {
+  flex: 1; /* Each bar takes equal space */
+  margin: 0 10px; /* Provide margin on both sides */
+  position: relative; /* For absolute positioning of the label inside */
+  text-align: center; /* Centre the text */
+  /* Add more styles here to represent the progress, such as a background color */
+}
+
+.client-graph-label {
+  position: absolute; /* Allows positioning relative to progress-bar container */
+  width: 100%; /* Full width of the progress bar */
+  bottom: -30px; /* Adjust as needed for positioning below the bar */
+  left: 0; /* Align to the left of the progress bar container */
+}
+
 
 @media (max-width: 640px) {
   .clients .client-logo img {
