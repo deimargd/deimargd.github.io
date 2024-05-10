@@ -1290,11 +1290,11 @@ section,
 
 /* Styles specific for circular progress bars */
 .progress-bar {
-  position: relative; /* Needed for absolute positioning inside */
-  height: 20px; /* Can be adjusted to your preference */
-  background: #eaeaea; /* Background of the unfulfilled part */
-  border-radius: 5px;
-  /* Other styling properties for the bar */
+  background: grey; /* Set the background for the unfilled portion */
+  border-radius: 5px; /* Optional: for rounded corners */
+  position: relative; /* Necessary for absolute positioning of inner elements */
+  height: 20px; /* Height of the bar */
+  width: 100%; /* Full width to allow the inner bar to fill as per '--value' */
 }
 
 .progress-bar::after {
@@ -1303,19 +1303,8 @@ section,
   top: 0;
   left: 0;
   height: 100%;
-  background-color: #4e73df; /* Your chosen fill color */
-  border-radius: 5px;
-  width: var(--value); /* Set width based on the inline "--value" property */
-  transition: width 0.5s ease; /* Smooth transition for the bar filling */
-}
-
-.progress-value {
-  position: absolute;
-  width: 100%;
-  line-height: 20px; /* Should match the height of your progress bar for vertical centering */
-  text-align: center; /* Horizontal centering */
-  font-size: 1em; /* Adjust the size as needed */
-  color: #ffffff; /* Choose a text color that is legible */
+  background: green; /* Set the background color for the filled portion */
+  width: var(--value); /* Use the custom property to set the width of the filled part */
 }
 
 /* Label below the progress bar */
