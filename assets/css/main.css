@@ -1298,7 +1298,8 @@ section,
   max-width: 25%; /* ensure the item does not exceed 25% of the container width */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Horizontally center the content */
+  justify-content: center; /* Vertically center the content */
 }
 
 /* Styles specific for horizontal progress bars */
