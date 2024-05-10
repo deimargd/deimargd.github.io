@@ -1058,6 +1058,19 @@ section,
   background-color: black;
 }
 
+.btn-primary {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  padding: 8px 20px 10px 20px;
+  border-radius: 7px;
+  color: var(--contrast-color);
+}
+
+.btn-primary:hover {
+  background-color: black;
+}
+
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 32px;
@@ -1291,6 +1304,10 @@ section,
 /* Styles specific for horizontal progress bars */
 .progress-bar {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   width: 150px; 
   height: 150px;
   background-color: #eaeaea; /* The unfilled portion color */
@@ -1304,7 +1321,6 @@ section,
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   text-align: center; /* Aligns text horizontally */
   background: #151515; /* The filled portion color */
   border-radius: 5px 0 0 5px; /* Partially rounded corners to match the progress bar */
