@@ -1291,10 +1291,11 @@ section,
 /* Styles specific for horizontal progress bars */
 .progress-bar {
   position: relative;
-  width: 100%; /* Full width of the parent container */
-  height: 100%; /* Adjust the height as desired */
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%;
   background-color: #eaeaea; /* The unfilled portion color */
-  border-radius: 5px;
+  border-radius: 10px;
   color: white;
   margin-bottom: 5px; /* Space below the bar for the label */
 }
@@ -1302,9 +1303,12 @@ section,
 .progress-bar::before {
   content: attr(aria-valuenow) '%'; /* Adds the percentage text inside the filled area */
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   height: 100%;
+  transform: translate(-50%, -50%); /* Centers the text within the circle */
+  line-height: 150px; /* Aligns text vertically */
+  text-align: center; /* Aligns text horizontally */
   background: #151515; /* The filled portion color */
   border-radius: 5px 0 0 5px; /* Partially rounded corners to match the progress bar */
   display: flex;
