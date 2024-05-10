@@ -1358,7 +1358,7 @@ section,
 
 
 .clients .client-logo img {
-  padding: 40px;
+  padding: 20px;
   max-width: 80%;
   transition: 0.3s;
   opacity: 0.5;
@@ -1407,7 +1407,7 @@ section,
 }
 
 .stats .stats-item {
-  padding: 30px;
+  padding: 20px;
   width: 100%;
 }
 
