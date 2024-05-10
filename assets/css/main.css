@@ -1288,26 +1288,31 @@ section,
   align-items: center;
 }
 
-/* Styles specific for circular progress bars */
+/* Styles specific for horizontal progress bars */
 .progress-bar {
   position: relative;
-  width: 100%;
-  height: 20px;
+  width: 100%; /* Full width of the parent container */
+  height: 100%; /* Adjust the height as desired */
   background-color: #eaeaea; /* The unfilled portion color */
   border-radius: 5px;
   color: white;
   margin-bottom: 5px; /* Space below the bar for the label */
 }
 
-.progress-bar::after {
-  content: '';
+.progress-bar::before {
+  content: attr(aria-valuenow) '%'; /* Adds the percentage text inside the filled area */
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  background: green; /* Set the background color for the filled portion */
-  width: var(--value); /* Use the custom property to set the width of the filled part */
+  background: #151515; /* The filled portion color */
+  border-radius: 5px 0 0 5px; /* Partially rounded corners to match the progress bar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--value); /* Width of the filled part based on the value */
 }
+
 
 /* Label below the progress bar */
 .client-graph-label {
