@@ -1290,27 +1290,35 @@ section,
 
 /* Styles specific for circular progress bars */
 .progress-bar {
-  background: grey; /* Set the background for the unfilled portion */
-  border-radius: 5px; /* Optional: for rounded corners */
-  position: relative; /* Necessary for absolute positioning of inner elements */
-  height: 20px; /* Height of the bar */
-  width: 100%; /* Full width to allow the inner bar to fill as per '--value' */
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background-color: #eaeaea; /* The unfilled portion color */
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 5px; /* Space below the bar for the label */
 }
 
-.progress-bar::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
+.progress-bar::before {
+  width: var(--value);
+  content: attr(aria-valuenow) '%'; /* To display the current value */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4caf50; /* The filled portion color */
+  border-radius: 10px;
+  text-align: center;
   height: 100%;
-  background: green; /* Set the background color for the filled portion */
-  width: var(--value); /* Use the custom property to set the width of the filled part */
+  transition: width 1s ease; /* For a smooth transition, optional */
+  width: 0;
 }
 
 /* Label below the progress bar */
 .client-graph-label {
-  width: 100%; /* Full width of parent to center the text properly */
-  text-align: center; /* Center the label text horizontally */
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  margin-top: 5px; /* Space between label and progress bar */
 }
 
 /* Responsive adjustments for smaller screens */
