@@ -1271,20 +1271,61 @@ section,
 
 /* Clients Section - Home Page
 ------------------------------*/
-.clients {
+.clients-flex-container {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 10px; /* Adjust the space between items */
 }
 
-.clients .client-logo,
-.clients [role="progressbar"] {
-  flex: 0 0 25%
+/* Common styles for each client logo and progress bar container */
+.client-logo,
+.progress-bar-container {
+  flex: 0 0 25%; /* allocate 25% of the container width to each item */
+  max-width: 25%; /* ensure the item does not exceed 25% of the container width */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
 }
+
+/* Styles specific for circular progress bars */
+.progress-bar::after {
+  content: ""; /* Essential for the pseudo-element to work */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width of the parent */
+  height: 100%; /* Full height of the parent */
+  border-radius: 50%; /* Make it circular */
+  background: conic-gradient(
+    #4e73df 0% var(--progress-value), /* Define a CSS variable for dynamic fill and use your primary color */
+    #eaeaea var(--progress-value) 100% /* Background color the same as the unfilled part */
+  );
+}
+
+/* Label below the progress bar */
+.client-graph-label {
+  width: 100%; /* Full width of parent to center the text properly */
+  text-align: center; /* Center the label text horizontally */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 992px) {
+  .client-logo,
+  .progress-bar-container {
+    flex: 0 0 50%;
+    max-width: 50%; /* 2 items per row on medium devices */
+  }
+}
+
+@media (max-width: 576px) {
+  .client-logo,
+  .progress-bar-container {
+    flex: 0 0 100%;
+    max-width: 100%; /* 1 item per row on small devices */
+  }
+}
+
 
 .clients .client-logo img {
   padding: 40px;
@@ -1298,29 +1339,6 @@ section,
   filter: none;
   opacity: 1;
 }
-
-.progress-bar {
-  flex: 1; /* Each bar takes equal space */
-  margin: 0 10px; /* Provide margin on both sides */
-  position: relative; /* For absolute positioning of the label inside */
-  text-align: center; /* Centre the text */
-  /* Add more styles here to represent the progress, such as a background color */
-}
-
-.clients .client-graph-label {
-  display: block; /* Use block to allow for width and margin attributes */
-  width: 100%; /* Label takes the full width of its parent */
-  margin-top: 10px; /* Adjust as needed for space above the label */
-  text-align: center; /* Center aligns the text horizontally */
-}
-
-
-@media (max-width: 640px) {
-  .clients .client-logo img {
-    padding: 20px;
-  }
-}
-
 
 
 /* Stats Section - Home Page
