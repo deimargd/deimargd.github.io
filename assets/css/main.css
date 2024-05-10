@@ -1308,29 +1308,27 @@ section,
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  width: 150px; 
-  height: 150px;
-  background-color: #eaeaea; /* The unfilled portion color */
+  height: 100%;
+  background-color: #eaeaea;
   border-radius: 10px;
   color: white;
-  margin-bottom: 5px; /* Space below the bar for the label */
+  margin-bottom: 5px;
+  width: 100%; /* Ensure the progress bar fills the entire width of its container */
 }
 
 .progress-bar::before {
-  content: attr(aria-valuenow) '%'; /* Adds the percentage text inside the filled area */
+  content: attr(aria-valuenow) '%';
   position: absolute;
   top: 0;
   left: 0;
-  text-align: center; /* Aligns text horizontally */
-  background: #151515; /* The filled portion color */
-  border-radius: 5px 0 0 5px; /* Partially rounded corners to match the progress bar */
+  text-align: center;
+  background: #151515;
+  border-radius: 5px 0 0 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--value); /* Width of the filled part based on the value */
+  width: var(--value);
 }
-
 
 /* Label below the progress bar */
 .client-graph-label {
