@@ -1377,7 +1377,7 @@ section,
 }
 
 .clients .client-logo img:hover {
-  filter: none;
+  filter: brightness(0) saturate(100%) invert(67%) sepia(94%) saturate(7037%) hue-rotate(2deg) brightness(103%) contrast(101%);
   opacity: 1;
 }
 
@@ -1394,7 +1394,7 @@ section,
 }
 
 .stats img {
-  position: absolute;
+  position: fixed;
   inset: 0;
   display: block;
   width: 100%;
@@ -1402,6 +1402,16 @@ section,
   -o-object-fit: cover;
   object-fit: cover;
   z-index: 1;
+}
+
+.stats img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  z-index: -1;
 }
 
 .stats:before {
