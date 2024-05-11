@@ -1319,7 +1319,7 @@ section,
   top: 0;
   left: 0;
   height: 100%;
-  background-color: #151515;
+  background-color: var(--accent-color);
   border-radius: 10px 0 0 10px; /* Only round border on the left side */
   display: flex;
   align-items: center;
