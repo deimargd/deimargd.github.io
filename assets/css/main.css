@@ -1307,7 +1307,7 @@ section,
   position: relative;
   background-color: #eaeaea;
   border-radius: 10px;
-  height: 200px;
+  height: 100%;
   margin: 10px auto; /* Center the progress bar horizontally */
   width: 100%; /* Let progress bar take full width of its parent */
 }
@@ -1325,7 +1325,8 @@ section,
   justify-content: center;
   color: white;
   transition: width 1s ease-out;
-  calc(var(--value) * 1%);
+  width: calc(var(--value) * 1%); /* Calculate the width based on the --value */
+  content: attr(aria-valuenow) '%'; /* Add the percentage text */
 }
 
 .client-stats-progress-bar:after {
