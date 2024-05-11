@@ -1307,7 +1307,7 @@ section,
   position: relative;
   background-color: #eaeaea;
   border-radius: 10px;
-  height: 20px;
+  height: 200px;
   margin: 10px auto; /* Center the progress bar horizontally */
   width: 100%; /* Let progress bar take full width of its parent */
 }
