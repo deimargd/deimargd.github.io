@@ -1307,32 +1307,31 @@ section,
   position: relative;
   background-color: #eaeaea;
   border-radius: 10px;
-  height: 100%;
-  margin: 10px auto; /* Center the progress bar horizontally */
-  width: 100%; /* Let progress bar take full width of its parent */
+  height: 20px; /* Example height, adjust as necessary for your design */
+  margin: 10px auto; /* Reevaluate if needed based on parent element's styling */
+  width: 100%;
 }
 
 .client-stats-progress-bar::before {
-  content: attr(aria-valuenow) '%';
+  content: attr(aria-valuenow) '%'; /* Shows percentage text and value */
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   background-color: #151515;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 10px; /* Only round border on the left side */
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   transition: width 1s ease-out;
-  width: calc(var(--value) * 1%); /* Calculate the width based on the --value */
-  content: attr(aria-valuenow) '%'; /* Add the percentage text */
+  width: calc(var(--value) * 1%); /* Use custom property for width */
 }
 
-.client-stats-progress-bar:after {
-  content: attr(aria-valuenow) '%'; /* Display percentage inside the bar */
+.client-stats-progress-bar::after {
+  content: ""; /* Remove text here to avoid duplication, already in ::before */
   position: absolute;
-  right: 10px; /* Position percentage text inside the bar */
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   color: white;
