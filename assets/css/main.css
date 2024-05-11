@@ -1302,17 +1302,14 @@ section,
   justify-content: center; /* Vertically center the content */
 }
 
-/* Styles specific for horizontal progress bars within Client Statistics section */
+/* Progress bar */
 .client-stats-progress-bar {
   position: relative;
-  display: block; /* Flex removed to avoid stretching */
-  height: 20px; /* You can set a specific height */
   background-color: #eaeaea;
   border-radius: 10px;
-  color: white;
-  margin: 0 auto; /* Center the progress bar horizontally */
-  width: 80%; /* Adjust the width of the progress bars here */
-  /* Ensure the progress bar fills the width set above */
+  height: 20px;
+  margin: 10px auto; /* Center the progress bar horizontally */
+  width: 100%; /* Let progress bar take full width of its parent */
 }
 
 .client-stats-progress-bar::before {
@@ -1320,24 +1317,22 @@ section,
   position: absolute;
   top: 0;
   left: 0;
-  text-align: center;
-  background: #151515;
-  border-radius: 10px 0 0 10px;  /* Full radius to match progress bar */
-  height: 100%; /* Match the height of the progress bar */
+  height: 100%;
+  background-color: #151515;
+  border-radius: 10px 0 0 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 0; /* Initialize at 0 width */
-  transition: width 1s ease-out; /* Transition for animating the bar */
+  color: white;
+  transition: width 1s ease-out;
 }
 
-/* Label styled specifically within Client Statistics section */
 .client-stats-label {
-  font-size: 14px;
   text-align: center;
-  display: block;
   margin-top: 5px;
+  font-size: 14px;
 }
+
 
 /* Responsive container for progress bars and labels */
 .client-stats-progress-container {
