@@ -1325,6 +1325,16 @@ section,
   justify-content: center;
   color: white;
   transition: width 1s ease-out;
+  calc(var(--value) * 1%);
+}
+
+.client-stats-progress-bar:after {
+  content: attr(aria-valuenow) '%'; /* Display percentage inside the bar */
+  position: absolute;
+  right: 10px; /* Position percentage text inside the bar */
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
 }
 
 .client-stats-label {
