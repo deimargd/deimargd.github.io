@@ -1404,16 +1404,6 @@ section,
   z-index: 1;
 }
 
-.stats img {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  min-height: 100%;
-  z-index: -1;
-}
-
 .stats:before {
   content: "";
   background: rgba(var(--background-color-rgb), 0.6);
@@ -1448,6 +1438,9 @@ section,
   color: rgba(var(--default-color-rgb), 0.6);
 }
 
+.stats_data .stats_symbol {
+  display: inline; 
+}
 
 
 
