@@ -1394,7 +1394,7 @@ section,
 }
 
 .stats img {
-  position: fixed;
+  position: absolute;
   inset: 0;
   display: block;
   width: 100%;
