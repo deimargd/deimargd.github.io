@@ -1621,9 +1621,7 @@ section#contact .form-group input, section#contact .form-group textarea {
 
 .portfolio .responsive-img {
   max-width: 450px;        
-  max-height: 450px;  
-  height: auto; 
-  width: auto;      
+  max-height: 450px;     
 }
 
 @media (max-width: 575px) {
