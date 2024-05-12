@@ -1435,7 +1435,7 @@ section,
   font-family: var(--heading-font);
   font-size: 16px;
   font-weight: 700;
-  color: rgba(var(--default-color-rgb), 0.6);
+  color: rgba(var(--accent-color), 0.6);
 }
 
 .stats_data .stats_symbol {
@@ -1617,6 +1617,12 @@ section#contact .form-group input, section#contact .form-group textarea {
   margin: 0 0 35px 0;
   color: #474747;
   font-family: var(--heading-font);
+}
+
+.portfolio .responsive-img {
+  width: 100%;        
+  max-height: 450px;  
+  height: auto;       
 }
 
 @media (max-width: 575px) {
@@ -2205,6 +2211,10 @@ box-shadow: 4px 4px 36px -10px rgba(0,0,0,0.66);
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
+}
+
+.testimonials .swiper-slide .testimonial-item p i:first-of-type {
+  color: var(--accent-color);
 }
 
 @media (max-width: 767px) {
