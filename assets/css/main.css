@@ -1377,7 +1377,6 @@ section,
 }
 
 .clients .client-logo img:hover {
-  filter: sepia(1);
   opacity: 1;
 }
 
