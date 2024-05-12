@@ -1377,7 +1377,7 @@ section,
 }
 
 .clients .client-logo img:hover {
-  filter: brightness(0) saturate(100%) invert(67%) sepia(94%) saturate(7037%) hue-rotate(2deg) brightness(103%) contrast(101%);
+  filter: sepia(1);
   opacity: 1;
 }
 
@@ -1620,9 +1620,10 @@ section#contact .form-group input, section#contact .form-group textarea {
 }
 
 .portfolio .responsive-img {
-  width: 100%;        
+  max-width: 450px;        
   max-height: 450px;  
-  height: auto;       
+  height: auto; 
+  width: auto;      
 }
 
 @media (max-width: 575px) {
