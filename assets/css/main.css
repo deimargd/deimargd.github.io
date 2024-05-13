@@ -995,7 +995,8 @@ About Me Section
 }
 
 .about .icon-box {
-  <!-- padding: 20px 20px; -->
+  justify-content: center;
+  align-items: center;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   transition: all 0.3s ease-out 0s;
