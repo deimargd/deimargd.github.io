@@ -1011,7 +1011,6 @@ About Me Section
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
   font-size: 32px;
   line-height: 0;
   transition: all 0.4s ease-out 0s;
@@ -1033,6 +1032,7 @@ About Me Section
 .about .icon-box:hover i {
   background-color: var(--accent-color);
   color: var(--contrast-color);
+  margin: auto;
 }
 
 .about .icon-boxes .col-md-6:nth-child(2) .icon-box,
