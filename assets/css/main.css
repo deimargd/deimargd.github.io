@@ -1011,7 +1011,7 @@ About Me Section
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  <!-- margin-bottom: 24px;-->
+  margin: auto;
   font-size: 32px;
   line-height: 0;
   transition: all 0.4s ease-out 0s;
