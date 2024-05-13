@@ -885,7 +885,6 @@ About Me Section
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
-  padding: 10px 0px; <!-- padding: 10px 20px -->
   background: rgba(var(--accent-color-rgb), 0.05);
   color: var(--accent-color);
   border-radius: 7px;
@@ -897,7 +896,7 @@ About Me Section
 }
 
 .about .content p:last-child {
-  <!-- margin-bottom: 0;-->
+  margin-bottom: 0;
 }
 
 .about .par-size p{
@@ -921,10 +920,10 @@ About Me Section
 
 .about .content .read-more i {
   font-size: 18px;
-  margin: 15px;
   line-height: 0;
   transition: 0.3s;
   margin: auto;
+  padding: 5px;
 }
 
 .about .content .read-more:hover {
