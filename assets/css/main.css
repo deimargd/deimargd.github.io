@@ -944,7 +944,7 @@ About Me Section
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
-  <!-- padding: 10px 20px -->
+  padding: 10px 0px; <!-- padding: 10px 20px -->
   background: rgba(var(--accent-color-rgb), 0.05);
   color: var(--accent-color);
   border-radius: 7px;
@@ -980,14 +980,13 @@ About Me Section
 
 .about .content .read-more i {
   font-size: 18px;
-  <!-- margin-left: 5px; -->
+  margin: 15px;
   line-height: 0;
   transition: 0.3s;
 }
 
 .about .content .read-more:hover {
   background: black;
-  <!-- padding-right: 19px; -->
 }
 
 .about .content .read-more:hover i {
@@ -995,14 +994,12 @@ About Me Section
 }
 
 .about .icon-box {
-  justify-content: center;
-  align-items: center;
+  margin:20px;
+  padding-top:50px;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   transition: all 0.3s ease-out 0s;
   background-color: #fff;
-  padding-top: 15px;
-  
 }
 
 .about .icon-box i {
@@ -1033,7 +1030,6 @@ About Me Section
 .about .icon-box:hover i {
   background-color: var(--accent-color);
   color: var(--contrast-color);
-  margin: auto;
 }
 
 .about .icon-boxes .col-md-6:nth-child(2) .icon-box,
@@ -3221,8 +3217,6 @@ box-shadow: 4px 4px 36px -10px rgba(0,0,0,0.66);
 }
 
 .footer .copyright {
-  padding-top: 25px;
-  padding-bottom: 25px;
   background-color: rgba(var(--default-color-rgb), 0.05);
 }
 
