@@ -924,6 +924,7 @@ About Me Section
   margin: 15px;
   line-height: 0;
   transition: 0.3s;
+  margin: auto;
 }
 
 .about .content .read-more:hover {
