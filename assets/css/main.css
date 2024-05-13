@@ -936,6 +936,7 @@ section,
 ------------------------------*/
 .about {
   --background-color: #f4f4f4;
+  margin: auto;
 }
 
 .about .content h3 {
@@ -989,7 +990,7 @@ section,
 }
 
 .about .content .read-more:hover i {
-  <!--margin-left: 10px;-->
+  margin: auto;
 }
 
 .about .icon-box {
