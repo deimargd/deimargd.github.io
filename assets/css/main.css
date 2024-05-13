@@ -954,7 +954,7 @@ section,
 }
 
 .about .content p:last-child {
-  margin-bottom: 0;
+  <!-- margin-bottom: 0;-->
 }
 
 .about .par-size p{
@@ -968,8 +968,8 @@ section,
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
-  padding: 12px 24px;
-  <!-- border-radius: 5px; -->
+  <!-- padding: 12px 24px; -->
+  border-radius: 5px; 
   transition: 0.3s;
   display: inline-flex;
   align-items: center;
@@ -989,7 +989,7 @@ section,
 }
 
 .about .content .read-more:hover i {
-  margin-left: 10px;
+  <!--margin-left: 10px;-->
 }
 
 .about .icon-box {
