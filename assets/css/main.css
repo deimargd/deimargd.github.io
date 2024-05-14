@@ -1876,6 +1876,26 @@ section#contact .form-group input, section#contact .form-group textarea {
   }
 }
 
+@media (max-width: 768px) {
+  /* Hide all the .faq-content divs by default */
+  .faq-container .faq-content {
+    display: none;
+  }
+  
+  /* Optional: Style the .faq-toggle icon to indicate expandability */
+  .faq-container .faq-toggle {
+    display: inline-block; /* Show the toggle button on mobile */
+    transform: rotate(0deg); /* Plus sign (default state) */
+    transition: transform 0.3s ease;
+  }
+
+  /* Rotate the icon when the FAQ item is active (content is visible) */
+  .faq-container .faq-active .faq-toggle {
+    transform: rotate(90deg); /* Turns it into a minus sign */
+  }
+}
+
+
 /* Team Section - Home Page
 ------------------------------*/
 .team {
