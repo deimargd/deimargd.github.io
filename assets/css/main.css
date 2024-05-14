@@ -890,7 +890,7 @@ About Me Section
 .about .content img {
   display: block;
   margin: auto; /* Center the image horizontally */
-  max-width: 400px; /* Set maximum width */
+  max-width: 430px; /* Set maximum width */
   width: 100%; /* Allow the image to take up full width initially */
   height: auto; /* Maintain aspect ratio */
   border-radius: 50%;
