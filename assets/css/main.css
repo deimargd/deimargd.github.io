@@ -1369,7 +1369,7 @@ box-shadow: 4px 4px 36px -10px rgba(0,0,0,0.66);
 }
 
 .stats .stats-item span {
-  font-size: clamp(2rem, 5vw, 4rem);<!-- pre 16px-->
+  font-size: clamp(2rem, 5vw, 4rem);<!-- pre 48px-->
   display: block;
   color: var(--default-color);
   font-weight: 700;
