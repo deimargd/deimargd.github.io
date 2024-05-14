@@ -886,7 +886,7 @@ About Me Section
   text-align: center;
 }
 
-about .content img {
+.about .content img {
   display: block; /* Ensure the image behaves as a block element */
   margin: 0 auto; /* Center the image horizontally */
 }
