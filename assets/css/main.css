@@ -994,7 +994,7 @@ About Me Section
 
 .services .service-item {
   position: relative;
-  padding-top: 20px;
+  padding-top: 0px;
   height: 100vh;
 }
 
@@ -1032,6 +1032,7 @@ About Me Section
   font-size: 56px;
   transition: ease-in-out 0.3s;
   z-index: 2;
+  text-align: center;
   position: relative;
 }
 
