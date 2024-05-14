@@ -1230,7 +1230,7 @@ box-shadow: 4px 4px 36px -10px rgba(0,0,0,0.66);
   bottom: 0;
 }
 
-/* Clients Section - Home Page
+/* Our Partners Section - Home Page
 ------------------------------*/
 .clients-flex-container {
   display: flex;
@@ -1294,7 +1294,7 @@ box-shadow: 4px 4px 36px -10px rgba(0,0,0,0.66);
 
 /* Responsive container for progress bars and labels */
 .client-stats-progress-container {
-  margin-bottom: 20px; /* Spacing between progress bars */
+  margin-bottom: 15px; /* Spacing between progress bars */
 }
 
 /* Responsive adjustments for smaller screens */
@@ -1316,7 +1316,7 @@ box-shadow: 4px 4px 36px -10px rgba(0,0,0,0.66);
 
 
 .clients .client-logo img {
-  padding: 20px;
+  padding: 15px;
   max-width: 80%;
   transition: 0.3s;
   opacity: 0.5;
@@ -2011,7 +2011,6 @@ section#contact .form-group input, section#contact .form-group textarea {
 .testimonials {
   --background-color: #f4f4f4;
   min-height: 50vh;
-  margin: 15px;
 }
 
 .testimonials .info h3 {
