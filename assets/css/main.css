@@ -894,13 +894,7 @@ About Me Section
   width: 100%; /* Allow the image to take up full width initially */
   height: auto; /* Maintain aspect ratio */
   border-radius: 50%;
-}
-
-/* Adjust image size for smaller screens */
-@media (max-width: 768px) {
-  .about .content img {
-    max-width: 300px; /* Reduce maximum width for smaller screens */
-  }
+  min-width: 200px;
 }
 
 
