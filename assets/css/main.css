@@ -890,7 +890,8 @@ About Me Section
 .about .content img {
   display: block; /* Ensure the image behaves as a block element */
   margin: 0 auto; /* Center the image horizontally */
-  max-width: 70%;
+  max-width: 400px;
+  width: 70%;
 }
 
 .about .content h3 {
