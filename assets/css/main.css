@@ -888,11 +888,21 @@ About Me Section
 }
 
 .about .content img {
-  display: block; /* Ensure the image behaves as a block element */
-  margin: 0 auto; /* Center the image horizontally */
-  max-width: 400px;
-  width: 70%;
+  display: block;
+  margin: auto; /* Center the image horizontally */
+  max-width: 400px; /* Set maximum width */
+  width: 100%; /* Allow the image to take up full width initially */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%;
 }
+
+/* Adjust image size for smaller screens */
+@media (max-width: 768px) {
+  .about .content img {
+    max-width: 300px; /* Reduce maximum width for smaller screens */
+  }
+}
+
 
 .about .content h3 {
   font-size: 16px;
