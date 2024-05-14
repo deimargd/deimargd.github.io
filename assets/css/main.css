@@ -1369,7 +1369,7 @@ box-shadow: 4px 4px 36px -10px rgba(0,0,0,0.66);
 }
 
 .stats .stats-item span {
-  font-size: 48px;
+  font-size: clamp(2rem, 5vw, 4rem);<!-- pre 16px-->
   display: block;
   color: var(--default-color);
   font-weight: 700;
@@ -1379,7 +1379,7 @@ box-shadow: 4px 4px 36px -10px rgba(0,0,0,0.66);
   padding: 0;
   margin: 0;
   font-family: var(--heading-font);
-  font-size: 16px;
+  font-size: clamp(0.8rem, 2vw, 1.2rem); <!-- pre 16px-->
   font-weight: 700;
   color: rgba(var(--accent-color), 0.6);
 }
