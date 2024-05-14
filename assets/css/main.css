@@ -1856,6 +1856,16 @@ section#contact .form-group input, section#contact .form-group textarea {
   color: var(--accent-color);
 }
 
+@media (max-width: 768px) {
+  .faq .faq-row {
+      flex-direction: column;
+  }
+
+  .faq .faq-container.left-col, .faq .faq-container.right-col {
+      width: 100%;
+  }
+}
+
 /* Team Section - Home Page
 ------------------------------*/
 .team {
