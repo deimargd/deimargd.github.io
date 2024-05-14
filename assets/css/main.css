@@ -1109,7 +1109,7 @@ About Me Section
 
 .portfolio .portfolio-filters {
   padding: 0;
-  margin: 0 auto 20px auto;
+  <!-- margin: 0 auto 20px auto; -->
   list-style: none;
   text-align: center;
 }
@@ -1126,7 +1126,6 @@ About Me Section
 .portfolio .service-info h3{
   font-size: 16px;
   font-weight: 700;
-  padding: 0;
   margin: 0 0 35px 0;
   color: #474747;
   font-family: var(--heading-font);
@@ -1136,7 +1135,7 @@ About Me Section
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 450px!important;
+  max-width: 460px !important;
   height: auto;
 }
 
