@@ -1389,24 +1389,29 @@ box-shadow: 4px 4px 36px -10px rgba(0,0,0,0.66);
 }
 
 /* Responsive adjustments for smaller screens */
+/* Responsive adjustments for Stats Section based on your specifications */
+
 /* For large screens (992px and above), a 4x2 layout */
 @media (min-width: 992px) {
-  .stats .row > div {
+  .stats .row > .col-lg-3 {
     width: 25%; /* Achieves 4 columns */
   }
 }
 
 /* For medium screens (between 576px and 991px), a 3x3 layout */
 @media (min-width: 576px) and (max-width: 991px) {
-  .stats .row > div {
-    width: 33.3333%; /* Achieves 3 columns */
+  .stats .row > .col-md-6 {
+    width: 33.3333%; /* Achieves 3 columns, override col-lg-3 */
+  }
+  .stats .row > .col-lg-3 {
+    width: 33.3333%; /* Ensures uniformity in case col-lg-3 applies */
   }
 }
 
 /* For small screens (below 576px), a 2x4 layout */
 @media (max-width: 575px) {
-  .stats .row > div {
-    width: 50%; /* Achieves 2 columns */
+  .stats .row > .col-md-6, .stats .row > .col-lg-3 {
+    width: 50%; /* Achieves 2 columns, override col-md-6 and col-lg-3 */
   }
 }
 
