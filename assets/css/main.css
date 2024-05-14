@@ -2020,7 +2020,7 @@ section#contact .form-group input, section#contact .form-group textarea {
 ------------------------------*/
 .testimonials {
   --background-color: #f4f4f4;
-  min-height: 35vh;
+  min-height: 40vh;
 }
 
 .testimonials .info h3 {
