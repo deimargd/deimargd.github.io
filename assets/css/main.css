@@ -466,6 +466,7 @@ section {
   .hamburger_social{
     display: flex;
     justify-content: space-around;
+    width: calc(33.3333% - 10px);
   }
 }
 
