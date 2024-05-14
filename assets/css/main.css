@@ -883,10 +883,12 @@ About Me Section
 
 .about .content {
   margin:auto;
+  text-align: center;
 }
 
-.about .content img {
-  margin:auto;
+about .content img {
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
 }
 
 .about .content h3 {
