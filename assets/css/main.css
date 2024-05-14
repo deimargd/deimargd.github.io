@@ -910,7 +910,7 @@ About Me Section
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
-  <!-- padding: 12px 24px; -->
+  padding: 12px 24px;
   border-radius: 5px; 
   transition: 0.3s;
   display: inline-flex;
