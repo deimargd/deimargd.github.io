@@ -582,6 +582,7 @@ section,
   font-weight: 700;
   position: relative;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .service-info h3{
