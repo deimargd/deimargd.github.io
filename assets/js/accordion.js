@@ -1,42 +1,45 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to toggle the 'faq-active' class and show/hide the content
-    function toggleAccordion(faqItem) {
-      var content = faqItem.querySelector('.faq-content');
-      if (content.style.display === 'block') {
-        content.style.display = 'none';
-        faqItem.classList.remove('faq-active');
-      } else {
-        content.style.display = 'block';
-        faqItem.classList.add('faq-active');
-      }
-    }
-    
-    // Detect screen size to enable accordion functionality for mobile
-    function enableAccordionOnMobile() {
-      return window.innerWidth <= 768;   // using 768px as the mobile breakpoint
-    }
-  
-    // Select all FAQ items
-    var faqs = document.querySelectorAll('.faq-item h3');
-    faqs.forEach(function(faq) {
-      faq.addEventListener('click', function(event) {
-        // Check if we're on a mobile screen size
-        if(enableAccordionOnMobile()) {
-          toggleAccordion(event.currentTarget.parentNode); // Pass the .faq-item to the function
-        }
+  // Function to toggle the 'faq-active' class and show/hide the content
+  function toggleAccordion(faqItem) {
+    var content = faqItem.querySelector('.faq-content');
+    if (content.style.display === 'block') {
+      content.style.display = 'none';
+      faqItem.classList.remove('faq-active');
+    } else {
+      // This part ensures that only one FAQ can be expanded at a time on mobile
+      document.querySelectorAll('.faq-container .faq-item').forEach(function(item) {
+        item.classList.remove('faq-active');
+        item.querySelector('.faq-content').style.display = 'none';
       });
-    });
-  
-    // Add window resize event listener to adapt the accordion to viewport changes
-    window.addEventListener('resize', function() {
-      // If we resize to a size larger than mobile, remove active classes and hide content
-      if (!enableAccordionOnMobile()) {
-        document.querySelectorAll('.faq-content').forEach(function(content) {
-          content.style.display = 'none';
-          content.parentNode.classList.remove('faq-active');
-        });
+      content.style.display = 'block';
+      faqItem.classList.add('faq-active');
+    }
+  }
+
+  // Function to check if we should display the accordion
+  function isMobileView() {
+    return window.innerWidth <= 768;
+  }
+
+  // Select all FAQ h3 elements
+  var faqHeaders = document.querySelectorAll('.faq-container .faq-item h3');
+  faqHeaders.forEach(function(header) {
+    header.addEventListener('click', function(event) {
+      var faqItem = header.parentNode;
+      if(isMobileView()) {
+        // Pass the .faq-item to the toggleAccordion function
+        toggleAccordion(faqItem);
       }
     });
   });
-  
-  
+
+  // Optional: close all FAQ sections if the window is resized larger than mobile view
+  window.addEventListener('resize', function() {
+    if (!isMobileView()) {
+      document.querySelectorAll('.faq-container .faq-item .faq-content').forEach(function(content) {
+        content.style.display = 'none';
+        content.parentNode.classList.remove('faq-active');
+      });
+    }
+  });
+});
