@@ -115,7 +115,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 100%;
+  max-width: 125px;
   width: 100%;
 }
 
