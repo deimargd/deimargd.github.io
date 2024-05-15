@@ -85,6 +85,7 @@ h6 {
   margin: 0;
   font-weight: 600;
   color: var(--heading-color);
+  margin:auto;
 }
 
 .header .logo span {
@@ -111,12 +112,7 @@ h6 {
   background: black;
 }
 
-.social{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 80px;
-}
+
 
 .social i{
   color: #000000;
@@ -477,14 +473,20 @@ section {
 }
 
 @media (max-width: 768px) {
-  .social i {
-    flex: 1 1 calc(50% - 10px); /* Two icons per row on smaller screens */
+  .social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 80px;
   }
 }
 
 @media (max-width: 480px) {
-  .social i {
-    flex: 1 1 calc(100% - 10px); /* One icon per row on very small screens */
+  .social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 55px;
   }
 }
 
