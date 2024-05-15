@@ -111,6 +111,12 @@ h6 {
   background: black;
 }
 
+.social{
+  display: flex;
+  justify-content: space-around;
+  width: calc(33.3333% - 10px);
+}
+
 .social i{
   color: #000000;
   z-index: 998;
