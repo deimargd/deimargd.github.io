@@ -2279,7 +2279,6 @@ section#contact .form-group input, section#contact .form-group textarea {
   color: #ffffff;
   text-align: left;
   padding: 15px;
-  margin-bottom: 24px;
   font-weight: 600;
 }
 
@@ -2289,7 +2288,6 @@ section#contact .form-group input, section#contact .form-group textarea {
   background: #059652;
   text-align: center;
   padding: 15px;
-  margin-bottom: 24px;
   font-weight: 600;
 }
 
@@ -2298,7 +2296,6 @@ section#contact .form-group input, section#contact .form-group textarea {
   background: var(--background-color);
   text-align: center;
   padding: 15px;
-  margin-bottom: 24px;
 }
 
 .contact .php-email-form .loading:before {
@@ -3216,7 +3213,7 @@ section#contact .form-group input, section#contact .form-group textarea {
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
-  padding-bottom: 0px; <!-- pre 50px -->
+  padding: 20px; <!-- pre 50px -->
   margin-top: -23px;
 }
 
@@ -3226,11 +3223,11 @@ section#contact .form-group input, section#contact .form-group textarea {
 
 .footer .footer-about .logo {
   line-height: 0;
-  margin: 20px; <!-- margin-bottom: 25px -->
+  ; <!-- margin-bottom: 25px -->
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
+  max-height: 50px;
   margin-right: 6px;
 }
 
