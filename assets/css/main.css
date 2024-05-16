@@ -572,61 +572,57 @@ section,
 	text-align: center;
 }
 
-.section-title h2 {
-	font-size: 25px;
-	font-weight: 700;
-	padding: 30px;
-	position: relative;
-	text-align: center;
-}
-
-.section-title h2:after, .section-title h2:before {
-	background: var(--accent-color);
-	content: "";
-  position: absolute; 
-  top: 50%; 
-  transform: translateY(-50%);
-  height: 2px;
-  width: 50px;
-}
-
-
-
 .service-info h3 {
 	font-size: 20px;
 	font-weight: 700;
 	text-align: center;
 }
 
-.section-title h2::before {
-  left: 0;
-  transform: translateX(-100%) translateY(-50%);
-  margin-left: calc(-15px - 50px); /* Width of the line + desired spacing to the left */
+.section-title h2 {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 30px 0; /* Adjust padding to add space above and below */
+  position: relative;
+  text-align: center;
 }
 
-.section-title h2::after {
-  right: 0;
-  transform: translateX(100%) translateY(-50%);
-  margin-right: calc(-15px - 50px); /* Width of the line + desired spacing to the right */
+.section-title h2:before,
+.section-title h2:after {
+  background: var(--accent-color);
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 50px;
+}
+
+.section-title h2:before {
+  left: calc(50% - 85px); /* Adjust to position before the text */
+}
+
+.section-title h2:after {
+  right: calc(50% - 85px); /* Adjust to position after the text */
 }
 
 @media (max-width: 480px) {
-  .section-title h2::before,
-  .section-title h2::after {
+  .section-title h2:before,
+  .section-title h2:after {
     width: 20px;
-    margin-left: calc(-15px - 20px);  /* Adjust margin for ::before */
-    margin-right: calc(-15px - 20px); /* Adjust margin for ::after */
+    left: calc(50% - 50px); /* Adjust for smaller screen */
+    right: calc(50% - 50px); /* Adjust for smaller screen */
   }
 }
 
 @media (max-width: 768px) {
-  .section-title h2::before,
-  .section-title h2::after {
+  .section-title h2:before,
+  .section-title h2:after {
     width: 35px;
-    margin-left: calc(-15px - 35px);  /* Adjust margin for ::before */
-    margin-right: calc(-15px - 35px); /* Adjust margin for ::after */
+    left: calc(50% - 65px); /* Adjust for medium screen */
+    right: calc(50% - 65px); /* Adjust for medium screen */
   }
 }
+
 
 /*--------------------------------------------------------------
 # Page Title & Breadcrumbs
