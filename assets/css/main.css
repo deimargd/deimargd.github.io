@@ -80,16 +80,20 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center; /* Align items vertically */
 }
 
+.header .logo a {
+	width: 100%;
+  margin: 0 auto;
+}
+
 .header .logo h1 {
 	color: var(--heading-color);
 	font-size: 24px;
 	font-weight: 600;
-	margin: 0 15px;
+	margin: auto;
 	text-align: center;
 }
 
 .header .logo img {
-	margin-right: 6px;
 	max-height: 40px;
   margin: 0 auto;
 }
