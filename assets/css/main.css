@@ -592,7 +592,6 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 0px; <!-- pre 30px -->
 }
 
 .section-title h2 {
@@ -626,9 +625,18 @@ section,
   margin: 0 0 10px 15px;
 }
 
-.section-title p {
-  margin-bottom: 0;
-  margin-top: 0; <!-- pre 30px -->
+@media (max-width: 768px) {
+  .section-title h2:before,
+  .section-title h2:after {
+    width: 25px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title h2:before,
+  .section-title h2:after {
+    width: 10px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1426,6 +1434,7 @@ box-shadow: 4px 4px 36px -10px rgba(0,0,0,0.66);
 .client-stats-progress-bar::after {
   content: ""; /* Remove text here to avoid duplication, already in ::before */
   position: absolute;
+  padding-left: 3px;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
