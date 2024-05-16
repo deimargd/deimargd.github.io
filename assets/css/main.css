@@ -591,7 +591,9 @@ section,
 }
 
 .section-title h2::before {
-  margin-right: 15px; /* Shift left by half width of line + 15px gap */
+  left: 0;
+  transform: translateX(-100%) translateY(-50%);
+  margin-left: calc(-15px - 50px); /* Width of the line + desired spacing to the left */
 }
 
 .section-title h2::after {
@@ -608,12 +610,18 @@ section,
 	.section-title h2:before, .section-title h2:after {
 		width: 20px;
 	}
+  .section-title h2::before {
+  margin-left: calc(-15px - 20px); /* Width of the line + desired spacing to the left */
+}
 }
 
 @media (max-width: 768px) {
 	.section-title h2:before, .section-title h2:after {
 		width: 35px;
 	}
+    .section-title h2::before {
+  margin-left: calc(-15px - 35px); /* Width of the line + desired spacing to the left */
+}
 }
 
 /*--------------------------------------------------------------
