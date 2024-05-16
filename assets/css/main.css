@@ -579,27 +579,31 @@ section,
   height: 2px;
   background: var(--accent-color);
   display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .section-title h2:before {
-  margin: 0 15px 10px 0;
+  top: 50%; /* Position the line at the vertical center */
+  transform: translateY(-50%) translateX(-100%);
 }
 
 .section-title h2:after {
-  margin: 0 0 10px 15px;
+  top: 50%; /* Position the line at the vertical center */
+  transform: translateY(-50%) translateX(100%);
 }
 
 @media (max-width: 768px) {
   .section-title h2:before,
   .section-title h2:after {
-    width: 25px; 
+    width: 35px; 
   }
 }
 
 @media (max-width: 480px) {
   .section-title h2:before,
   .section-title h2:after {
-    width: 10px;
+    width: 15px;
   }
 }
 
