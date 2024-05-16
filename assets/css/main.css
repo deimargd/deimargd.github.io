@@ -580,8 +580,7 @@ section,
 }
 
 .section-title h2:after {
-	top: 50%;
-  margin-left: 15px;
+  margin: auto 15px auto auto;
 }
 
 .section-title h2:after, .section-title h2:before {
@@ -593,8 +592,7 @@ section,
 }
 
 .section-title h2:before {
-	top: 50%;
-  margin-right: 15px;
+  margin: auto auto auto 15px;
 }
 
 .service-info h3 {
