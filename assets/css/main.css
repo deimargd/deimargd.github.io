@@ -590,13 +590,14 @@ section,
   width: 50px;
 }
 
-/* Set your lines 15px from the text */
 .section-title h2::before {
-  left: calc(50% - 25px - 50px); /* Half of parent minus half text width minus line width */
+  left: 50%; 
+  margin-left: -calc(50% + 15px); /* Negative half of parent width + spacing */
 }
 
 .section-title h2::after {
-  right: calc(50% - 25px - 50px); /* Equivalent calculation for the right side */
+  right: 50%; 
+  margin-right: -calc(50% + 15px); /* Negative half of parent width + spacing */
 }
 
 .service-info h3 {
