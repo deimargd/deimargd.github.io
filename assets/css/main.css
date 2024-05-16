@@ -580,11 +580,6 @@ section,
 	text-align: center;
 }
 
-.section-title h2:after {
-  margin: auto auto auto 15px;
-  
-}
-
 .section-title h2:after, .section-title h2:before {
 	background: var(--accent-color);
 	content: "";
@@ -595,8 +590,14 @@ section,
   width: 50px;
 }
 
-.section-title h2:before {
-  margin: auto 15px auto auto;
+.section-title h2::before {
+  left: 0; /* Position the line on the left side */
+  margin-right: 15px;
+}
+
+.section-title h2::after {
+  right: 0; /* Position the line on the right side */
+  margin-left: 15px;
 }
 
 .service-info h3 {
