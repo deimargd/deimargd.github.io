@@ -598,11 +598,11 @@ section,
 }
 
 .section-title h2:before {
-  right: 15px; /* Adjust to position before the text */
+  left: 15px; /* Adjust to position before the text */
 }
 
 .section-title h2:after {
-  left: 15px; /* Adjust to position after the text */
+  right: 15px; /* Adjust to position after the text */
 }
 
 @media (max-width: 480px) {
