@@ -580,19 +580,22 @@ section,
 }
 
 .section-title h2:after {
-  margin: auto 15px auto auto;
+  margin: auto auto auto 15px;
+  
 }
 
 .section-title h2:after, .section-title h2:before {
 	background: var(--accent-color);
 	content: "";
-	display: inline-block;
-	height: 2px;
-	width: 50px;
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
+  height: 2px;
+  width: 50px;
 }
 
 .section-title h2:before {
-  margin: auto auto auto 15px;
+  margin: auto 15px auto auto;
 }
 
 .service-info h3 {
