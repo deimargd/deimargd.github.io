@@ -590,14 +590,13 @@ section,
   width: 50px;
 }
 
+/* Set your lines 15px from the text */
 .section-title h2::before {
-  left: 0; /* Position the line on the left side */
-  margin-right: 15px;
+  left: calc(50% - 25px - 50px); /* Half of parent minus half text width minus line width */
 }
 
 .section-title h2::after {
-  right: 0; /* Position the line on the right side */
-  margin-left: 15px;
+  right: calc(50% - 25px - 50px); /* Equivalent calculation for the right side */
 }
 
 .service-info h3 {
