@@ -2694,10 +2694,6 @@ section, .section {
 }
 
 @media (max-width: 1199px) {
-	section {
-		scroll-margin-top: 66px;
-	}
-
 	.hamburger_social {
 		display: flex;
 		justify-content: space-around;
@@ -2819,6 +2815,12 @@ section, .section {
 	}
 }
 
+@media (max-width: 1199px) {
+	section {
+		scroll-margin-top: 66px;
+	}
+}
+
 @media (max-width: 1200px) {
 	.header .btn-getstarted {
 		margin: 0 15px 0 0;
@@ -2849,11 +2851,15 @@ section, .section {
 		font-size: 14px;
 		margin: 0 0 10px 0;
 	}
+}
 
+@media (max-width: 575px) {
 	.portfolio-details .swiper-button-prev, .portfolio-details .swiper-button-next {
 		display: none;
 	}
+}
 
+@media (max-width: 575px) {
 	.stats .row > .col-md-6, .stats .row > .col-lg-3 {
 		width: 50%;
 	}
@@ -2883,11 +2889,6 @@ section, .section {
 }
 
 @media (max-width: 768px) {
-	.about .icon-boxes .col-md-6:nth-child(2) .icon-box, .about .icon-boxes .col-md-6:nth-child(4) .icon-box {
-		-->;
-		<!-- margin-top: 0;
-	}
-
 	.faq .faq-container.left-col, .faq .faq-container.right-col {
 		width: 100%;
 	}
@@ -2895,26 +2896,9 @@ section, .section {
 	.faq .faq-row {
 		flex-direction: column;
 	}
+}
 
-	.faq-container .faq-active .faq-toggle {
-		transform: rotate(90deg);
-	}
-
-	.faq-container .faq-content {
-		display: none;
-	}
-
-	.faq-container .faq-toggle {
-		display: inline-block;
-		transform: rotate(0deg);
-		transition: transform 0.3s ease;
-	}
-
-	.features .features-item+.features-item {
-		<!-- pre 40px-->;
-		margin-top: 0px;
-	}
-
+@media (max-width: 768px) {
 	.hero .sign-up-form .form-control {
 		font-size: smaller;
 	}
@@ -2929,6 +2913,36 @@ section, .section {
 
 	.hero p {
 		font-size: 18px;
+	}
+}
+
+@media (max-width: 768px) {
+	.about .icon-boxes .col-md-6:nth-child(2) .icon-box, .about .icon-boxes .col-md-6:nth-child(4) .icon-box {
+		-->;
+		<!-- margin-top: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.faq-container .faq-active .faq-toggle {
+		transform: rotate(90deg);
+	}
+
+	.faq-container .faq-content {
+		display: none;
+	}
+
+	.faq-container .faq-toggle {
+		display: inline-block;
+		transform: rotate(0deg);
+		transition: transform 0.3s ease;
+	}
+}
+
+@media (max-width: 768px) {
+	.features .features-item+.features-item {
+		<!-- pre 40px-->;
+		margin-top: 0px;
 	}
 }
 
@@ -3111,7 +3125,9 @@ section, .section {
 	.pricing .featured {
 		transform: scale(1.15);
 	}
+}
 
+@media (min-width: 992px) {
 	.stats .row > .col-lg-3 {
 		width: 25%;
 	}
