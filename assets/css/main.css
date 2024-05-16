@@ -577,7 +577,7 @@ section,
 
 .section-title h2:after {
 	top: 50%;
-	transform: translateY(-50%) translateX(100%);
+  margin-left: 15px;
 }
 
 .section-title h2:after, .section-title h2:before {
@@ -585,14 +585,12 @@ section,
 	content: "";
 	display: inline-block;
 	height: 2px;
-	left: 50%;
-	transform: translateX(-50%);
 	width: 50px;
 }
 
 .section-title h2:before {
 	top: 50%;
-	transform: translateY(-50%) translateX(-100%);
+  margin-right: 15px;
 }
 
 .service-info h3 {
