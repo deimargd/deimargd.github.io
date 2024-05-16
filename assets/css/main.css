@@ -591,14 +591,10 @@ section,
 }
 
 .section-title h2::before {
-  left: 50%; /* Start from the exact horizontal center */
-  transform: translateX(-50%) translateY(-50%); /* Adjust horizontal placement as well */
-  margin-left: -50px - 15px; /* Shift left by half width of line + 15px gap */
+  margin-right: 15px; /* Shift left by half width of line + 15px gap */
 }
 
 .section-title h2::after {
-  left: 50%; /* Start from the exact horizontal center */
-  transform: translateX(50%) translateY(-50%); /* Adjust horizontal placement as well */
   margin-left: 15px; /* Shift right by 15px gap */
 }
 
