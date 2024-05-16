@@ -591,13 +591,15 @@ section,
 }
 
 .section-title h2::before {
-  left: 50%; 
-  margin-left: -calc(50% + 15px); /* Negative half of parent width + spacing */
+  left: 50%; /* Start from the exact horizontal center */
+  transform: translateX(-50%) translateY(-50%); /* Adjust horizontal placement as well */
+  margin-left: -50px - 15px; /* Shift left by half width of line + 15px gap */
 }
 
 .section-title h2::after {
-  right: 50%; 
-  margin-right: -calc(50% + 15px); /* Negative half of parent width + spacing */
+  left: 50%; /* Start from the exact horizontal center */
+  transform: translateX(50%) translateY(-50%); /* Adjust horizontal placement as well */
+  margin-left: 15px; /* Shift right by 15px gap */
 }
 
 .service-info h3 {
