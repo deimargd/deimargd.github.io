@@ -591,9 +591,7 @@ section,
 }
 
 .section-title h2::before {
-  left: 0;
-  transform: translateX(-100%) translateY(-50%);
-  margin-left: calc(-15px - 50px); /* Width of the line + desired spacing to the left */
+  margin-right: calc(15px + 50px); /* Width of the line + desired spacing to the left */
 }
 
 .section-title h2::after {
@@ -611,7 +609,7 @@ section,
 		width: 20px;
 	}
   .section-title h2::before {
-  margin-left: calc(-15px - 20px); /* Width of the line + desired spacing to the left */
+  margin-right: calc(15px + 20px); /* Width of the line + desired spacing to the left */
 }
 }
 
@@ -620,7 +618,7 @@ section,
 		width: 35px;
 	}
     .section-title h2::before {
-  margin-left: calc(-15px - 35px); /* Width of the line + desired spacing to the left */
+  margin-right: calc(15px + 35px); /* Width of the line + desired spacing to the left */
 }
 }
 
