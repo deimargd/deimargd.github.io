@@ -55,6 +55,9 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 15px 0;
 	transition: all 0.5s;
 	z-index: 997;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 }
 
 .header .btn-getstarted, .header .btn-getstarted:focus {
@@ -72,11 +75,16 @@ h1, h2, h3, h4, h5, h6 {
 	color: var(--contrast-color);
 }
 
+.header .logo {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
 .header .logo h1 {
 	color: var(--heading-color);
 	font-size: 24px;
 	font-weight: 600;
-	margin: 0 auto;
+	margin: 0 15px;
 	text-align: center;
 }
 
@@ -555,56 +563,53 @@ section,
 # Section Title
 --------------------------------------------------------------*/
 .section-title {
-  text-align: center;
+	text-align: center;
 }
 
 .section-title h2 {
-  font-size: 25px;
-  font-weight: 700;
-  position: relative;
-  text-align: center;
-  padding: 30px;
+	font-size: 25px;
+	font-weight: 700;
+	padding: 30px;
+	position: relative;
+	text-align: center;
 }
 
-.service-info h3{
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.section-title h2:before,
 .section-title h2:after {
-  content: "";
-  width: 50px;
-  height: 2px;
-  background: var(--accent-color);
-  display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
+	top: 50%;
+	transform: translateY(-50%) translateX(100%);
+}
+
+.section-title h2:after, .section-title h2:before {
+	background: var(--accent-color);
+	content: "";
+	display: inline-block;
+	height: 2px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
 }
 
 .section-title h2:before {
-  top: 50%; /* Position the line at the vertical center */
-  transform: translateY(-50%) translateX(-100%);
+	top: 50%;
+	transform: translateY(-50%) translateX(-100%);
 }
 
-.section-title h2:after {
-  top: 50%; /* Position the line at the vertical center */
-  transform: translateY(-50%) translateX(100%);
-}
-
-@media (max-width: 768px) {
-  .section-title h2:before,
-  .section-title h2:after {
-    width: 35px; 
-  }
+.service-info h3 {
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
 }
 
 @media (max-width: 480px) {
-  .section-title h2:before,
-  .section-title h2:after {
-    width: 15px;
-  }
+	.section-title h2:before, .section-title h2:after {
+		width: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.section-title h2:before, .section-title h2:after {
+		width: 35px;
+	}
 }
 
 /*--------------------------------------------------------------
