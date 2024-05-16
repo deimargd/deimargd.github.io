@@ -581,7 +581,7 @@ section,
 .section-title h2 {
   font-size: 25px;
   font-weight: 700;
-  padding: 30px 0; /* Adjust padding to add space above and below */
+  padding: 30px;
   position: relative;
   text-align: center;
 }
@@ -598,19 +598,17 @@ section,
 }
 
 .section-title h2:before {
-  left: calc(50% - 85px); /* Adjust to position before the text */
+  right: 15px; /* Adjust to position before the text */
 }
 
 .section-title h2:after {
-  right: calc(50% - 85px); /* Adjust to position after the text */
+  left: 15px; /* Adjust to position after the text */
 }
 
 @media (max-width: 480px) {
   .section-title h2:before,
   .section-title h2:after {
     width: 20px;
-    left: calc(50% - 50px); /* Adjust for smaller screen */
-    right: calc(50% - 50px); /* Adjust for smaller screen */
   }
 }
 
@@ -618,8 +616,6 @@ section,
   .section-title h2:before,
   .section-title h2:after {
     width: 35px;
-    left: calc(50% - 65px); /* Adjust for medium screen */
-    right: calc(50% - 65px); /* Adjust for medium screen */
   }
 }
 
