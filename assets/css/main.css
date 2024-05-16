@@ -85,7 +85,8 @@ h6 {
   margin: 0;
   font-weight: 600;
   color: var(--heading-color);
-  margin:auto;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .header .logo span {
@@ -1024,8 +1025,10 @@ About Me Section
   }
 }
 
-/* Services Section - Home Page
-------------------------------*/
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+
 .services{
   min-height: 100vh;
 }
@@ -1122,6 +1125,133 @@ About Me Section
   flex-direction: column;
   justify-content: space-between;
   height: 100%; /* Make the inner content fill the height */
+}
+
+
+.service-details .service-box {
+  padding: 20px;
+  box-shadow: 0px 2px 20px rgba(var(--default-color-rgb), 0.12);
+}
+
+.service-details .service-box+.service-box {
+  margin-top: 30px;
+}
+
+.service-details .service-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(var(--default-color-rgb), 0.08);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.service-details .services-list a {
+  color: rgba(var(--default-color-rgb), 0.8);
+  background-color: rgba(var(--default-color-rgb), 0.04);
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.service-details .services-list a:first-child {
+  margin-top: 0;
+}
+
+.service-details .services-list a i {
+  font-size: 16px;
+  margin-right: 8px;
+  color: var(--accent-color);
+}
+
+.service-details .services-list a.active {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+}
+
+.service-details .services-list a.active i {
+  color: var(--contrast-color);
+}
+
+.service-details .services-list a:hover {
+  background-color: rgba(var(--accent-color-rgb), 0.05);
+  color: var(--accent-color);
+}
+
+.service-details .download-catalog a {
+  color: var(--default-color);
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  transition: 0.3s;
+  border-top: 1px solid rgba(var(--default-color-rgb), 0.1);
+}
+
+.service-details .download-catalog a:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.service-details .download-catalog a:last-child {
+  padding-bottom: 0;
+}
+
+.service-details .download-catalog a i {
+  font-size: 24px;
+  margin-right: 8px;
+  color: var(--accent-color);
+}
+
+.service-details .download-catalog a:hover {
+  color: var(--accent-color);
+}
+
+.service-details .help-box {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  margin-top: 30px;
+  padding: 30px 15px;
+}
+
+.service-details .help-box .help-icon {
+  font-size: 48px;
+}
+
+.service-details .help-box h4,
+.service-details .help-box a {
+  color: var(--contrast-color);
+}
+
+.service-details .services-img {
+  margin-bottom: 20px;
+}
+
+.service-details h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.service-details p {
+  font-size: 15px;
+}
+
+.service-details ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.service-details ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.service-details ul i {
+  font-size: 20px;
+  margin-right: 8px;
+  color: var(--accent-color);
 }
 
 
@@ -1444,7 +1574,7 @@ section#contact form {
 	margin-top: 15px;
 }
 section#contact.form-group {
-margin-bottom: 25px;
+margin-bottom: 0px;
 }
 
 section#contact .form-group input, section#contact .form-group textarea {
@@ -2243,129 +2373,6 @@ section#contact .form-group input, section#contact .form-group textarea {
   margin-bottom: 0;
 }
 
-/* Contact Section - Home Page
-------------------------------*/
-.contact .info-item {
-  background: rgba(var(--default-color-rgb), 0.03);
-  padding: 20px;
-}
-
-.contact .info-item i {
-  font-size: 38px;
-  line-height: 0;
-  color: var(--accent-color);
-}
-
-.contact .info-item h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 20px 0 10px 0;
-}
-
-.contact .info-item p {
-  padding: 0;
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.contact .php-email-form {
-  background: rgba(var(--default-color-rgb), 0.03);
-  padding: 20px;
-  height: 100%;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: var(--background-color);
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--background-color);
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
-  color: var(--default-color);
-  background-color: rgba(var(--background-color-rgb), 0.5);
-  border-color: rgba(var(--default-color-rgb), 0.2);
-}
-
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
-}
-
-.contact .php-email-form input[type=text]::-moz-placeholder,
-.contact .php-email-form input[type=email]::-moz-placeholder,
-.contact .php-email-form textarea::-moz-placeholder {
-  color: rgba(var(--default-color-rgb), 0.3);
-}
-
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: rgba(var(--default-color-rgb), 0.3);
-}
-
-.contact .php-email-form button[type=submit] {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-
-
-.contact .php-email-form button[type=submit]:hover {
-  background: rgba(var(--accent-color-rgb), 0.8);
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Portfolio Details Page
@@ -2528,136 +2535,6 @@ section#contact .form-group input, section#contact .form-group textarea {
   padding: 0;
 }
 
-/*--------------------------------------------------------------
-# Services Details Page
---------------------------------------------------------------*/
-/* Service-details Section - Services Details Page
-------------------------------*/
-.service-details .service-box {
-  padding: 20px;
-  box-shadow: 0px 2px 20px rgba(var(--default-color-rgb), 0.12);
-}
-
-.service-details .service-box+.service-box {
-  margin-top: 30px;
-}
-
-.service-details .service-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  border-bottom: 2px solid rgba(var(--default-color-rgb), 0.08);
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-}
-
-.service-details .services-list a {
-  color: rgba(var(--default-color-rgb), 0.8);
-  background-color: rgba(var(--default-color-rgb), 0.04);
-  display: flex;
-  align-items: center;
-  padding: 12px 15px;
-  margin-top: 15px;
-  transition: 0.3s;
-}
-
-.service-details .services-list a:first-child {
-  margin-top: 0;
-}
-
-.service-details .services-list a i {
-  font-size: 16px;
-  margin-right: 8px;
-  color: var(--accent-color);
-}
-
-.service-details .services-list a.active {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
-}
-
-.service-details .services-list a.active i {
-  color: var(--contrast-color);
-}
-
-.service-details .services-list a:hover {
-  background-color: rgba(var(--accent-color-rgb), 0.05);
-  color: var(--accent-color);
-}
-
-.service-details .download-catalog a {
-  color: var(--default-color);
-  display: flex;
-  align-items: center;
-  padding: 10px 0;
-  transition: 0.3s;
-  border-top: 1px solid rgba(var(--default-color-rgb), 0.1);
-}
-
-.service-details .download-catalog a:first-child {
-  border-top: 0;
-  padding-top: 0;
-}
-
-.service-details .download-catalog a:last-child {
-  padding-bottom: 0;
-}
-
-.service-details .download-catalog a i {
-  font-size: 24px;
-  margin-right: 8px;
-  color: var(--accent-color);
-}
-
-.service-details .download-catalog a:hover {
-  color: var(--accent-color);
-}
-
-.service-details .help-box {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  margin-top: 30px;
-  padding: 30px 15px;
-}
-
-.service-details .help-box .help-icon {
-  font-size: 48px;
-}
-
-.service-details .help-box h4,
-.service-details .help-box a {
-  color: var(--contrast-color);
-}
-
-.service-details .services-img {
-  margin-bottom: 20px;
-}
-
-.service-details h3 {
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.service-details p {
-  font-size: 15px;
-}
-
-.service-details ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.service-details ul li {
-  padding: 5px 0;
-  display: flex;
-  align-items: center;
-}
-
-.service-details ul i {
-  font-size: 20px;
-  margin-right: 8px;
-  color: var(--accent-color);
-}
 
 /*--------------------------------------------------------------
 # Blog Page
@@ -2754,7 +2631,7 @@ section#contact .form-group input, section#contact .form-group textarea {
 }
 
 /*--------------------------------------------------------------
-# Blog Details Page
+# Blog Section
 --------------------------------------------------------------*/
 /* Blog-details Section - Blog Details Page
 ------------------------------*/
@@ -3206,9 +3083,133 @@ section#contact .form-group input, section#contact .form-group textarea {
   background-color: rgba(var(--accent-color-rgb), 0.8);
 }
 
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-item {
+  background: rgba(var(--default-color-rgb), 0.03);
+  padding: 20px;
+}
+
+.contact .info-item i {
+  font-size: 38px;
+  line-height: 0;
+  color: var(--accent-color);
+}
+
+.contact .info-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.contact .info-item p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .php-email-form {
+  background: rgba(var(--default-color-rgb), 0.03);
+  padding: 20px;
+  height: 100%;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  background: #df1529;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #ffffff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: var(--background-color);
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--accent-color);
+  border-top-color: var(--background-color);
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: rgba(var(--background-color-rgb), 0.5);
+  border-color: rgba(var(--default-color-rgb), 0.2);
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.contact .php-email-form input[type=text]::-moz-placeholder,
+.contact .php-email-form input[type=email]::-moz-placeholder,
+.contact .php-email-form textarea::-moz-placeholder {
+  color: rgba(var(--default-color-rgb), 0.3);
+}
+
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: rgba(var(--default-color-rgb), 0.3);
+}
+
+.contact .php-email-form button[type=submit] {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+
+
+.contact .php-email-form button[type=submit]:hover {
+  background: rgba(var(--accent-color-rgb), 0.8);
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /*--------------------------------------------------------------
-# Footer
+# Footer // Copyrigth
 --------------------------------------------------------------*/
 .footer {
   --background-color: #f4f4f4;
@@ -3216,7 +3217,7 @@ section#contact .form-group input, section#contact .form-group textarea {
   background-color: var(--background-color);
   font-size: 14px;
   padding: 20px; <!-- pre 50px -->
-  margin-top: -23px;
+  margin-top: 0;
 }
 
 .footer .footer-top {
