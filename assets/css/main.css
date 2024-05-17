@@ -580,8 +580,8 @@ section,
 }
 
 .service-info h3 {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -759,9 +759,11 @@ section,
     width: 100%;
   }
   .section-title h2 {
-    font-size: 15px;
-    
+    font-size: 20px;
     text-align: center;
+  }
+  h3 {
+    font-size: 16px;
   }
 }
 
@@ -796,7 +798,6 @@ section,
 
 .hero-img-div{
   max-width: 30%;
-  <!-- margin-bottom: -10px -->
 }
 
 .hero:before {
@@ -836,7 +837,7 @@ section,
 
 .hero .sign-up-form {
   margin-top: 20px;
-  padding: 15px; <!-- pre 10px -->
+  padding: 15px; 
   border-radius: 7px;
   background: #fff;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
@@ -997,14 +998,9 @@ About Me Section
 }
 
 .about .icon-box h3 {
-  <!-- margin-bottom: 10px;-->
   font-size: 24px;
   font-weight: 700;
   
-}
-
-.about .icon-box p {
-  <!-- margin-bottom: 0;-->
 }
 
 .about .icon-box:hover i {
@@ -1012,18 +1008,6 @@ About Me Section
   color: var(--contrast-color);
 }
 
-.about .icon-boxes .col-md-6:nth-child(2) .icon-box,
-.about .icon-boxes .col-md-6:nth-child(4) .icon-box {
-  <!--  margin-top: 0;-->
-}
-
-@media (max-width: 768px) {
-
-  .about .icon-boxes .col-md-6:nth-child(2) .icon-box,
-  .about .icon-boxes .col-md-6:nth-child(4) .icon-box {
-    <!--  margin-top: 0;-->
-  }
-}
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1146,7 +1130,7 @@ About Me Section
 }
 
 .service-details h3 {
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 700;
 }
 
@@ -1274,8 +1258,7 @@ About Me Section
 }
 
 .portfolio .portfolio-filters {
-	--> list-style: none;
-	<!-- margin: 0 auto 20px auto;
+	list-style: none;
 	padding: 0;
 	text-align: center;
 }
@@ -1341,7 +1324,7 @@ About Me Section
 	color: #474747;
 	font-family: var(--heading-font);
 	font-size: 16px;
-	font-weight: 700;
+	font-weight: 500;
 	margin: 0 0 35px 0;
 }
 
@@ -1648,7 +1631,7 @@ About Me Section
 }
 
 .stats .stats-item p {
-	<!-- pre 16px--> font-weight: 700;
+	font-weight: 700;
 	color: rgba(var(--accent-color), 0.6);
 	font-family: var(--heading-font);
 	font-size: clamp(0.8rem,2vw,1.2rem);
@@ -1657,7 +1640,7 @@ About Me Section
 }
 
 .stats .stats-item span {
-	<!-- pre 48px--> display: block;
+	display: block;
 	color: var(--default-color);
 	font-size: clamp(2rem,5vw,4rem);
 	font-weight: 700;
@@ -2215,8 +2198,7 @@ About Me Section
 }
 
 .testimonials .testimonial-item h3 {
-	--> margin: 15px;
-	<!-- margin: 10px 0 5px 0;
+	margin: 15px;
 	font-size: 18px;
 	font-weight: bold;
 }
