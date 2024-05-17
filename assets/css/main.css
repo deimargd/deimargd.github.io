@@ -1096,6 +1096,8 @@ About Me Section
 #services .icon-boxes {
   display: flex;
   flex-wrap: wrap;
+  min-height: 400px;
+  height: 100%;
 }
 
 #services .icon-box {
@@ -1240,7 +1242,7 @@ About Me Section
 @media (min-width: 768px) and (max-width: 1399px) {
 
   #services .icon-box {
-    min-height:380px;
+    min-height:400px;
 }
 
 
