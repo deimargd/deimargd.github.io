@@ -1239,8 +1239,8 @@ About Me Section
 
 @media (min-width: 768px) and (max-width: 1399px) {
 
-  .services .icon-box {
-    min-height:350px;
+  #services .icon-box {
+    min-height:380px;
 }
 
 
