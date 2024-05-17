@@ -1092,6 +1092,23 @@ About Me Section
   font-size: 14px;
 }
 
+/* Updated Services Section CSS */
+#services .icon-boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#services .icon-box {
+  flex: 1 1 auto; /* Allow boxes to grow and shrink equally */
+  min-width: 0; /* Allow boxes to shrink past their content width */
+}
+
+#services .icon-box .icon-box-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Make the inner content fill the height */
+}
 
 
 .service-details .service-box {
