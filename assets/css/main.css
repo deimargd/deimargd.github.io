@@ -614,23 +614,26 @@ section,
   width: 50px;
 }
 
-@media (max-width: 768px) {
-  .section-title h2:before,
-  .section-title h2:after {
-    width: 35px;
-    left: -50px; /* Width of the line + spacing */
-    right: -50px; /* Width of the line + spacing */
-  }
-}
-
 @media (max-width: 480px) {
+  .section-title h2 {
+    margin-left: 35px; /* Width of the line */
+    margin-right: 35px; /* Width of the line */
+  }
+
   .section-title h2:before,
   .section-title h2:after {
     width: 20px;
+  }
+
+  .section-title h2:before {
     left: -35px; /* Width of the line + spacing */
+  }
+
+  .section-title h2:after {
     right: -35px; /* Width of the line + spacing */
   }
 }
+
 /*--------------------------------------------------------------
 # Page Title & Breadcrumbs
 --------------------------------------------------------------*/
@@ -739,42 +742,27 @@ section,
   font-size: 20px;
   font-weight: 600;
 }
-@media (max-width: 480px) {
-	.section-title h2 {
-		margin-left: 35px;
-		margin-right: 35px;
-	}
-
-	.section-title h2:after {
-		right: -35px;
-	}
-
-	.section-title h2:after, .section-title h2:before {
-		width: 20px;
-	}
-
-	.section-title h2:before {
-		left: -35px;
-	}
+@media(max-width: 753px){
+  .wrapper{
+    max-width: 700px;
+  }
+  .wrapper1 .card{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
 }
-
-@media (max-width: 768px) {
-	.section-title h2 {
-		margin-left: 50px;
-		margin-right: 50px;
-	}
-
-	.section-title h2:after {
-		right: -50px;
-	}
-
-	.section-title h2:after, .section-title h2:before {
-		width: 35px;
-	}
-
-	.section-title h2:before {
-		left: -50px;
-	}
+@media(max-width: 505px){
+  .wrapper1{
+    max-width: 500px;
+  }
+  .wrapper1 .card{
+    width: 100%;
+  }
+  .section-title h2 {
+    font-size: 15px;
+    
+    text-align: center;
+  }
 }
 
 
