@@ -614,23 +614,26 @@ section,
   width: 50px;
 }
 
-@media (max-width: 768px) {
-  .section-title h2:before,
-  .section-title h2:after {
-    width: 35px;
-    left: -50px; /* Width of the line + spacing */
-    right: -50px; /* Width of the line + spacing */
-  }
-}
-
 @media (max-width: 480px) {
+  .section-title h2 {
+    margin-left: 35px; /* Width of the line */
+    margin-right: 35px; /* Width of the line */
+  }
+
   .section-title h2:before,
   .section-title h2:after {
     width: 20px;
+  }
+
+  .section-title h2:before {
     left: -35px; /* Width of the line + spacing */
+  }
+
+  .section-title h2:after {
     right: -35px; /* Width of the line + spacing */
   }
 }
+
 /*--------------------------------------------------------------
 # Page Title & Breadcrumbs
 --------------------------------------------------------------*/
