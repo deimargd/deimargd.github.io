@@ -1012,11 +1012,11 @@ About Me Section
 # Services Section
 --------------------------------------------------------------*/
 
-#services{
+.services{
   min-height: 100vh;
 }
 
-#services .service-item {
+.services .service-item {
   position: relative;
   padding-top: 0px;
   height: 100vh;
@@ -1239,8 +1239,8 @@ About Me Section
 
 @media (min-width: 768px) and (max-width: 1399px) {
 
-  #services .icon-box {
-    min-height:400px;
+  .services .icon-box {
+    min-height:350px;
 }
 
 
