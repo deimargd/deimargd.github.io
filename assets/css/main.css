@@ -1092,25 +1092,6 @@ About Me Section
   font-size: 14px;
 }
 
-/* Updated Services Section CSS */
-#services .icon-boxes {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#services .icon-box {
-  flex: 1 1 auto; /* Allow boxes to grow and shrink equally */
-  min-width: 0; /* Allow boxes to shrink past their content width */
-}
-
-#services .icon-box .icon-box-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%; /* Make the inner content fill the height */
-}
-
-
 .service-details .service-box {
   padding: 20px;
   box-shadow: 0px 2px 20px rgba(var(--default-color-rgb), 0.12);
@@ -1162,50 +1143,6 @@ About Me Section
   color: var(--accent-color);
 }
 
-.service-details .download-catalog a {
-  color: var(--default-color);
-  display: flex;
-  align-items: center;
-  padding: 10px 0;
-  transition: 0.3s;
-  border-top: 1px solid rgba(var(--default-color-rgb), 0.1);
-}
-
-.service-details .download-catalog a:first-child {
-  border-top: 0;
-  padding-top: 0;
-}
-
-.service-details .download-catalog a:last-child {
-  padding-bottom: 0;
-}
-
-.service-details .download-catalog a i {
-  font-size: 24px;
-  margin-right: 8px;
-  color: var(--accent-color);
-}
-
-.service-details .download-catalog a:hover {
-  color: var(--accent-color);
-}
-
-.service-details .help-box {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  margin-top: 30px;
-  padding: 30px 15px;
-}
-
-.service-details .help-box .help-icon {
-  font-size: 48px;
-}
-
-.service-details .help-box h4,
-.service-details .help-box a {
-  color: var(--contrast-color);
-}
-
 .service-details .services-img {
   margin-bottom: 20px;
 }
@@ -1239,7 +1176,7 @@ About Me Section
 
 @media (min-width: 768px) and (max-width: 1399px) {
 
-  #services .icon-box {
+.services .icon-box {
     min-height:400px;
 }
 
