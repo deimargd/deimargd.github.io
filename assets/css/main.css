@@ -1253,14 +1253,14 @@ About Me Section
 }
 
 @media (min-width: 770px) and (max-width: 999px) {
-  .services .icon-box {
-    height: 500px!important;
+  .col-md-4 {
+    height: 400px !important; /* Important to override conflicting styles */
   }
 }
 
 @media (min-width: 1000px) and (max-width: 1399px) {
-  .services .icon-box {
-    height: 500px!important;
+  .col-md-4 {
+    height: 380px !important; /* Important to override conflicting styles */
   }
 }
 
