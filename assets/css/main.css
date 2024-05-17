@@ -1254,13 +1254,13 @@ About Me Section
 
 @media (min-width: 770px) and (max-width: 999px) {
   #services .icon-box {
-    height: 400px;
+    height: 500px;
   }
 }
 
 @media (min-width: 1000px) and (max-width: 1399px) {
   #services .icon-box {
-    height: 380px;
+    height: 500px;
   }
 }
 
