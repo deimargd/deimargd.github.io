@@ -1032,6 +1032,7 @@ About Me Section
 #services .icon-box {
 	flex: 1 1 auto;
 	min-width: 0;
+  height:auto;
 }
 
 #services .icon-box .icon-box-inner {
@@ -1251,7 +1252,17 @@ About Me Section
 	top: 0;
 }
 
+@media (min-width: 770px) and (max-width: 999px) {
+  #services .icon-box {
+    height: 400px;
+  }
+}
 
+@media (min-width: 1000px) and (max-width: 1399px) {
+  #services .icon-box {
+    height: 380px;
+  }
+}
 
 /* Portfolio Section - Home Page
 ------------------------------*/
@@ -1527,188 +1538,174 @@ About Me Section
 
 /* Our Partners Section - Home Page
 ------------------------------*/
-.clients-flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px; /* Adjust the space between items */
-}
-
-/* Common styles for each client logo and progress bar container */
-.client-logo,
-.progress-bar-container {
-  flex: 0 0 25%; /* allocate 25% of the container width to each item */
-  max-width: 25%; /* ensure the item does not exceed 25% of the container width */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Horizontally center the content */
-  justify-content: center; /* Vertically center the content */
-}
-
-/* Progress bar */
-.client-stats-progress-bar {
-  position: relative;
-  background-color: #eaeaea;
-  border-radius: 10px;
-  height: 20px; /* Example height, adjust as necessary for your design */
-  margin: 10px auto; /* Reevaluate if needed based on parent element's styling */
-  width: 100%;
-}
-
-.client-stats-progress-bar::before {
-  content: attr(aria-valuenow) '%'; /* Shows percentage text and value */
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: var(--accent-color);
-  border-radius: 10px 0 0 10px; /* Only round border on the left side */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  transition: width 1s ease-out;
-  width: calc(var(--value) * 1%); /* Use custom property for width */
-}
-
-.client-stats-progress-bar::after {
-  content: ""; /* Remove text here to avoid duplication, already in ::before */
-  position: absolute;
-  padding-left: 3px;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: white;
+.client-logo, .progress-bar-container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 25%;
+	justify-content: center;
+	max-width: 25%;
 }
 
 .client-stats-label {
-  text-align: center;
-  margin-top: 5px;
-  font-size: 14px;
+	font-size: 14px;
+	margin-top: 5px;
+	text-align: center;
 }
 
+.client-stats-progress-bar {
+	background-color: #eaeaea;
+	border-radius: 10px;
+	height: 20px;
+	margin: 10px auto;
+	position: relative;
+	width: 100%;
+}
 
-/* Responsive container for progress bars and labels */
+.client-stats-progress-bar::after {
+	color: white;
+	content: "";
+	padding-left: 3px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.client-stats-progress-bar::before {
+	align-items: center;
+	background-color: var(--accent-color);
+	border-radius: 10px 0 0 10px;
+	color: white;
+	content: attr(aria-valuenow) '%';
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transition: width 1s ease-out;
+	width: calc(var(--value) * 1%);
+}
+
 .client-stats-progress-container {
-  margin-bottom: 15px; /* Spacing between progress bars */
+	margin-bottom: 15px;
 }
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 992px) {
-  .client-logo,
-  .progress-bar-container {
-    flex: 0 0 50%;
-    max-width: 50%; /* 2 items per row on medium devices */
-  }
-}
-
-@media (max-width: 576px) {
-  .client-logo,
-  .progress-bar-container {
-    flex: 0 0 50%;
-    max-width: 50%; /* 2 item per row on small devices 100%=1 item*/
-  }
-}
-
 
 .clients .client-logo img {
-  padding: 15px;
-  max-width: 80%;
-  transition: 0.3s;
-  opacity: 0.5;
-  filter: grayscale(100);
+	filter: grayscale(100);
+	max-width: 80%;
+	opacity: 0.5;
+	padding: 15px;
+	transition: 0.3s;
 }
 
 .clients .client-logo img:hover {
-  opacity: 1;
+	opacity: 1;
+}
+
+.clients-flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+}
+
+@media (max-width: 576px) {
+	.client-logo, .progress-bar-container {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+@media (max-width: 992px) {
+	.client-logo, .progress-bar-container {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
 }
 
 
 /* Stats Section - Home Page
 ------------------------------*/
 .stats {
-  --default-color: #ffffff;
-  --default-color-rgb: 255, 255, 255;
-  --background-color: #000000;
-  --background-color-rgb: 0, 0, 0;
-  position: relative;
-  padding: 25px 0;
-}
-
-.stats img {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.stats:before {
-  content: "";
-  background: rgba(var(--background-color-rgb), 0.6);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
+	--background-color-rgb: 0, 0, 0;
+	--background-color: #000000;
+	--default-color-rgb: 255, 255, 255;
+	--default-color: #ffffff;
+	padding: 25px 0;
+	position: relative;
 }
 
 .stats .container {
-  position: relative;
-  z-index: 3;
+	position: relative;
+	z-index: 3;
 }
 
 .stats .stats-item {
-  padding: 20px;
-  width: 100%;
-}
-
-.stats .stats-item span {
-  font-size: clamp(2rem, 5vw, 4rem);<!-- pre 48px-->
-  display: block;
-  color: var(--default-color);
-  font-weight: 700;
+	padding: 20px;
+	width: 100%;
 }
 
 .stats .stats-item p {
-  padding: 0;
-  margin: 0;
-  font-family: var(--heading-font);
-  font-size: clamp(0.8rem, 2vw, 1.2rem); <!-- pre 16px-->
-  font-weight: 700;
-  color: rgba(var(--accent-color), 0.6);
+	<!-- pre 16px--> font-weight: 700;
+	color: rgba(var(--accent-color), 0.6);
+	font-family: var(--heading-font);
+	font-size: clamp(0.8rem,2vw,1.2rem);
+	margin: 0;
+	padding: 0;
+}
+
+.stats .stats-item span {
+	<!-- pre 48px--> display: block;
+	color: var(--default-color);
+	font-size: clamp(2rem,5vw,4rem);
+	font-weight: 700;
+}
+
+.stats img {
+	-o-object-fit: cover;
+	display: block;
+	height: 100%;
+	inset: 0;
+	object-fit: cover;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+.stats:before {
+	background: rgba(var(--background-color-rgb), 0.6);
+	content: "";
+	inset: 0;
+	position: absolute;
+	z-index: 2;
 }
 
 .stats_data .stats_symbol {
-  display: inline; 
+	display: inline;
 }
 
-/* Responsive adjustments for smaller screens */
-/* Responsive adjustments for Stats Section based on your specifications */
-
-/* For large screens (992px and above), a 4x2 layout */
-@media (min-width: 992px) {
-  .stats .row > .col-lg-3 {
-    width: 25%; /* Achieves 4 columns */
-  }
-}
-
-/* For medium screens (between 576px and 991px), a 3x3 layout */
-@media (min-width: 576px) and (max-width: 991px) {
-  .stats .row > .col-md-6 {
-    width: 33.3333%; /* Achieves 3 columns, override col-lg-3 */
-  }
-  .stats .row > .col-lg-3 {
-    width: 33.3333%; /* Ensures uniformity in case col-lg-3 applies */
-  }
-}
-
-/* For small screens (below 576px), a 2x4 layout */
 @media (max-width: 575px) {
-  .stats .row > .col-md-6, .stats .row > .col-lg-3 {
-    width: 50%; /* Achieves 2 columns, override col-md-6 and col-lg-3 */
-  }
+	.stats .row > .col-md-6, .stats .row > .col-lg-3 {
+		width: 50%;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+	.stats .row > .col-lg-3 {
+		width: 33.3333%;
+	}
+
+	.stats .row > .col-md-6 {
+		width: 33.3333%;
+	}
+}
+
+@media (min-width: 992px) {
+	.stats .row > .col-lg-3 {
+		width: 25%;
+	}
 }
 
 
