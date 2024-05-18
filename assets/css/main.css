@@ -55,8 +55,9 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 15px 0;
 	transition: all 0.5s;
 	z-index: 997;
-	display: flex;
-	align-items: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 }
 
 .header .btn-getstarted, .header .btn-getstarted:focus {
@@ -75,28 +76,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-	text-align: center;
+  display: flex;
+  align-items: center; /* Align items vertically */
 }
 
 .header .logo a {
 	min-width: 290px;
-	max-width: 500px;
-	margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header .logo h1 {
 	color: var(--heading-color);
 	font-size: 24px;
 	font-weight: 600;
-	margin: 0;
+	margin: auto;
+	text-align: center;
 }
 
 .header .logo img {
 	max-height: 40px;
-	margin: 0;
+  margin: 0 auto;
 }
 
 .header .logo span {
@@ -115,6 +115,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .social i:hover {
 	color: var(--accent-color);
+}
+
+@media (max-width: 1200px) {
+	.header .btn-getstarted {
+		margin: 0 15px 0 0;
+		order: 2;
+		padding: 6px 20px;
+	}
+
+	.header .logo {
+		order: 1;
+	}
+
+	.header .navmenu {
+		order: 3;
+	}
 }
 
 /* Global Header on page scroll
@@ -138,7 +154,6 @@ section {
     scroll-margin-top: 66px;
   }
 }
-
 
 /* Home Page Custom Header
 ------------------------------*/
@@ -316,7 +331,6 @@ section {
 	.hamburger_social {
 		display: flex;
 		justify-content: space-around;
-		width: 100%;
 	}
 
 	.mobile-nav-active {
@@ -460,26 +474,6 @@ section {
     }
     }
 
-	@media (max-width: 768px) {
-		.header {
-			justify-content: space-between; /* Distribute space evenly */
-		}
-	
-		.header .logo {
-			order: 2; /* Center the logo between social icons and navmenu */
-			margin: 0 auto;
-		}
-	
-		.header .social,
-		.header .navmenu {
-			flex: 0 1 auto;
-		}
-		
-		.header .navmenu {
-			position: absolute; /* Ensure hamburger menu stays on the right */
-			right: 15px;
-		}
-	}
 
 /*--------------------------------------------------------------
 # Preloader
