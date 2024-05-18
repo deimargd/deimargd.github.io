@@ -76,9 +76,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header .logo {
-  display: flex;
-  flex: 1;
-  text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	text-align: center;
 }
 
 .header .logo a {
@@ -91,13 +92,12 @@ h1, h2, h3, h4, h5, h6 {
 	color: var(--heading-color);
 	font-size: 24px;
 	font-weight: 600;
-	margin: auto;
-	text-align: center;
+	margin: 0;
 }
 
 .header .logo img {
 	max-height: 40px;
-  margin: 0 auto;
+	margin: 0;
 }
 
 .header .logo span {
