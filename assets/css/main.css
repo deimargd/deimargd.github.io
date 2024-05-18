@@ -331,7 +331,6 @@ section {
 	.hamburger_social {
 		display: flex;
 		justify-content: space-around;
-		max-width: 100%;
 	}
 
 	.mobile-nav-active {
@@ -911,10 +910,10 @@ About Me Section
   display: block;
   margin: auto; /* Center the image horizontally */
   max-width: 430px; /* Set maximum width */
-  width: 100%; /* Allow the image to take up full width initially */
+  width: 80%; /* Allow the image to take up full width initially */
   height: auto; /* Maintain aspect ratio */
   border-radius: 50%;
-  min-width: 200px;
+  min-width: 150px;
 }
 
 
