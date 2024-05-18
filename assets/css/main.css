@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 	transition: all 0.5s;
 	z-index: 997;
   display: flex;
-  justify-content: space-between; 
+  justify-content: center; 
   align-items: center;
 }
 
@@ -75,47 +75,37 @@ h1, h2, h3, h4, h5, h6 {
 	color: var(--contrast-color);
 }
 
-.header .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.header .logo-container .logo {
-    display: flex;
-    align-items: center;
-    text-align: center;
+.header .logo {
+  display: flex;
+  align-items: center; /* Align items vertically */
 }
 
 .header .logo a {
 	min-width: 290px;
-	width: 100%;
-	margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.header .logo-container .logo h1 {
+.header .logo h1 {
 	color: var(--heading-color);
 	font-size: 24px;
 	font-weight: 600;
-	margin: 0 5px;
+	margin: auto;
+	text-align: center;
 }
 
-.header .logo-container .logo img {
+.header .logo img {
 	max-height: 40px;
+  margin: 0 auto;
 }
 
-.header .logo-container .logo span {
+.header .logo span {
 	color: var(--accent-color);
 	font-size: 24px;
 	font-weight: 600;
 	padding-left: 3px;
-}
-
-.social {
-    display: flex;
-    justify-content: space-around;
-    max-width: 78px;
+  margin: 0 auto;
+  width:5px;
 }
 
 .social i {
@@ -127,27 +117,20 @@ h1, h2, h3, h4, h5, h6 {
 	color: var(--accent-color);
 }
 
-@media (max-width: 1199px) {
-    .header {
-        justify-content: space-between;
-    }
+@media (max-width: 1200px) {
+	.header .btn-getstarted {
+		margin: 0 15px 0 0;
+		order: 2;
+		padding: 6px 20px;
+	}
 
-    .header .logo-container {
-        display: flex;
-        justify-content: center;
-        flex: 1;
-    }
+	.header .logo {
+		order: 1;
+	}
 
-
-
-/* Global Header on page scroll
-------------------------------*/
-.scrolled .header {
-  --background-color: #ffffff;
-  --heading-color: #444444;
-  --nav-color: #444444;
-  --nav-hover-color: #e84545;
-  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+	.header .navmenu {
+		order: 3;
+	}
 }
 
 /* Global Header on page scroll
@@ -348,6 +331,7 @@ section {
 	.hamburger_social {
 		display: flex;
 		justify-content: space-around;
+		max-width: 100%;
 	}
 
 	.mobile-nav-active {
