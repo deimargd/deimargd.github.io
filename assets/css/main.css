@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 	transition: all 0.5s;
 	z-index: 997;
   display: flex;
-  justify-content: center; 
+  justify-content: space-between; 
   align-items: center;
 }
 
@@ -75,9 +75,17 @@ h1, h2, h3, h4, h5, h6 {
 	color: var(--contrast-color);
 }
 
-.header .logo {
-  display: flex;
-  align-items: center; /* Align items vertically */
+.header .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header .logo-container .logo {
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .header .logo a {
@@ -86,26 +94,28 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 auto;
 }
 
-.header .logo h1 {
+.header .logo-container .logo h1 {
 	color: var(--heading-color);
 	font-size: 24px;
 	font-weight: 600;
-	margin: auto;
-	text-align: center;
+	margin: 0 5px;
 }
 
-.header .logo img {
+.header .logo-container .logo img {
 	max-height: 40px;
-  margin: 0 auto;
 }
 
-.header .logo span {
+.header .logo-container .logo span {
 	color: var(--accent-color);
 	font-size: 24px;
 	font-weight: 600;
 	padding-left: 3px;
-  margin: 0 auto;
-  width:5px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    max-width: 78px;
 }
 
 .social i {
@@ -116,6 +126,18 @@ h1, h2, h3, h4, h5, h6 {
 .social i:hover {
 	color: var(--accent-color);
 }
+
+@media (max-width: 1199px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .header .logo-container {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+    }
+
 
 
 /* Global Header on page scroll
