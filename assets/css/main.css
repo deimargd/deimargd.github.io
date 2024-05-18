@@ -82,8 +82,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .header .logo a {
 	min-width: 290px;
-  width: 100%;
-  margin: 0 auto;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .header .logo h1 {
@@ -117,20 +117,15 @@ h1, h2, h3, h4, h5, h6 {
 	color: var(--accent-color);
 }
 
-@media (max-width: 1200px) {
-	.header .btn-getstarted {
-		margin: 0 15px 0 0;
-		order: 2;
-		padding: 6px 20px;
-	}
 
-	.header .logo {
-		order: 1;
-	}
-
-	.header .navmenu {
-		order: 3;
-	}
+/* Global Header on page scroll
+------------------------------*/
+.scrolled .header {
+  --background-color: #ffffff;
+  --heading-color: #444444;
+  --nav-color: #444444;
+  --nav-hover-color: #e84545;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Global Header on page scroll
