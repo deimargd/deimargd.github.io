@@ -80,7 +80,7 @@ sitemap_template = '''<?xml version="1.0" encoding="UTF-8"?>
 def generate_sitemap():
     current_date = datetime.datetime.utcnow().isoformat() + "+00:00"
     sitemap_content = sitemap_template.format(lastmod=current_date)
-    with open("/path/to/your/repository/sitemap.xml", "w") as file:  # Replace this path with your actual path
+    with open("sitemap.xml", "w") as file:  # Replace this path with your actual path
         file.write(sitemap_content)
 
 if __name__ == "__main__":
