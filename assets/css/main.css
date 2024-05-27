@@ -1561,7 +1561,7 @@ About Me Section
     align-items: center;
     justify-content: flex-end; /* Align content to the end */
     height: 100%;
-    padding-right: 10px; /* Add padding to move the text more to the right */
+    padding-right: 15px; /* Add padding to move the text more to the right */
     left: 0;
     position: absolute;
     top: 0;
