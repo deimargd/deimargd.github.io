@@ -1553,19 +1553,20 @@ About Me Section
 }
 
 .client-stats-progress-bar::before {
-	align-items: center;
-	background-color: var(--accent-color);
-	border-radius: 10px 0 0 10px;
-	color: white;
-	content: attr(aria-valuenow) '%';
-	display: flex;
-	height: 100%;
-	justify-content: center;
-	left: 0;
-	position: absolute;
-	top: 0;
-	transition: width 1s ease-out;
-	width: calc(var(--value) * 1%);
+    background-color: var(--accent-color);
+    border-radius: 10px 0 0 10px;
+    color: white;
+    content: attr(aria-valuenow) '%';
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align content to the end */
+    height: 100%;
+    padding-right: 10px; /* Add padding to move the text more to the right */
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: width 1s ease-out;
+    width: calc(var(--value) * 1%);
 }
 
 .client-stats-progress-container {
