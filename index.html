@@ -39,14 +39,52 @@
 
     <!-- Inline Critical CSS -->
     <style>
-      body {
-        font-family: 'Open Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      .logo h1 {
-        font-family: 'Playfair Display', serif;
-      }
+:root {
+	--accent-color-rgb: 232, 69, 69;
+	--accent-color: #ffc107;
+	--background-color-rgb: 255, 255, 255;
+	--background-color: #ffffff;
+	--contrast-color-rgb: 255, 255, 255;
+	--contrast-color: #ffffff;
+	--default-color-rgb: black;
+	--default-color: #212529;
+	--default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--heading-color-rgb: 50, 53, 58;
+	--heading-color: #32353a;
+	--heading-font: "Montserrat", sans-serif;
+	--nav-color: #3a3939;
+	--nav-dropdown-background-color: #ffffff;
+	--nav-dropdown-color: #3a3939;
+	--nav-dropdown-hover-color: #ffc107;
+	--nav-font: "Lato", sans-serif;
+	--nav-hover-color: #ffc107;
+	scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+a {
+	color: var(--accent-color);
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--default-color);
+	font-family: var(--default-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--heading-color);
+	font-family: var(--heading-font);
+}
     </style>
     
   <!-- Vendor CSS Files loaded asynchronously -->
@@ -69,6 +107,9 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/pb.css" rel="stylesheet">
   </noscript>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </head>
 
@@ -1126,8 +1167,7 @@
 <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
 <script src="assets/vendor/aos/aos.js" defer></script>
 <script src="assets/vendor/php-email-form/validate.js" defer></script>
-<!-- Template Main JS File -->
-<script src="assets/js/main.js" defer></script>
+
 <script src="assets/js/accordion.js" defer></script>
 
 <!-- Initialize plugins and custom scripts after page load -->
