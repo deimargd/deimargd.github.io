@@ -1859,7 +1859,6 @@ About Me Section
 	font-size: 15px;
   }
   
-  /* Individual FAQ item collapse styles */
   .faq .faq-container .faq-active .faq-content {
 	grid-template-rows: 1fr;
 	opacity: 1;
@@ -1876,7 +1875,6 @@ About Me Section
 	color: var(--accent-color);
   }
   
-  /* Individual FAQ item styles */
   .faq .faq-container .faq-item {
 	box-shadow: 0px 5px 25px 0px rgba(var(--default-color-rgb), 0.1);
 	margin-bottom: 20px;
@@ -1937,41 +1935,40 @@ About Me Section
   }
   
   /* Wrapper for FAQ section in mobile view */
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
 	.faq .faq-wrapper {
 	  display: none; /* Hide all FAQ items by default */
 	}
   
-	.faq .faq-wrapper-active {
+	.faq .faq-wrapper.faq-wrapper-active {
 	  display: block; /* Show when active */
 	}
+  
 	.faq .faq-container.left-col, .faq .faq-container.right-col {
-		width: 100%;
-	  }
-	
-	  .faq .faq-row {
-		flex-direction: column;
-	  }
-	
-	  .faq .faq-section-title {
-		cursor: pointer;
-		font-size: 24px;
-		margin-bottom: 0;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	  }
-	
-	  .faq .faq-section-title .faq-wrapper-toggle {
-		font-size: 24px;
-		transition: transform 0.3s ease;
-	  }
-	
-	  .faq .faq-section-title .faq-wrapper-toggle-active {
-		transform: rotate(180deg);
-	  }
+	  width: 100%;
 	}
-	
+  
+	.faq .faq-row {
+	  flex-direction: column;
+	}
+  
+	.faq .faq-section-title {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+  
+	.faq .faq-wrapper-toggle {
+	  font-size: 24px;
+	  transition: transform 0.3s ease;
+	}
+  
+	.faq .faq-wrapper-toggle.faq-wrapper-toggle-active {
+	  transform: rotate(180deg);
+	}
+  }
+  
+	  
 
 /* Team Section - Home Page
 ------------------------------*/
