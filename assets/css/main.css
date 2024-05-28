@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 	background: var(--accent-color);
 	border-radius: 4px;
 	color: var(--contrast-color);
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	margin: 0;
 	padding: 8px 26px;
 	transition: 0.3s;
@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header .logo {
   display: flex;
-  align-items: center; /* Align items vertically */
+  align-items: center; 
 }
 
 .header .logo a {
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header .logo h1 {
 	color: var(--heading-color);
-	font-size: 24px;
+	font-size: 1.5rem; /* 24px = 1.5rem */
 	font-weight: 600;
 	margin: auto;
 	text-align: center;
@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header .logo span {
 	color: var(--accent-color);
-	font-size: 24px;
+	font-size: 1.5rem; /* 24px = 1.5rem */
 	font-weight: 600;
 	padding-left: 3px;
   margin: 0 auto;
@@ -228,13 +228,13 @@ section {
 
 	.navmenu .dropdown ul a {
 		color: var(--nav-dropdown-color);
-		font-size: 15px;
+		font-size: 0.9375rem; /* 15px = 0.9375rem */
 		padding: 10px 20px;
 		text-transform: none;
 	}
 
 	.navmenu .dropdown ul a i {
-		font-size: 12px;
+		font-size: 0.75rem; /* 12px = 0.75rem */
 	}
 
 	.navmenu .dropdown ul li {
@@ -279,7 +279,7 @@ section {
 
 	.navmenu .megamenu ul li a, .navmenu .megamenu ul li:hover>a {
 		color: var(--nav-dropdown-color);
-		font-size: 15px;
+		font-size: 0.9375rem; /* 15px = 0.9375rem */
 		padding: 10px 20px;
 	}
 
@@ -290,7 +290,7 @@ section {
 	}
 
 	.navmenu a i, .navmenu a:focus i {
-		font-size: 12px;
+		font-size: 0.75rem; /* 12px = 0.75rem */
 		line-height: 0;
 		margin-left: 5px;
 		transition: 0.3s;
@@ -301,7 +301,7 @@ section {
 		color: #000000;
 		display: flex;
 		font-family: var(--nav-font);
-		font-size: 16px;
+		font-size: 1rem; /* 16px = 1rem */
 		font-weight: 400;
 		justify-content: space-between;
 		padding: 18px 15px;
@@ -339,7 +339,7 @@ section {
 
 	.mobile-nav-active .mobile-nav-toggle {
 		color: #fff;
-		font-size: 32px;
+		font-size: 2rem; /* 32px = 2rem */
 		margin-right: 0;
 		position: absolute;
 		right: 15px;
@@ -362,7 +362,7 @@ section {
 	.mobile-nav-toggle {
 		color: var(--nav-color);
 		cursor: pointer;
-		font-size: 28px;
+		font-size: 1.75rem; /* 28px = 1.75rem */
 		line-height: 0;
 		margin-right: 10px;
 		transition: color 0.3s;
@@ -407,7 +407,7 @@ section {
 		background-color: rgba(var(black), 0.1);
 		border-radius: 50%;
 		display: flex;
-		font-size: 12px;
+		font-size: 0.75rem; /* 12px = 0.75rem */
 		height: 30px;
 		justify-content: center;
 		line-height: 0;
@@ -426,7 +426,7 @@ section {
 		color: var(--nav-dropdown-color);
 		display: flex;
 		font-family: var(--nav-font);
-		font-size: 17px;
+		font-size: 1rem; /* 16px = 1rem */
 		font-weight: 500;
 		justify-content: space-between;
 		padding: 10px 20px;
@@ -580,13 +580,13 @@ section,
 }
 
 .service-info h3 {
-  font-size: 16px;
+	font-size: 1rem; /* 16px = 1rem */
   font-weight: 500;
   text-align: center;
 }
 
 .section-title h2 {
-  font-size: 25px;
+	font-size: 1.625rem; /* 26px = 1.625rem  antes 25*/
   font-weight: 700;
   padding: 30px;
   position: relative;
@@ -648,7 +648,7 @@ section,
 }
 
 .page-title .heading h1 {
-  font-size: 38px;
+	font-size: 2.375rem; /* 38px = 2.375rem */
   font-weight: 700;
   color: var(--heading-color);
 }
@@ -663,7 +663,7 @@ section,
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem; /* 16px = 1rem */
   font-weight: 600;
 }
 
@@ -729,7 +729,7 @@ section,
   -webkit-text-fill-color: transparent;
 }
 .circle .box span{
-  font-size: 38px;
+	font-size: 2.375rem; /* 38px = 2.375rem */
   font-family: sans-serif;
   font-weight: 600;
   transform: translate(-45%, -45%);
@@ -739,7 +739,7 @@ section,
   transform: translate(-45%, -45%) scale(1.09);
 }
 .card .text{
-  font-size: 20px;
+	font-size: 1.25rem; /* 20px = 1.25rem */
   font-weight: 600;
 }
 @media(max-width: 753px){
@@ -759,7 +759,7 @@ section,
     width: 100%;
   }
   .section-title h2 {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px = 1.25rem */
     text-align: center;
   }
 }
@@ -829,7 +829,7 @@ section,
 .hero p {
   color: rgba(var(--default-color-rgb), 0.8);
   margin: 20px 0 0 0;
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px = 1.25rem */
 }
 
 .hero .sign-up-form {
@@ -878,11 +878,11 @@ section,
 
 @media (max-width: 768px) {
   .hero h2 {
-    font-size: 32px;
+    font-size: 2rem; /* 32px = 2rem */
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px = 1.125rem */
   }
   .hero .sign-up-form .form-control {
     font-size: smaller;
@@ -918,7 +918,7 @@ About Me Section
 
 
 .about .content h3 {
-  font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
   font-weight: 500;
   line-height: 19px;
   background: rgba(var(--accent-color-rgb), 0.05);
@@ -944,7 +944,7 @@ About Me Section
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem; /* 16px = 1rem */
   letter-spacing: 1px;
   padding: 12px 24px;
   border-radius: 5px; 
@@ -956,7 +956,7 @@ About Me Section
 
 
 .about .content .read-more i {
-  font-size: 18px;
+	font-size: 1.125rem; /* 18px = 1.125rem */
   line-height: 0;
   transition: 0.3s;
   margin: auto;
@@ -987,7 +987,7 @@ About Me Section
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
+  font-size: 2rem; /* 32px = 2rem */
   line-height: 0;
   transition: all 0.4s ease-out 0s;
   background-color: rgba(var(--accent-color-rgb), 0.05);
@@ -995,7 +995,7 @@ About Me Section
 }
 
 .about .icon-box h3 {
-  font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
   font-weight: 700;
   
 }
@@ -1052,7 +1052,7 @@ About Me Section
 
 .service-details .download-catalog a i {
 	color: var(--accent-color);
-	font-size: 24px;
+	font-size: 1.5rem; /* 24px = 1.5rem */
 	margin-right: 8px;
 }
 
@@ -1077,7 +1077,7 @@ About Me Section
 }
 
 .service-details .help-box .help-icon {
-	font-size: 48px;
+	font-size: 3rem; /* 48px = 3rem */
 }
 
 .service-details .help-box a, .service-details .help-box h4 {
@@ -1091,7 +1091,7 @@ About Me Section
 
 .service-details .service-box h4 {
 	border-bottom: 2px solid rgba(var(--default-color-rgb), 0.08);
-	font-size: 20px;
+	font-size: 1.25rem; /* 20px = 1.25rem */
 	font-weight: 700;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
@@ -1117,7 +1117,7 @@ About Me Section
 
 .service-details .services-list a i {
 	color: var(--accent-color);
-	font-size: 16px;
+	font-size: 1rem; /* 16px = 1rem */
 	margin-right: 8px;
 }
 
@@ -1140,23 +1140,23 @@ About Me Section
 }
 
 .service-details h3 {
-	font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: 700;
 }
 
 .service-details p {
-	font-size: 15px;
+	font-size: 0.9375rem; /* 15px = 0.9375rem */
 }
 
 .service-details ul {
-	font-size: 15px;
+	font-size: 0.9375rem; /* 15px = 0.9375rem */
 	list-style: none;
 	padding: 0;
 }
 
 .service-details ul i {
 	color: var(--accent-color);
-	font-size: 20px;
+	font-size: 1.25rem; /* 20px = 1.25rem */
 	margin-right: 8px;
 }
 
@@ -1177,7 +1177,7 @@ About Me Section
 }
 
 .services .service-item .description {
-	font-size: 14px;
+	font-size: 0.9375rem; /* 15px = 0.9375rem */
 	line-height: 24px;
 }
 
@@ -1191,7 +1191,7 @@ About Me Section
 
 .services .service-item .icon i {
 	color: rgba(var(--default-color-rgb), 0.7);
-	font-size: 56px;
+	font-size: 3rem; /* 48px = 3rem  prev 56*/
 	position: relative;
 	text-align: center;
 	transition: ease-in-out 0.3s;
@@ -1212,7 +1212,7 @@ About Me Section
 }
 
 .services .service-item .title {
-	font-size: 18px;
+	font-size: 1.125rem; /* 18px = 1.125rem */
 	font-weight: 700;
 	margin-bottom: 15px;
 }
@@ -1281,13 +1281,13 @@ About Me Section
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
-	font-size: 28px;
+	font-size: 1.75rem; /* 28px = 1.75rem */
 	right: 14px;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link, .portfolio .portfolio-item .portfolio-info .preview-link {
 	color: rgba(var(--default-color-rgb), 0.7);
-	font-size: 24px;
+	font-size: 1.5rem; /* 24px = 1.5rem */
 	line-height: 0;
 	position: absolute;
 	right: 50px;
@@ -1300,13 +1300,13 @@ About Me Section
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
-	font-size: 18px;
+	font-size: 1.125rem; /* 18px = 1.125rem */
 	font-weight: 600;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
 	color: rgba(var(--default-color-rgb), 0.7);
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	margin-bottom: 0;
 }
 
@@ -1326,7 +1326,7 @@ About Me Section
 .portfolio .service-info h2 {
 	color: var(--default-color);
 	font-family: var(--heading-font);
-	font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: 700;
 	margin: 0 0 15px 0;
 	padding: 0;
@@ -1335,7 +1335,7 @@ About Me Section
 .portfolio .service-info h3 {
 	color: #474747;
 	font-family: var(--heading-font);
-	font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: 500;
 	margin: 0 0 35px 0;
 }
@@ -1355,7 +1355,7 @@ About Me Section
 
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-left, .portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
 	color: rgba(var(--accent-color-rgb), 0.5);
-	font-size: 26px;
+	font-size: 1.625rem; /* 26px = 1.625rem */
 	line-height: 0;
 }
 
@@ -1376,7 +1376,7 @@ About Me Section
 }
 
 .portfolio-details .portfolio-description .testimonial-item h3 {
-	font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: bold;
 	margin: 15px 0 5px 0;
 	padding-top: 20px;
@@ -1384,7 +1384,7 @@ About Me Section
 
 .portfolio-details .portfolio-description .testimonial-item h4 {
 	color: #6c757d;
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	margin: 0;
 }
 
@@ -1395,7 +1395,7 @@ About Me Section
 }
 
 .portfolio-details .portfolio-description h2 {
-	font-size: 26px;
+	font-size: 1.625rem; /* 26px = 1.625rem */
 	font-weight: 700;
 	margin-bottom: 20px;
 }
@@ -1421,7 +1421,7 @@ About Me Section
 }
 
 .portfolio-details .portfolio-info h3 {
-	font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: 700;
 	margin-bottom: 20px;
 	padding: 40px;
@@ -1440,7 +1440,7 @@ About Me Section
 }
 
 .portfolio-details .portfolio-info ul {
-	font-size: 15px;
+	font-size: 0.9375rem; /* 15px = 0.9375rem */
 	list-style: none;
 	padding: 0;
 }
@@ -1453,7 +1453,7 @@ About Me Section
 
 .portfolio-details .portfolio-info ul strong {
 	color: rgba(var(--default-color-rgb), 0.5);
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	font-weight: 400;
 	text-transform: uppercase;
 }
@@ -1469,7 +1469,7 @@ About Me Section
 	border-radius: 50%;
 	color: rgba(255,255,255,0.8);
 	display: flex;
-	font-size: 24px;
+	font-size: 1.5rem; /* 24px = 1.5rem */
 	height: 48px;
 	justify-content: center;
 	transition: 0.3s;
@@ -1543,7 +1543,7 @@ About Me Section
 }
 
 .client-stats-label {
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	margin-top: 5px;
 	text-align: center;
 }
@@ -1718,7 +1718,7 @@ About Me Section
 	color: rgba(var(--default-color-rgb), 0.8);
 	display: inline-block;
 	font-family: var(--heading-font);
-	font-size: 16px;
+	font-size: 1rem; /* 16px = 1rem */
 	font-weight: 600;
 	padding: 10px 20px;
 	transition: 0.3s;
@@ -1759,7 +1759,7 @@ About Me Section
 
 .pricing .icon i {
 	color: var(--background-color);
-	font-size: 28px;
+	font-size: 1.75rem; /* 28px = 1.75rem */
 	line-height: 0;
 	transition: ease-in-out 0.3s;
 }
@@ -1799,7 +1799,7 @@ About Me Section
 }
 
 .pricing h3 {
-	font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: 600;
 	margin-bottom: 15px;
 	text-align: center;
@@ -1808,7 +1808,7 @@ About Me Section
 .pricing h4 {
 	color: var(--accent-color);
 	font-family: var(--heading-font);
-	font-size: 48px;
+	font-size: 3rem; /* 48px = 3rem */
 	font-weight: 700;
 	margin-bottom: 25px;
 	text-align: center;
@@ -1816,12 +1816,12 @@ About Me Section
 
 .pricing h4 span {
 	color: rgba(var(--default-color-rgb), 0.5);
-	font-size: 18px;
+	font-size: 1.125rem; /* 18px = 1.125rem */
 	font-weight: 400;
 }
 
 .pricing h4 sup {
-	font-size: 28px;
+	font-size: 1.75rem; /* 28px = 1.75rem */
 }
 
 .pricing ul {
@@ -1846,7 +1846,7 @@ About Me Section
 
 .pricing ul i {
 	color: #059652;
-	font-size: 24px;
+	font-size: 1.5rem; /* 24px = 1.5rem */
 	padding-right: 3px;
 }
 
@@ -1871,7 +1871,7 @@ About Me Section
 
 .faq .content p {
 	color: rgba(var(--default-color-rgb), 0.7);
-	font-size: 15px;
+	font-size: 0.9375rem; /* 15px = 0.9375rem */
 }
 
 .faq .faq-container .faq-active .faq-content {
@@ -1913,7 +1913,7 @@ About Me Section
 
 .faq .faq-container .faq-item .faq-toggle {
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 1rem; /* 16px = 1rem */
 	line-height: 0;
 	position: absolute;
 	right: 20px;
@@ -1929,7 +1929,7 @@ About Me Section
 	align-items: flex-start;
 	cursor: pointer;
 	display: flex;
-	font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: 600;
 	line-height: 24px;
 	margin: 0 20px 0 0;
@@ -2012,7 +2012,7 @@ About Me Section
 
 .team .member .member-img .social a {
 	color: var(--contrast-color);
-	font-size: 20px;
+	font-size: 1.25rem; /* 20px = 1.25rem */
 	margin: 0 8px;
 	transition: 0.3s;
 }
@@ -2031,20 +2031,20 @@ About Me Section
 }
 
 .team .member .member-info h4 {
-	font-size: 18px;
+	font-size: 1.125rem; /* 18px = 1.125rem */
 	font-weight: 700;
 	margin-bottom: 6px;
 }
 
 .team .member .member-info p {
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	margin-bottom: 0;
 }
 
 .team .member .member-info span {
 	color: rgba(var(--default-color-rgb), 0.6);
 	display: block;
-	font-size: 15px;
+	font-size: 0.9375rem; /* 15px = 0.9375rem */
 	font-style: italic;
 	margin-bottom: 10px;
 }
@@ -2084,7 +2084,7 @@ About Me Section
 	color: var(--contrast-color);
 	display: inline-block;
 	font-family: var(--heading-font);
-	font-size: 16px;
+	font-size: 1rem; /* 16px = 1rem */
 	font-weight: 500;
 	letter-spacing: 1px;
 	margin: 10px;
@@ -2099,7 +2099,7 @@ About Me Section
 
 .call-to-action h3 {
 	color: var(--default-color);
-	font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: 700;
 }
 
@@ -2135,7 +2135,7 @@ About Me Section
 }
 
 .testimonials .info h3 {
-	font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: 700;
 }
 
@@ -2185,7 +2185,7 @@ About Me Section
 
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
 	color: black;
-	font-size: 26px;
+	font-size: 1.625rem; /* 26px = 1.625rem */
 	line-height: 0;
 }
 
@@ -2216,13 +2216,13 @@ About Me Section
 
 .testimonials .testimonial-item h3 {
 	margin: 15px;
-	font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: bold;
 }
 
 .testimonials .testimonial-item h4 {
 	color: rgba(var(--default-color-rgb), 0.5);
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	margin: 0;
 }
 
@@ -2262,13 +2262,13 @@ About Me Section
 }
 
 .recent-posts .post-category {
-  font-size: 16px;
+	font-size: 1rem; /* 16px = 1rem */
   color: rgba(var(--default-color-rgb), 0.5);
   margin-bottom: 10px;
 }
 
 .recent-posts .title {
-  font-size: 20px;
+	font-size: 1.25rem; /* 20px = 1.25rem */
   font-weight: 600;
   padding: 0;
   margin: 0 0 20px 0;
@@ -2295,7 +2295,7 @@ About Me Section
 }
 
 .recent-posts .post-date {
-  font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
   color: rgba(var(--default-color-rgb), 0.5);
   margin-bottom: 0;
 }
@@ -2352,13 +2352,13 @@ About Me Section
 
 .blog .posts-list .post-category {
 	color: rgba(var(--default-color-rgb), 0.6);
-	font-size: 16px;
+	font-size: 1rem; /* 16px = 1rem */
 	margin-bottom: 10px;
 }
 
 .blog .posts-list .post-date {
 	color: rgba(var(--default-color-rgb), 0.6);
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	margin-bottom: 0;
 }
 
@@ -2369,7 +2369,7 @@ About Me Section
 }
 
 .blog .posts-list .title {
-	font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: 700;
 	margin: 0 0 20px 0;
 	padding: 0;
@@ -2414,7 +2414,7 @@ About Me Section
 
 .blog-details .blog-author h4 {
 	color: rgba(var(--default-color-rgb), 0.8);
-	font-size: 20px;
+	font-size: 1.25rem; /* 20px = 1.25rem */
 	font-weight: 600;
 	margin-bottom: 0px;
 	padding: 0;
@@ -2449,7 +2449,7 @@ About Me Section
 }
 
 .blog-details .comments .comment h5 {
-	font-size: 16px;
+	font-size: 1rem; /* 16px = 1rem */
 	margin-bottom: 2px;
 }
 
@@ -2459,7 +2459,7 @@ About Me Section
 }
 
 .blog-details .comments .comment h5 .reply i {
-	font-size: 20px;
+	font-size: 1.25rem; /* 20px = 1.25rem */
 }
 
 .blog-details .comments .comment h5 a {
@@ -2475,7 +2475,7 @@ About Me Section
 .blog-details .comments .comment time {
 	color: rgba(var(--default-color-rgb), 0.6);
 	display: block;
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	margin-bottom: 5px;
 }
 
@@ -2511,7 +2511,7 @@ About Me Section
 }
 
 .blog-details .comments .reply-form h4 {
-	font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: bold;
 }
 
@@ -2520,7 +2520,7 @@ About Me Section
 	border-radius: 4px;
 	border: 1px solid rgba(var(--default-color-rgb), 0.3);
 	color: var(--default-color);
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	padding: 10px 10px;
 }
 
@@ -2530,7 +2530,7 @@ About Me Section
 }
 
 .blog-details .comments .reply-form p {
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 }
 
 .blog-details .comments .reply-form textarea {
@@ -2538,7 +2538,7 @@ About Me Section
 	border-radius: 4px;
 	border: 1px solid rgba(var(--default-color-rgb), 0.3);
 	color: var(--default-color);
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	height: 120px;
 	padding: 10px 10px;
 }
@@ -2563,7 +2563,7 @@ About Me Section
 
 .blog-details .content blockquote p {
 	color: var(--default-color);
-	font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-style: italic;
 	font-weight: 500;
 	line-height: 1.6;
@@ -2583,7 +2583,7 @@ About Me Section
 }
 
 .blog-details .content h3 {
-	font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: bold;
 	margin-top: 30px;
 }
@@ -2595,7 +2595,7 @@ About Me Section
 
 .blog-details .meta-bottom .cats {
 	display: inline;
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	list-style: none;
 	padding: 0 20px 0 0;
 }
@@ -2605,7 +2605,7 @@ About Me Section
 }
 
 .blog-details .meta-bottom .share {
-	font-size: 16px;
+	font-size: 1rem; /* 16px = 1rem */
 }
 
 .blog-details .meta-bottom .share i {
@@ -2614,7 +2614,7 @@ About Me Section
 
 .blog-details .meta-bottom .tags {
 	display: inline;
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	list-style: none;
 	padding: 0;
 }
@@ -2651,13 +2651,13 @@ About Me Section
 .blog-details .meta-top a {
 	color: rgba(var(--default-color-rgb), 0.6);
 	display: inline-block;
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	line-height: 1;
 }
 
 .blog-details .meta-top i {
 	color: rgba(var(--default-color-rgb), 0.6);
-	font-size: 16px;
+	font-size: 1rem; /* 16px = 1rem */
 	line-height: 0;
 	margin-right: 8px;
 }
@@ -2697,7 +2697,7 @@ About Me Section
 
 .blog-details .sidebar .categories ul a span {
 	color: rgba(var(--default-color-rgb), 0.5);
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	padding-left: 5px;
 }
 
@@ -2715,7 +2715,7 @@ About Me Section
 }
 
 .blog-details .sidebar .recent-posts h4 {
-	font-size: 15px;
+	font-size: 0.9375rem; /* 15px = 0.9375rem */
 	font-weight: bold;
 	margin-bottom: 5px;
 }
@@ -2737,7 +2737,7 @@ About Me Section
 .blog-details .sidebar .recent-posts time {
 	color: rgba(var(--default-color-rgb), 0.5);
 	display: block;
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	font-style: italic;
 }
 
@@ -2754,7 +2754,7 @@ About Me Section
 	border: 0;
 	bottom: 0;
 	color: var(--background-color);
-	font-size: 16px;
+	font-size: 1rem; /* 16px = 1rem */
 	line-height: 0;
 	margin: -1px;
 	padding: 0 15px;
@@ -2791,7 +2791,7 @@ About Me Section
 
 .blog-details .sidebar .sidebar-title {
 	color: var(--heading-color);
-	font-size: 20px;
+	font-size: 1.25rem; /* 20px = 1.25rem */
 	font-weight: 700;
 	margin: 0;
 	padding: 0;
@@ -2810,7 +2810,7 @@ About Me Section
 	border: 1px solid rgba(var(--default-color-rgb), 0.4);
 	color: rgba(var(--default-color-rgb), 0.7);
 	display: inline-block;
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	margin: 0 6px 8px 0;
 	padding: 6px 14px;
 	transition: 0.3s;
@@ -2818,7 +2818,7 @@ About Me Section
 
 .blog-details .sidebar .tags ul a span {
 	color: rgba(var(--default-color-rgb), 0.4);
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	padding-left: 5px;
 }
 
@@ -2834,7 +2834,7 @@ About Me Section
 
 .blog-details .title {
 	color: var(--heading-color);
-	font-size: 28px;
+	font-size: 1.75rem; /* 28px = 1.75rem */
 	font-weight: 700;
 	margin: 30px 0;
 	padding: 0;
@@ -2848,7 +2848,7 @@ section#contact .form-group input, section#contact .form-group textarea {
 	border-radius: 0;
 	border: 1px solid #bbbbbb;
 	box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
-	font-size: 13px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	padding: 15px;
 }
 
@@ -2871,19 +2871,19 @@ section#contact.form-group {
 }
 
 .contact .info-item h3 {
-	font-size: 22px;
+	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: 700;
 	margin: 20px 0 10px 0;
 }
 
 .contact .info-item i {
 	color: var(--accent-color);
-	font-size: 38px;
+	font-size: 2.375rem; /* 38px = 2.375rem */
 	line-height: 0;
 }
 
 .contact .info-item p {
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	line-height: 24px;
 	margin-bottom: 0;
 	padding: 0;
@@ -2951,7 +2951,7 @@ section#contact.form-group {
 	border-radius: 0;
 	box-shadow: none;
 	color: var(--default-color);
-	font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 	padding: 10px 15px;
 }
 
@@ -2976,7 +2976,7 @@ section#contact.form-group {
 }
 
 .contact p {
-	font-size: 13px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
 }
 
 @keyframes animate-loading {
@@ -2996,7 +2996,7 @@ section#contact.form-group {
   --background-color: #f4f4f4;
   color: var(--default-color);
   background-color: var(--background-color);
-  font-size: 14px;
+  font-size: 0.875rem; /* 14px = 0.875rem */
   padding: 20px;
   margin-top: auto;
 }
@@ -3012,14 +3012,14 @@ section#contact.form-group {
 
 .footer .footer-about .logo span {
   color: var(--heading-color);
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px = 1.875rem */
   font-weight: 700;
   letter-spacing: 1px;
   font-family: var(--heading-font);
 }
 
 .footer .footer-about p {
-  font-size: 14px;
+	font-size: 0.875rem; /* 14px = 0.875rem */
   font-family: var(--heading-font);
 }
 
@@ -3031,7 +3031,7 @@ section#contact.form-group {
   height: 40px;
   border-radius: 50%;
   border: 1px solid rgba(var(--default-color-rgb), 0.5);
-  font-size: 16px;
+  font-size: 1rem; /* 16px = 1rem */
   color: rgba(var(--default-color-rgb), 0.5);
   margin-right: 10px;
   transition: 0.3s;
@@ -3044,7 +3044,7 @@ section#contact.form-group {
 
 .footer h4 {
   color: var(--heading-color);
-  font-size: 16px;
+  font-size: 1rem; /* 16px = 1rem */
   font-weight: bold;
   position: relative;
 }
@@ -3055,7 +3055,7 @@ section#contact.form-group {
 
 .footer .footer-links ul i {
   padding-right: 2px;
-  font-size: 12px;
+  font-size: 0.75rem; /* 12px = 0.75rem */
   line-height: 0;
 }
 
@@ -3084,7 +3084,7 @@ section#contact.form-group {
 }
 
 .footer .credits {
-  font-size: 13px;
+	font-size: 0.75rem; /* 12px = 0.75rem */
 }
 
 
@@ -3106,7 +3106,7 @@ section#contact.form-group {
 }
 
 .scroll-top i {
-  font-size: 24px;
+	font-size: 1.5rem; /* 24px = 1.5rem */
   color: #ffffff;
   line-height: 0;
 }
