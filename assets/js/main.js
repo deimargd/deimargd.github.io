@@ -174,11 +174,9 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Frequently Asked Questions Toggle
    */
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
-      faqItem.addEventListener('click', () => {
-        faqItem.parentNode.classList.toggle('faq-active');
-      });
+  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
+    faqItem.addEventListener('click', () => {
+      faqItem.parentNode.classList.toggle('faq-active');
     });
   });
 
