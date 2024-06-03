@@ -1192,7 +1192,7 @@ About Me Section
 
 .services .service-item .icon i {
 	color: rgba(var(--default-color-rgb), 0.7);
-	font-size: 3rem; /* 48px = 3rem  prev 56*/
+	font-size: 2rem; /* 48px = 3rem  prev 56*/
 	position: relative;
 	text-align: center;
 	transition: ease-in-out 0.3s;
@@ -1248,17 +1248,15 @@ About Me Section
 }
 
 @media (min-width: 770px) and (max-width: 999px) {
-  .col-md-4 {
-	font-size: 1.25rem;
-    height: 400px !important; /* Important to override conflicting styles */
-  }
+  .services .service-item .icon i {
+	font-size: 1.5rem;
 }
 
-@media (min-width: 1000px) and (max-width: 1399px) {
-  .col-md-4 {
-	font-size: 0.875rem;
-    height: 380px !important; /* Important to override conflicting styles */
-  }
+
+@media (max-width: 770px) {
+	.services .service-item .icon i {
+		font-size: 1rem;
+	}
 }
 
 /* Portfolio Section - Home Page
@@ -1524,6 +1522,8 @@ About Me Section
 		max-width: 100% !important;
 	}
 }
+
+
 
 /* Our Partners Section - Home Page
 ------------------------------*/
