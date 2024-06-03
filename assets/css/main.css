@@ -43,6 +43,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	color: var(--heading-color);
 	font-family: var(--heading-font);
+	text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -582,7 +583,6 @@ section,
 .service-info h3 {
 	font-size: 1.25rem; /* 20px = 1.25rem */
   font-weight: 500;
-  text-align: center;
 }
 
 .section-title h2 {
@@ -590,7 +590,6 @@ section,
   font-weight: 700;
   padding: 30px;
   position: relative;
-  text-align: center;
   display: inline-block; /* Ensures lines are positioned relative to text width */
 }
 
@@ -760,7 +759,6 @@ section,
   }
   .section-title h2 {
     font-size: 1.25rem; /* 20px = 1.25rem */
-    text-align: center;
   }
 }
 
@@ -827,9 +825,9 @@ section,
 }
 
 .hero p {
+	font-size: 0.875rem; /* 14px = 0.875rem */
   color: rgba(var(--default-color-rgb), 0.8);
   margin: 20px 0 0 0;
-  font-size: 1.25rem; /* 20px = 1.25rem */
 }
 
 .hero .sign-up-form {
@@ -882,7 +880,7 @@ section,
   }
 
   .hero p {
-    font-size: 1.125rem; /* 18px = 1.125rem */
+    
   }
   .hero .sign-up-form .form-control {
     font-size: smaller;
@@ -1142,11 +1140,11 @@ About Me Section
 }
 
 .service-details p {
-	font-size: 0.9375rem; /* 15px = 0.9375rem */
+	
 }
 
 .service-details ul {
-	font-size: 0.9375rem; /* 15px = 0.9375rem */
+	
 	list-style: none;
 	padding: 0;
 }
@@ -1303,7 +1301,7 @@ About Me Section
 
 .portfolio .portfolio-item .portfolio-info p {
 	color: rgba(var(--default-color-rgb), 0.7);
-	font-size: 0.875rem; /* 14px = 0.875rem */
+	
 	margin-bottom: 0;
 }
 
@@ -1323,7 +1321,6 @@ About Me Section
 .portfolio .service-info h2 {
 	color: var(--default-color);
 	font-family: var(--heading-font);
-	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: 700;
 	margin: 0 0 15px 0;
 	padding: 0;
@@ -1390,7 +1387,6 @@ About Me Section
 }
 
 .portfolio-details .portfolio-description h2 {
-	font-size: 1.625rem; /* 26px = 1.625rem */
 	font-weight: 700;
 	margin-bottom: 20px;
 }
@@ -1497,11 +1493,9 @@ About Me Section
 }
 
 .portfolio-row h2 {
-	text-align: center;
 }
 
 .portfolio-row h3 {
-	text-align: center;
 }
 
 @media (max-width: 575px) {
@@ -1795,7 +1789,6 @@ About Me Section
 .pricing h3 {
 	font-weight: 600;
 	margin-bottom: 15px;
-	text-align: center;
 }
 
 .pricing h4 {
@@ -1863,7 +1856,7 @@ About Me Section
 
 .faq .content p {
 	color: rgba(var(--default-color-rgb), 0.7);
-	font-size: 0.9375rem; /* 15px = 0.9375rem */
+	
 }
 
 .faq .faq-container .faq-active .faq-content {
@@ -2028,7 +2021,7 @@ About Me Section
 }
 
 .team .member .member-info p {
-	font-size: 0.875rem; /* 14px = 0.875rem */
+	
 	margin-bottom: 0;
 }
 
@@ -2205,7 +2198,6 @@ About Me Section
 
 .testimonials .testimonial-item h3 {
 	margin: 15px;
-	font-size: 1.375rem; /* 22px = 1.375rem */
 	font-weight: bold;
 }
 
@@ -2438,7 +2430,6 @@ About Me Section
 }
 
 .blog-details .comments .comment h5 {
-	font-size: 1rem; /* 16px = 1rem */
 	margin-bottom: 2px;
 }
 
@@ -2448,7 +2439,6 @@ About Me Section
 }
 
 .blog-details .comments .comment h5 .reply i {
-	font-size: 1.25rem; /* 20px = 1.25rem */
 }
 
 .blog-details .comments .comment h5 a {
@@ -2519,7 +2509,7 @@ About Me Section
 }
 
 .blog-details .comments .reply-form p {
-	font-size: 0.875rem; /* 14px = 0.875rem */
+	
 }
 
 .blog-details .comments .reply-form textarea {
@@ -2552,7 +2542,7 @@ About Me Section
 
 .blog-details .content blockquote p {
 	color: var(--default-color);
-	font-size: 1.375rem; /* 22px = 1.375rem */
+	
 	font-style: italic;
 	font-weight: 500;
 	line-height: 1.6;
@@ -2870,7 +2860,7 @@ section#contact.form-group {
 }
 
 .contact .info-item p {
-	font-size: 0.875rem; /* 14px = 0.875rem */
+	
 	line-height: 24px;
 	margin-bottom: 0;
 	padding: 0;
@@ -2963,7 +2953,7 @@ section#contact.form-group {
 }
 
 .contact p {
-	font-size: 0.875rem; /* 14px = 0.875rem */
+	
 }
 
 @keyframes animate-loading {
@@ -3006,7 +2996,7 @@ section#contact.form-group {
 }
 
 .footer .footer-about p {
-	font-size: 0.875rem; /* 14px = 0.875rem */
+	
   font-family: var(--heading-font);
 }
 
