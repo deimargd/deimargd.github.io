@@ -1850,116 +1850,120 @@ About Me Section
 
 /* Faq Section - Home Page
 ------------------------------*/
-.faq .content h3 {
-	font-weight: 400;
-}
 
-.faq .content p {
-	color: rgba(var(--default-color-rgb), 0.7);
-	
-}
-
-.faq .faq-container .faq-active .faq-content {
-	grid-template-rows: 1fr;
-	opacity: 1;
-	padding-top: 10px;
-	visibility: visible;
-}
-
-.faq .faq-container .faq-active .faq-toggle {
-	color: var(--accent-color);
-	transform: rotate(90deg);
-}
-
-.faq .faq-container .faq-active h3 {
-	color: var(--accent-color);
-}
-
-.faq .faq-container .faq-item {
-	box-shadow: 0px 5px 25px 0px rgba(var(--default-color-rgb), 0.1);
-	margin-bottom: 20px;
+.faq {
+	margin-top: 50px;
+  }
+  
+  .faq .container {
+	margin-top: 30px;
+  }
+  
+  .faq .container.section-title {
+	text-align: center;
+  }
+  
+  .faq .faq-container .faq-item {
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+	border-radius: 4px;
 	overflow: hidden;
 	padding: 20px;
 	position: relative;
-}
-
-.faq .faq-container .faq-item .faq-content {
-	display: grid;
-	grid-template-rows: 0fr;
-	opacity: 0;
-	transition: 0.3s ease-in-out;
-	visibility: hidden;
-}
-
-.faq .faq-container .faq-item .faq-content p {
-	margin-bottom: 0;
-	overflow: hidden;
-}
-
-.faq .faq-container .faq-item .faq-toggle {
-	cursor: pointer;
-	font-size: 1rem; /* 16px = 1rem */
-	line-height: 0;
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	transition: 0.3s;
-}
-
-.faq .faq-container .faq-item .faq-toggle:hover {
-	color: var(--accent-color);
-}
-
-.faq .faq-container .faq-item h3 {
-	align-items: flex-start;
+	box-shadow: 0px 5px 25px 0px rgba(var(--default-color-rgb), 0.1);
+  }
+  
+  .faq .faq-container .faq-item h3 {
+	background: #f9f9f9;
+	padding: 10px;
+	margin: 0;
 	cursor: pointer;
 	display: flex;
-	font-weight: 600;
-	line-height: 24px;
-	margin: 0 20px 0 0;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 400;
+	color: rgba(var(--default-color-rgb), 0.7);
 	transition: 0.3s;
-}
-
-.faq .faq-container .faq-item h3 .num {
+  }
+  
+  .faq .faq-container .faq-item h3:hover {
+	color: var(--accent-color);
+  }
+  
+  .faq .faq-container .faq-item .num {
 	color: var(--accent-color);
 	padding-right: 5px;
-}
-
-.faq .faq-container .faq-item h3:hover {
-	color: var(--accent-color);
-}
-
-.faq .faq-container .faq-item:last-child {
+  }
+  
+  .faq .faq-container .faq-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+	opacity: 0;
+	visibility: hidden;
+	padding: 0 20px; /* Adjust padding to suit your design */
+  }
+  
+  .faq .faq-container .faq-content p {
 	margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-	.faq .faq-container.left-col, .faq .faq-container.right-col {
-		width: 100%;
+	font-size: 0.875rem; /* 14px = 0.875rem */
+	overflow: hidden;
+	color: rgba(var(--default-color-rgb), 0.7);
+  }
+  
+  .faq .faq-container .faq-toggle {
+	cursor: pointer;
+	font-size: 0.875rem; /* 14px = 0.875rem */
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	transition: color 0.3s, transform 0.3s;
+  }
+  
+  .faq .faq-container .faq-toggle:hover {
+	color: var(--accent-color);
+  }
+  
+  .faq .faq-container .faq-active .faq-content {
+	max-height: 1000px; /* Adjust based on the content height */
+	opacity: 1;
+	visibility: visible;
+	padding-top: 10px;
+  }
+  
+  .faq .faq-container .faq-active .faq-toggle {
+	transform: rotate(90deg);
+	color: var(--accent-color);
+  }
+  
+  @media (max-width: 768px) {
+	.faq .faq-container {
+	  width: 100%;
 	}
-
-	.faq .content h3 {
-		font-size: 1rem;
+  
+	.faq .container.section-title h2 {
+	  font-size: 1.5rem;
 	}
-
-	.faq .faq-row {
-		flex-direction: column;
+  
+	.faq .faq-container .faq-item h3 {
+	  font-size: 1rem;
 	}
-
-	.faq-container .faq-active .faq-toggle {
-		transform: rotate(90deg);
+  
+	.faq .faq-container .faq-toggle {
+	  display: inline-block;
+	  transform: rotate(0deg);
+	  transition: transform 0.3s ease;
 	}
-
-	.faq-container .faq-content {
-		display: none;
+  
+	.faq .faq-container .faq-content {
+	  display: none;
 	}
-
-	.faq-container .faq-toggle {
-		display: inline-block;
-		transform: rotate(0deg);
-		transition: transform 0.3s ease;
+  
+	.faq .faq-container .faq-active .faq-content {
+	  display: block;
 	}
-}
+  }
+  
 
 /* Team Section - Home Page
 ------------------------------*/
