@@ -916,9 +916,9 @@ About Me Section
 
 
 .about .content h3 {
-	font-size: 1.375rem;
+	font-size: 1rem; /* 16px = 1rem */
   font-weight: 500;
-  line-height: 19px;
+  line-height: 20px;
   background: rgba(var(--accent-color-rgb), 0.05);
   color: var(--accent-color);
   border-radius: 7px;
@@ -1041,6 +1041,10 @@ About Me Section
 #services .icon-boxes {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.services .icon-box h3 {
+	text-align: center;
 }
 
 .service-details .download-catalog a {
@@ -1297,6 +1301,10 @@ About Me Section
 
 .portfolio .portfolio-item .portfolio-info .details-link:hover, .portfolio .portfolio-item .portfolio-info .preview-link:hover {
 	color: var(--accent-color);
+}
+
+.portfolio .icon-box h3 {
+	text-align: center;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
