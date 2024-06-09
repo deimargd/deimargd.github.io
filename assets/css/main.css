@@ -878,10 +878,10 @@ section,
 .btn-primary:hover {
   background-color: black;
 }
-
+/*
 @media (max-width: 768px) {
   .hero h2 {
-    ; /* 32px = 2rem */
+    ;  32px = 2rem */
   }
 
   .hero p {
@@ -894,7 +894,7 @@ section,
 .hero .sign-up-form input[type=submit] {
   font-size: smaller;
 }
-}
+}*/
 
 /* ----------------------------
 About Me Section
@@ -913,10 +913,10 @@ About Me Section
   display: block;
   margin: auto; /* Center the image horizontally */
   max-width: 430px; /* Set maximum width */
-  width: 80%; /* Allow the image to take up full width initially */
+  width: 70%; /* Allow the image to take up full width initially */
   height: auto; /* Maintain aspect ratio */
   border-radius: 50%;
-  min-width: 150px;
+  min-width: 100px;
 }
 
 
@@ -1007,20 +1007,13 @@ About Me Section
   color: var(--contrast-color);
 }
 
-/*@media (max-width: 768px) {
-	.about .icon-box h3 {
-	}
-
-	.about .par-size p{
-
-	  
-	}
-
-	.about .icon-box i {
-
-	  }
-}*/
+@media (max-width: 1200px) {
 	
+	.about .content img {
+		width: 50%;
+		max-width: 300px;
+	}
+}	
   
 
 
