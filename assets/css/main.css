@@ -577,16 +577,15 @@ section,
 /*--------------------------------------------------------------
 # Section Title
 --------------------------------------------------------------*/
-/*.section-title {
+.section-title {
   text-align: center;
-}*/
+}
 
 .section-title h2 {
 	font-size: clamp(1rem,1.3vw,1.3rem); /* 26px = 1.625rem  antes 25*/
   /*font-weight: 700;*/
   padding: 30px;
   position: relative;
-  text-align: center;
   display: inline-block; /* Ensures lines are positioned relative to text width */
 }
 
