@@ -938,7 +938,7 @@ About Me Section
 }
 
 .about .par-size p{
-	font-size: (0.625vw,0.75rem,1rem)/* 12px */;
+	font-size: clamp(0.625vw,0.75rem,1rem)/* 12px */;
 }
 
 .about .content .read-more {
