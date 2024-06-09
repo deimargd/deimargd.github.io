@@ -586,6 +586,7 @@ section,
   /*font-weight: 700;*/
   padding: 30px;
   position: relative;
+  text-align: center;
   display: inline-block; /* Ensures lines are positioned relative to text width */
 }
 
@@ -1898,9 +1899,8 @@ About Me Section
 	box-shadow: 0px 5px 25px 0px rgba(var(--default-color-rgb), 0.1);
 	margin-bottom: 20px;
 	overflow: hidden;
-	padding: 20px;
+	padding: 5px;
 	position: relative;
-	font-size: clamp(0.7rem, 0.7292vw, 1rem);/* 12px */;
 }
 
 .faq .faq-container .faq-item .faq-content {
