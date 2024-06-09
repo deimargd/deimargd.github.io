@@ -824,8 +824,9 @@ section,
 .hero h2 {
   color: var(--contrast-color);
   margin: 0;
-  font-size: 70px;
-  /*font-weight: 700;*/
+  font-size: clamp(3.5rem, 3.6458vw, 4.5rem);
+  /*font-size: 70px;
+  font-weight: 700;*/
 }
 
 .hero p {
@@ -938,7 +939,7 @@ About Me Section
 }
 
 .about .par-size p{
-	font-size: clamp(0.625rem, 0.625vw, 0.875rem);/* 12px */;
+	font-size: clamp(0.7rem, 0.7292vw, 1rem);/* 12px */;
 }
 
 .about .content .read-more {
@@ -1873,7 +1874,6 @@ About Me Section
 
 .faq .content p {
 	color: rgba(var(--default-color-rgb), 0.7);
-	font-size: clamp(0.625vw,0.75rem,1rem)!important; /* 12px = 0.875rem */
 	
 }
 
@@ -1891,6 +1891,7 @@ About Me Section
 
 .faq .faq-container .faq-active h3 {
 	color: var(--accent-color);
+	font-size: clamp(0.7rem, 0.7292vw, 1rem);/* 12px */;
 }
 
 .faq .faq-container .faq-item {
@@ -1911,13 +1912,13 @@ About Me Section
 
 .faq .faq-container .faq-item .faq-content p {
 	margin-bottom: 0;
-	font-size: ; /* 14px = 0.875rem */
+	font-size: clamp(0.7rem, 0.7292vw, 1rem);/* 12px */;
 	overflow: hidden;
 }
 
 .faq .faq-container .faq-item .faq-toggle {
 	cursor: pointer;
-	font-size: ; /* 14px = 0.875rem */
+	font-size: clamp(0.7rem, 0.7292vw, 1rem);/* 12px */;
 	line-height: 0;
 	position: absolute;
 	right: 20px;
