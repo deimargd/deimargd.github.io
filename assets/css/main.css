@@ -1868,6 +1868,7 @@ About Me Section
 ------------------------------*/
 .faq .content h3 {
 	font-weight: 400; 
+	font-size: calc(0.55rem,0.62vw,0.6rem)!important;
 }
 
 .faq .content p {
