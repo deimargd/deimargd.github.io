@@ -592,7 +592,7 @@ section,
 }
 
 .service-info h3 {
-	font-size: clamp(0.8rem,1vw,1.25rem); /* 20px = 1.25rem */
+	font-size: clamp(1rem, 0.9375vw, 1.25rem); /* 18px */
 	font-weight: 500;
 	text-align: center;
 }
@@ -921,7 +921,7 @@ About Me Section
 
 
 .about .content h3 {
-	font-size: clamp(0.75rem, 0.7292vw, 1rem); /* 14px */
+	font-size: clamp(0.875rem, 0.8333vw, 1.125rem);; /* 16px */
   font-weight: 500;
   line-height: 20px;
   background: rgba(var(--accent-color-rgb), 0.05);
@@ -998,7 +998,6 @@ About Me Section
 }
 
 .about .icon-box h3 {
-	text-align: left;
   /*font-weight: 700;*/
   
 }
@@ -1447,7 +1446,7 @@ About Me Section
 }
 
 .portfolio-details .portfolio-info ul {
-	font-size: 0.9375rem; /* 15px = 0.9375rem */
+	font-size: clamp(0.7rem, 0.7292vw, 1rem);/* 14px */
 	list-style: none;
 	padding: 0;
 }
@@ -1517,7 +1516,6 @@ About Me Section
 
 @media (max-width: 575px) {
 	.portfolio .portfolio-filters li {
-		font-size: 1rem;
 		margin: 0 0 10px 0;
 	}
 
