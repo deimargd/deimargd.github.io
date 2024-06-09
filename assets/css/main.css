@@ -920,7 +920,7 @@ About Me Section
 
 
 .about .content h3 {
-	font-size: 1rem; /* 16px = 1rem */
+	font-size: clamp(0.7rem,0.83vw,1rem); /* 16px = 1rem */
   font-weight: 500;
   line-height: 20px;
   background: rgba(var(--accent-color-rgb), 0.05);
@@ -938,7 +938,7 @@ About Me Section
 }
 
 .about .par-size p{
-  font-size: 1rem;
+  font-size: clamp(0.55rem,0.62vw,0.6rem)/* 10px */;
 }
 
 .about .content .read-more {
@@ -946,7 +946,7 @@ About Me Section
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
-  font-size: 1rem; /* 16px = 1rem */
+  font-size: clamp(0.7rem,0.83vw,1rem); /* 16px */
   letter-spacing: 1px;
   padding: 12px 24px;
   border-radius: 5px; 
@@ -958,7 +958,7 @@ About Me Section
 
 
 .about .content .read-more i {
-	font-size: 1.125rem; /* 18px = 1.125rem */
+	font-size: clamp(0.7rem,0.83vw,1rem); /* 16px */
   line-height: 0;
   transition: 0.3s;
   margin: auto;
@@ -983,13 +983,13 @@ About Me Section
 }
 
 .about .icon-box i {
-  width: 60px;
-  height: 60px;
+  width: clamp(2.375rem,3.125vw,3.75rem);/* 60px*/
+  height: clamp(2rem,3.125vw,3.75rem);/* 60px*/
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem; /* 32px = 2rem */
+  font-size: clamp(1rem,1vw,2rem); /* 20px*/
   line-height: 0;
   transition: all 0.4s ease-out 0s;
   background-color: rgba(var(--accent-color-rgb), 0.05);
@@ -1009,16 +1009,16 @@ About Me Section
 
 @media (max-width: 768px) {
 	.about .icon-box h3 {
-		font-size: 1.25rem;
+
 	}
 
 	.about .par-size p{
-		font-size: 0.875rem;
+
 	  
 	}
 
 	.about .icon-box i {
-		font-size: 1.5rem; /* 32px = 2rem */
+
 	  }
 }
 	
