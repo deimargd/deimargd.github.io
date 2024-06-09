@@ -762,7 +762,7 @@ section,
     width: 100%;
   }
   .section-title h2 {
-    font-size: 1.25rem; /* 20px = 1.25rem */
+    font-size: ; /* 20px = 1.25rem */
   }
 }
 
@@ -829,7 +829,7 @@ section,
 }
 
 .hero p {
-	font-size: 0.875rem; /* 14px = 0.875rem */
+	font-size: clamp(0.65rem,0.7vw,0.8rem); /* 14px = 0.875rem */
   color: rgba(var(--default-color-rgb), 0.8);
   margin: 20px 0 0 0;
 }
@@ -880,7 +880,7 @@ section,
 
 @media (max-width: 768px) {
   .hero h2 {
-    font-size: 2rem; /* 32px = 2rem */
+    ; /* 32px = 2rem */
   }
 
   .hero p {
@@ -1061,7 +1061,7 @@ About Me Section
 
 .service-details .download-catalog a i {
 	color: var(--accent-color);
-	font-size: 1.5rem; /* 24px = 1.5rem */
+	font-size: ; /* 24px = 1.5rem */
 	margin-right: 8px;
 }
 
@@ -1126,7 +1126,7 @@ About Me Section
 
 .service-details .services-list a i {
 	color: var(--accent-color);
-	font-size: 1rem; /* 16px = 1rem */
+	font-size: ; /* 16px = 1rem */
 	margin-right: 8px;
 }
 
@@ -1164,7 +1164,7 @@ About Me Section
 
 .service-details ul i {
 	color: var(--accent-color);
-	font-size: 1.25rem; /* 20px = 1.25rem */
+	font-size: ; /* 20px = 1.25rem */
 	margin-right: 8px;
 }
 
@@ -1199,7 +1199,7 @@ About Me Section
 
 .services .service-item .icon i {
 	color: rgba(var(--default-color-rgb), 0.7);
-	font-size: 3rem; /* 48px = 3rem  prev 56*/
+	font-size: ; /* 48px = 3rem  prev 56*/
 	position: relative;
 	text-align: center;
 	transition: ease-in-out 0.3s;
@@ -1848,7 +1848,7 @@ About Me Section
 
 .pricing ul i {
 	color: #059652;
-	font-size: 1.5rem; /* 24px = 1.5rem */
+	font-size: ; /* 24px = 1.5rem */
 	padding-right: 3px;
 }
 
@@ -1867,13 +1867,12 @@ About Me Section
 /* Faq Section - Home Page
 ------------------------------*/
 .faq .content h3 {
-	font-weight: 400;
-	font-size: 1rem; 
+	font-weight: 400; 
 }
 
 .faq .content p {
 	color: rgba(var(--default-color-rgb), 0.7);
-	font-size: 0.875rem; /* 14px = 0.875rem */
+	font-size: ; /* 14px = 0.875rem */
 	
 }
 
@@ -1911,13 +1910,13 @@ About Me Section
 
 .faq .faq-container .faq-item .faq-content p {
 	margin-bottom: 0;
-	font-size: 0.875rem; /* 14px = 0.875rem */
+	font-size: ; /* 14px = 0.875rem */
 	overflow: hidden;
 }
 
 .faq .faq-container .faq-item .faq-toggle {
 	cursor: pointer;
-	font-size: 0.875rem; /* 14px = 0.875rem */
+	font-size: ; /* 14px = 0.875rem */
 	line-height: 0;
 	position: absolute;
 	right: 20px;
@@ -1959,7 +1958,7 @@ About Me Section
 	}
 
 	.faq .content h3 {
-		font-size: 1rem;
+		font-size: ;
 	}
 
 	.faq .faq-row {
@@ -2048,7 +2047,7 @@ About Me Section
 .team .member .member-info span {
 	color: rgba(var(--default-color-rgb), 0.6);
 	display: block;
-	font-size: 0.9375rem; /* 15px = 0.9375rem */
+	font-size: ; /* 15px = 0.9375rem */
 	font-style: italic;
 	margin-bottom: 10px;
 }
@@ -2223,7 +2222,7 @@ About Me Section
 
 .testimonials .testimonial-item h4 {
 	color: rgba(var(--default-color-rgb), 0.5);
-	font-size: 0.875rem; /* 14px = 0.875rem */
+	font-size: ; /* 14px = 0.875rem */
 	margin: 0;
 }
 
@@ -2695,7 +2694,7 @@ About Me Section
 
 .blog-details .sidebar .categories ul a span {
 	color: rgba(var(--default-color-rgb), 0.5);
-	font-size: 0.875rem; /* 14px = 0.875rem */
+	font-size: ; /* 14px = 0.875rem */
 	padding-left: 5px;
 }
 
@@ -2816,7 +2815,7 @@ About Me Section
 
 .blog-details .sidebar .tags ul a span {
 	color: rgba(var(--default-color-rgb), 0.4);
-	font-size: 0.875rem; /* 14px = 0.875rem */
+	font-size: ; /* 14px = 0.875rem */
 	padding-left: 5px;
 }
 
@@ -3028,7 +3027,7 @@ section#contact.form-group {
   height: 40px;
   border-radius: 50%;
   border: 1px solid rgba(var(--default-color-rgb), 0.5);
-  font-size: 1rem; /* 16px = 1rem */
+  font-size: ; /* 16px = 1rem */
   color: rgba(var(--default-color-rgb), 0.5);
   margin-right: 10px;
   transition: 0.3s;
@@ -3052,7 +3051,7 @@ section#contact.form-group {
 
 .footer .footer-links ul i {
   padding-right: 2px;
-  font-size: 0.75rem; /* 12px = 0.75rem */
+  font-size: ; /* 12px = 0.75rem */
   line-height: 0;
 }
 
