@@ -920,7 +920,7 @@ About Me Section
 
 
 .about .content h3 {
-	font-size: clamp(0.7rem,0.83vw,1rem); /* 16px = 1rem */
+	font-size: clamp(0.75rem, 0.7292vw, 1rem); /* 14px */
   font-weight: 500;
   line-height: 20px;
   background: rgba(var(--accent-color-rgb), 0.05);
@@ -938,7 +938,7 @@ About Me Section
 }
 
 .about .par-size p{
-	font-size: clamp(0.625vw,0.75rem,1rem)/* 12px */;
+	font-size: clamp(0.625rem, 0.625vw, 0.875rem);/* 12px */;
 }
 
 .about .content .read-more {
@@ -946,7 +946,7 @@ About Me Section
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
-  font-size: clamp(0.7rem,0.83vw,1rem); /* 16px */
+  font-size: clamp(0.875rem, 0.8333vw, 1.125rem); /* 16px */
   letter-spacing: 1px;
   padding: 12px 24px;
   border-radius: 5px; 
@@ -958,7 +958,7 @@ About Me Section
 
 
 .about .content .read-more i {
-	font-size: clamp(0.7rem,0.83vw,1rem); /* 16px */
+	font-size: clamp(0.875rem, 0.8333vw, 1.125rem); /* 16px */
   line-height: 0;
   transition: 0.3s;
   margin: auto;
@@ -984,12 +984,12 @@ About Me Section
 
 .about .icon-box i {
   width: clamp(2.375rem,3.125vw,3.75rem);/* 60px*/
-  height: clamp(2rem,3.125vw,3.75rem);/* 60px*/
+  height: clamp(2.375rem,3.125vw,3.75rem);/* 60px*/
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(1rem,1vw,2rem); /* 20px*/
+  font-size: clamp(1.125rem, 1.0417vw, 1.375rem); /* 20px*/
   line-height: 0;
   transition: all 0.4s ease-out 0s;
   background-color: rgba(var(--accent-color-rgb), 0.05);
