@@ -40,10 +40,16 @@ body {
 	font-family: var(--default-font);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, {
 	color: var(--heading-color);
 	font-family: var(--heading-font);
 	font-weight: 700;
+}
+
+h4, h5, h6 {
+	color: var(--heading-color);
+	font-family: var(--heading-font);
+	font-weight: 500;
 }
 
 /*--------------------------------------------------------------
@@ -942,11 +948,11 @@ About Me Section
 }
 
 .about .par-size p{
-	font-size: clamp(0.7rem, 0.7292vw, 1rem);/* 12px */;
+	font-size: clamp(0.75rem, 0.7292vw, 1rem);/* 14px */;
 }
 
 .about li{
-	font-size: clamp(0.7rem, 0.7292vw, 1rem);/* 12px */;
+	font-size: clamp(0.75rem, 0.7292vw, 1rem);/* 14px */;
 }
 
 .about .content .read-more {
@@ -954,7 +960,7 @@ About Me Section
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
-  font-size: clamp(0.875rem, 0.8333vw, 1.125rem); /* 16px */
+  font-size: clamp(0.75rem, 0.7292vw, 1rem);/* 14px */;
   letter-spacing: 1px;
   padding: 12px 24px;
   border-radius: 5px; 
