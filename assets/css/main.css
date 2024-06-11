@@ -940,7 +940,7 @@ About Me Section
 }
 
 .about .content h2 {
-  /*font-weight: 700;*/
+	font-size: clamp(0.9rem, 0.8524vw, 1.35rem); /* 22px */
 }
 
 .about .content p:last-child {
@@ -1010,10 +1010,6 @@ About Me Section
   color: var(--accent-color);
 }
 
-.about .icon-box h3 {
-  /*font-weight: 700;*/
-  
-}
 
 .about .icon-box:hover i {
   background-color: var(--accent-color);
@@ -1261,18 +1257,6 @@ About Me Section
 	top: 0;
 }
 
-@media (min-width: 770px) and (max-width: 999px) {
-  .col-md-4 {
-	font-size: 1.25rem;
-
-  }
-}
-
-@media (min-width: 1000px) and (max-width: 1399px) {
-  .col-md-4 {
-	font-size: 0.875rem;
-  }
-}
 
 /* Portfolio Section - Home Page
 ------------------------------*/
