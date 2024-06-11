@@ -40,7 +40,7 @@ body {
 	font-family: var(--default-font);
 }
 
-h1, h2, h3, {
+h1, h2, h3 {
 	color: var(--heading-color);
 	font-family: var(--heading-font);
 	font-weight: 700;
@@ -930,7 +930,7 @@ About Me Section
 
 
 .about .content h3 {
-	font-size: clamp(0.875rem, 0.8333vw, 1.125rem); /* 16px */
+	font-size: clamp(0.9rem, 0.8524vw, 1.35rem); /* 22px */
   font-weight: 500;
   line-height: 20px;
   background: rgba(var(--accent-color-rgb), 0.05);
