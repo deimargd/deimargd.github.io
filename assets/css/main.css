@@ -582,7 +582,7 @@ section,
 }
 
 .section-title h2 {
-	font-size: clamp(1rem,1.3vw,1.3rem); /* 26px = 1.625rem  antes 25*/
+	font-size: clamp(1.432rem, 1.1046vw, 1.75rem); /* 28px*/
   /*font-weight: 700;*/
   padding: 30px;
   position: relative;
@@ -828,11 +828,11 @@ section,
 }
 
 .hero h3 {
-	font-size: clamp(0.875rem, 0.8333vw, 1.125rem); /* 16px */
+	font-size: clamp(1.432rem, 1.1046vw, 1.75rem); /* 28px */ 
 }
 
 .hero p {
-	font-size: clamp(0.65rem,0.7vw,0.8rem); /* 14px = 0.875rem */
+	font-size: clamp(0.875rem, 0.8333vw, 1.125rem); /* 16px */
   color: rgba(var(--default-color-rgb), 0.8);
   margin: 20px 0 0 0;
 }
@@ -924,7 +924,7 @@ About Me Section
 
 
 .about .content h3 {
-	font-size: clamp(0.875rem, 0.8333vw, 1.125rem);; /* 16px */
+	font-size: clamp(0.875rem, 0.8333vw, 1.125rem); /* 16px */
   font-weight: 500;
   line-height: 20px;
   background: rgba(var(--accent-color-rgb), 0.05);
