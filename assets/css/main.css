@@ -1862,107 +1862,110 @@ About Me Section
 }
 /* Faq Section - Home Page
 ------------------------------*/
+/* Faq Section - Home Page */
 .faq .content h3 {
-    font-weight: 400;
-}
-
-.faq .content p {
-    color: rgba(var(--default-color-rgb), 0.7);
-}
-
-.faq .faq-container .faq-active .faq-content {
-    grid-template-rows: 1fr;
-    opacity: 1 !important;
-    padding-top: 10px;
-    visibility: visible !important;
-    font-size: clamp(0.7rem, 0.7292vw, 1rem); /* 12px */;
-}
-
-.faq .faq-container .faq-active .faq-toggle {
-    color: var(--accent-color);
-    transform: rotate(90deg);
-}
-
-.faq .faq-container .faq-active h3 {
-    color: var(--accent-color);
-}
-
-.faq .faq-container .faq-item {
-    box-shadow: 0px 5px 25px 0px rgba(var(--default-color-rgb), 0.1);
-    margin-bottom: 20px;
-    overflow: hidden;
-    padding: 5px;
-    position: relative;
-}
-
-.faq .faq-container .faq-item .faq-content {
-    display: grid;
-    grid-template-rows: 0fr;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-.faq .faq-container .faq-item .faq-content p {
-    margin-bottom: 0;
-    overflow: hidden;
-}
-
-.faq .faq-container .faq-item .faq-toggle {
-    cursor: pointer;
-    line-height: 0;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    transition: 0.3s;
-}
-
-.faq .faq-container .faq-item .faq-toggle:hover {
-    color: var(--accent-color);
-}
-
-.faq .faq-container .faq-item h3 {
-    align-items: flex-start;
-    cursor: pointer;
-    display: flex;
-    font-weight: 600;
-    line-height: 24px;
-    margin: 0 20px 0 0;
-    transition: 0.3s;
-    font-size: clamp(0.7rem, 0.7292vw, 1rem); /* 12px */;
-}
-
-.faq .faq-container .faq-item h3 .num {
-    color: var(--accent-color);
-    padding-right: 5px;
-}
-
-.faq .faq-container .faq-item h3:hover {
-    color: var(--accent-color);
-}
-
-.faq .faq-container .faq-item:last-child {
-    margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-    .faq .faq-container.left-col, .faq .faq-container.right-col {
-        width: 100%;
-    }
-
-    .faq .faq-row {
-        flex-direction: column;
-    }
-
-    .faq-container .faq-active .faq-toggle {
-        transform: rotate(90deg);
-    }
-
-    .faq-container .faq-toggle {
-        display: inline-block;
-        transform: rotate(0deg);
-        transition: transform 0.3s ease;
-    }
-}
+	font-weight: 400;
+  }
+  
+  .faq .content p {
+	color: rgba(var(--default-color-rgb), 0.7);
+  }
+  
+  .faq .faq-container .faq-active .faq-content {
+	grid-template-rows: 1fr;
+	opacity: 1;
+	padding-top: 10px;
+	visibility: visible;
+	font-size: clamp(0.7rem, 0.7292vw, 1rem); /* 12px */
+  }
+  
+  .faq .faq-container .faq-active .faq-toggle {
+	color: var(--accent-color);
+	transform: rotate(90deg);
+  }
+  
+  .faq .faq-container .faq-active h3 {
+	color: var(--accent-color);
+  }
+  
+  .faq .faq-container .faq-item {
+	box-shadow: 0px 5px 25px 0px rgba(var(--default-color-rgb), 0.1);
+	margin-bottom: 20px;
+	overflow: hidden;
+	padding: 5px;
+	position: relative;
+  }
+  
+  .faq .faq-container .faq-item .faq-content {
+	display: grid;
+	grid-template-rows: 0fr;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, grid-template-rows 0.3s ease-in-out;
+	visibility: hidden;
+  }
+  
+  .faq .faq-container .faq-item .faq-content p {
+	margin-bottom: 0;
+	overflow: hidden;
+  }
+  
+  .faq .faq-container .faq-item .faq-toggle {
+	cursor: pointer;
+	line-height: 0;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	transition: 0.3s;
+  }
+  
+  .faq .faq-container .faq-item .faq-toggle:hover {
+	color: var(--accent-color);
+  }
+  
+  .faq .faq-container .faq-item h3 {
+	align-items: flex-start;
+	cursor: pointer;
+	display: flex;
+	font-weight: 600;
+	line-height: 24px;
+	margin: 0 20px 0 0;
+	transition: 0.3s;
+	font-size: clamp(0.7rem, 0.7292vw, 1rem); /* 12px */
+  }
+  
+  .faq .faq-container .faq-item h3 .num {
+	color: var(--accent-color);
+	padding-right: 5px;
+  }
+  
+  .faq .faq-container .faq-item h3:hover {
+	color: var(--accent-color);
+  }
+  
+  .faq .faq-container .faq-item:last-child {
+	margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+	.faq .faq-container.left-col, .faq .faq-container.right-col {
+	  width: 100%;
+	}
+  
+	.faq .faq-row {
+	  flex-direction: column;
+	}
+  
+	.faq-container .faq-active .faq-toggle {
+	  transform: rotate(90deg);
+	}
+  
+	.faq-container .faq-toggle {
+	  display: inline-block;
+	  transform: rotate(0deg);
+	  transition: transform 0.3s ease;
+	}
+  }
+  
 
 /* Team Section - Home Page
 ------------------------------*/
