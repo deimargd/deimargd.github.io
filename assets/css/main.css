@@ -1028,233 +1028,84 @@ About Me Section
 --------------------------------------------------------------*/
 
 #services .icon-box {
-	flex: 1 1 auto;
-	min-width: 0;
-  height:auto;
-}
-
-#services .icon-box .icon-box-inner {
+	/* Ensures the icon-boxes grow to the same height */
 	display: flex;
 	flex-direction: column;
-	height: 100%;
 	justify-content: space-between;
-}
-
-#services .icon-boxes {
+	height: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+  }
+  
+  #services .icon-box h3, #services .icon-box ul {
+	text-align: center;
+  }
+  
+  #services .icon-boxes .col-md-4 {
+	display: flex;
+	align-items: stretch;
+  }
+  
+  #services .icon-boxes .col-md-4 .icon-box {
+	flex: 1;
+  }
+  
+  /* Additional styling for icon and text alignment */
+  .services .icon-box .icon {
+	margin-bottom: 15px;
+	text-align: center;
+  }
+  
+  .services .icon-box h3 {
+	text-align: center;
+	margin-bottom: 15px;
+  }
+  
+  .services .icon-box ul {
+	list-style-type: disc;
+	margin: 15px auto;
+	padding-left: 0;
+	text-align: left;
+	display: inline-block;
+  }
+  
+  /* Additional styling for icons and elements within the icon boxes */
+  .services .icon-box .icon i {
+	color: rgba(var(--default-color-rgb), 0.7);
+	font-size: 48px; /* Adjust size as needed */
+	margin-bottom: 15px;
+	display: inline-block;
+  }
+  
+  .services .icon-box ul li {
+	text-align: left;
+  }
+  
+  .services .icon-box ul li {
+	margin-bottom: 8px;
+  }
+  
+  /* Optional: To ensure the content within the boxes is accurately centered */
+  .icon-boxes {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.services .icon-box h3 {
-	text-align: center;
-}
-
-.service-details .download-catalog a {
-	align-items: center;
-	border-top: 1px solid rgba(var(--default-color-rgb), 0.1);
-	color: var(--default-color);
+  }
+  
+  .icon-box,
+  .icon-box-inner {
 	display: flex;
-	padding: 10px 0;
-	transition: 0.3s;
-}
-
-.service-details .download-catalog a i {
-	color: var(--accent-color);
-	font-size: ; /* 24px = 1.5rem */
-	margin-right: 8px;
-}
-
-.service-details .download-catalog a:first-child {
-	border-top: 0;
-	padding-top: 0;
-}
-
-.service-details .download-catalog a:hover {
-	color: var(--accent-color);
-}
-
-.service-details .download-catalog a:last-child {
-	padding-bottom: 0;
-}
-
-.service-details .help-box {
-	background-color: var(--accent-color);
-	color: var(--contrast-color);
-	margin-top: 30px;
-	padding: 30px 15px;
-}
-
-.service-details .help-box .help-icon {
-	font-size: 3rem; /* 48px = 3rem */
-}
-
-.service-details .help-box a, .service-details .help-box h4 {
-	color: var(--contrast-color);
-}
-
-.service-details .service-box {
-	box-shadow: 0px 2px 20px rgba(var(--default-color-rgb), 0.12);
-	padding: 20px;
-}
-
-.service-details .service-box h4 {
-	border-bottom: 2px solid rgba(var(--default-color-rgb), 0.08);
-	font-size: clamp(0.7rem,1vw,1rem); /* 1.25rem */
-	/*font-weight: 700;*/
-	margin-bottom: 15px;
-	padding-bottom: 15px;
-}
-
-.service-details .service-box+.service-box {
-	margin-top: 30px;
-}
-
-.service-details .services-img {
-	margin-bottom: 20px;
-}
-
-.service-details .services-list a {
-	align-items: center;
-	background-color: rgba(var(--default-color-rgb), 0.04);
-	color: rgba(var(--default-color-rgb), 0.8);
-	display: flex;
-	margin-top: 15px;
-	padding: 12px 15px;
-	transition: 0.3s;
-}
-
-.service-details .services-list a i {
-	color: var(--accent-color);
-	/*font-size: ;  16px = 1rem */
-	margin-right: 8px;
-}
-
-.service-details .services-list a.active {
-	background-color: var(--accent-color);
-	color: var(--contrast-color);
-}
-
-.service-details .services-list a.active i {
-	color: var(--contrast-color);
-}
-
-.service-details .services-list a:first-child {
-	margin-top: 0;
-}
-
-.service-details .services-list a:hover {
-	background-color: rgba(var(--accent-color-rgb), 0.05);
-	color: var(--accent-color);
-}
-
-.service-details h3 {
-	/*font-weight: 700;*/
-	text-align: center;
-}
-
-.service-details p {
-	
-}
-
-.service-details ul {
-	
-	list-style: none;
-	padding: 0;
-}
-
-.service-details ul i {
-	color: var(--accent-color);
-	font-size: ; /* 20px = 1.25rem */
-	margin-right: 8px;
-}
-
-.service-details ul li {
-	align-items: center;
-	display: flex;
-	padding: 5px 0;
-}
-
-.services {
-	min-height: 100vh;
-}
-
-.services .service-item {
-	height: 100vh;
-	padding-top: 0px;
-	position: relative;
-}
-
-.services .service-item .description {
-	font-size: 0.9375rem; /* 15px = 0.9375rem */
-	line-height: 24px;
-}
-
-.services .service-item .icon {
-	height: 48px;
-	line-height: 0;
-	margin-right: 50px;
-	position: relative;
-	width: 48px;
-}
-
-.services .service-item .icon i {
-	color: rgba(var(--default-color-rgb), 0.7);
-	font-size: ; /* 48px = 3rem  prev 56*/
-	position: relative;
-	text-align: center;
-	transition: ease-in-out 0.3s;
-	z-index: 2;
-}
-
-.services .service-item .icon:before {
-	background: rgba(var(--accent-color-rgb), 0.3);
-	border-radius: 50px;
-	bottom: -15px;
-	content: "";
-	height: 30px;
-	position: absolute;
-	right: -15px;
-	transition: 0.3s;
-	width: 30px;
-	z-index: 1;
-}
-
-.services .service-item .title {
-	font-size: 1.125rem; /* 18px = 1.125rem */
-	/*font-weight: 700;*/
-	margin-bottom: 15px;
-}
-
-.services .service-item .title a {
-	color: var(--heading-color);
-}
-
-.services .service-item .title a:hover {
-	color: var(--accent-color);
-}
-
-.services .service-item::after {
-	background: var(--accent-color);
-	border-right: 5px solid var(--background-color);
-	content: "";
-	height: 2px;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 30px;
-}
-
-.services .service-item:before {
-	background: rgba(var(--default-color-rgb), 0.1);
-	content: "";
-	height: 2px;
-	left: 0;
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-
+	flex-direction: column;
+	justify-content: space-between;
+  }
+  
+  /* Optional responsive adjustments */
+  @media (max-width: 992px) {
+	/* Adjust font sizes or padding for smaller screens if necessary */
+	.services .icon-box h3, .services .icon-box ul {
+	  font-size: clamp(0.9rem, 2.5vw, 1.25rem);
+	}
+  }
+  
 /* Portfolio Section - Home Page
 ------------------------------*/
 
