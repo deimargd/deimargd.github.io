@@ -1013,11 +1013,12 @@ About Me Section
   color: var(--contrast-color);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
 	
 	.about .content img {
 		width: 50%;
 		max-width: 300px;
+		margin-bottom: 20px;
 	}
 }	
   
@@ -1027,7 +1028,7 @@ About Me Section
 # Services Section
 --------------------------------------------------------------*/
 
-#services .icon-box {
+.services .icon-box {
 	/* Ensures the icon-boxes grow to the same height */
 	display: flex;
 	flex-direction: column;
@@ -1037,16 +1038,16 @@ About Me Section
 	box-sizing: border-box;
   }
   
-  #services .icon-box h3, #services .icon-box ul {
-	text-align: center;
+  .services .icon-box h3, .services .icon-box ul {
+	text-align: left;
   }
   
-  #services .icon-boxes .col-md-4 {
+  .services .icon-boxes .col-md-4 {
 	display: flex;
 	align-items: stretch;
   }
   
-  #services .icon-boxes .col-md-4 .icon-box {
+  .services .icon-boxes .col-md-4 .icon-box {
 	flex: 1;
   }
   
