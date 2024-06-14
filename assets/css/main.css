@@ -1056,8 +1056,16 @@ About Me Section
 	flex: 1;
   }
   
- .services .service-item h3 {
-	font-size: clamp(0.9rem, 2vw, 1.35rem);
+  #portfolio .icon-box h3 {
+	font-size: clamp(1.2rem, 2.5vw, 2rem); /* Responsive sizes */
+	color: #007bff; /* Custom color for portfolio section headings */
+	font-weight: bold;
+  }
+
+  #services .icon-box h3 {
+	font-size: clamp(1.2rem, 2.5vw, 2rem); /* Responsive sizes */
+	color: #007bff; /* Custom color for portfolio section headings */
+	font-weight: bold;
   }
 
   /* Additional styling for icon and text alignment */
@@ -1143,6 +1151,7 @@ About Me Section
 
 .portfolio .service-item h3 {
 	font-size: clamp(0.9rem, 2vw, 1.35rem);
+	colo
   }
 
   .portfolio .icon-box .text-center {
