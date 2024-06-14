@@ -1951,9 +1951,15 @@ About Me Section
     transform: rotate(90deg);
 }
 
+@media (max-width: 990px) {
+    .faq .faq-container {
+        grid-template-columns: repeat(2, 1fr); /* Create 2 columns for medium screens */
+    }
+}
+
 @media (max-width: 768px) {
-    .faq .faq-container.left-col, .faq .faq-container.right-col {
-        width: 100%;
+	.faq .faq-container {
+        grid-template-columns: 1fr; /* Stack items in a single column on smaller screens */
     }
 
     .faq .faq-row {
