@@ -1883,9 +1883,10 @@ About Me Section
 	display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    overflow: hidden;
+	justify-content: space-between;
     padding: 5px;
     position: relative;
+	box-sizing: border-box;
 }
 
 .faq .faq-container .faq-item h3 {
@@ -1897,6 +1898,9 @@ About Me Section
     margin: 0 20px 0 0;
     transition: 0.3s;
     font-size: clamp(0.7rem, 0.7292vw, 1rem); /* 12px */
+}
+.faq .faq-container .faq-item span {
+	font-size:clamp(0.7rem, 0.7vw, 0.9rem)
 }
 
 .faq .faq-container .faq-item .num {
