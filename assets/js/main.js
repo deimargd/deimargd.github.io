@@ -174,11 +174,23 @@ document.addEventListener('DOMContentLoaded', () => {
 /**
  * Frequently Asked Questions Toggle
  */
-document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
-  faqItem.addEventListener('click', () => {
-      faqItem.parentNode.classList.toggle('faq-active');
+document.querySelectorAll('.faq-item h3, .faq-toggle').forEach((element) => {
+  element.addEventListener('click', (event) => {
+      const item = event.target.closest('.faq-item');
+      
+      // Toggle the active state
+      item.classList.toggle('faq-active');
+      
+      // Handle the max-height for smooth transition
+      const content = item.querySelector('.faq-content');
+      if (item.classList.contains('faq-active')) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+          content.style.maxHeight = '0';
+      }
   });
 });
+
 
 
   /**
