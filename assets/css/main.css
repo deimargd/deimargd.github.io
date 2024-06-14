@@ -1056,7 +1056,7 @@ About Me Section
 	flex: 1;
   }
   
-  /*.services .service-item h3 {
+ .services .service-item h3 {
 	font-size: clamp(0.9rem, 2vw, 1.35rem);
   }
 
@@ -1066,11 +1066,12 @@ About Me Section
 	text-align: center;
   }
   
+  /*
   .services .icon-box h3 {
 	text-align: center;
 	font-size: clamp(0.9rem, 2vw, 1.35rem);
 
-  }
+  }*/
   
   .services .icon-box ul {
 	list-style-type: disc;
@@ -1140,9 +1141,9 @@ About Me Section
 	text-align: left;
   }
 
-  .portfolio .icon-box h3 {
-  font-size: clamp(0.9rem, 2vw, 1.35rem);
-}
+.portfolio .service-item h3 {
+	font-size: clamp(0.9rem, 2vw, 1.35rem);
+  }
 
   .portfolio .icon-box .text-center {
 	text-align: center;
