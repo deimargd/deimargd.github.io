@@ -1056,16 +1056,9 @@ About Me Section
 	flex: 1;
   }
   
-  #portfolio .icon-box h3 {
-	font-size: clamp(1.2rem, 2.5vw, 2rem); /* Responsive sizes */
-	color: #007bff; /* Custom color for portfolio section headings */
-	font-weight: bold;
-  }
-
   #services .icon-box h3 {
-	font-size: clamp(1.2rem, 2.5vw, 2rem); /* Responsive sizes */
-	color: #007bff; /* Custom color for portfolio section headings */
-	font-weight: bold;
+	font-size: clamp(0.9rem, 2vw, 1.35rem); 
+	font-weight: 700;
   }
 
   /* Additional styling for icon and text alignment */
@@ -1073,13 +1066,6 @@ About Me Section
 	margin-bottom: 15px;
 	text-align: center;
   }
-  
-  /*
-  .services .icon-box h3 {
-	text-align: center;
-	font-size: clamp(0.9rem, 2vw, 1.35rem);
-
-  }*/
   
   .services .icon-box ul {
 	list-style-type: disc;
@@ -1149,10 +1135,11 @@ About Me Section
 	text-align: left;
   }
 
-.portfolio .service-item h3 {
+  #portfolio .icon-box h3 {
 	font-size: clamp(0.9rem, 2vw, 1.35rem);
-	colo
+	font-weight: 700;
   }
+
 
   .portfolio .icon-box .text-center {
 	text-align: center;
@@ -1365,7 +1352,7 @@ About Me Section
 	display: block;
 	color: var(--default-color);
 	font-size: clamp(2rem,5vw,3rem);
-	/*font-weight: 700;*/
+	font-weight: 500;
 }
 
 .stats img {
@@ -1602,7 +1589,7 @@ About Me Section
     align-items: flex-start;
     cursor: pointer;
     display: flex;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 24px;
     margin: 0 20px 0 0;
     transition: 0.3s;
