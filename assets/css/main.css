@@ -1953,10 +1953,11 @@ About Me Section
 	margin-bottom: 0;
 }
 
-.faq .faq-container .faq-active .faq-content {
+.faq .faq-container .faq-item.faq-active .faq-content {
     opacity: 1 !important;
     visibility: visible !important;
 }
+
 
 @media (max-width: 768px) {
 	.faq .faq-container.left-col, .faq .faq-container.right-col {
