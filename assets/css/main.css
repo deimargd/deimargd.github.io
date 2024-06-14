@@ -1863,6 +1863,8 @@ About Me Section
 
 /* Faq Section - Home Page
 ------------------------------*/
+/* Faq Section - Home Page
+------------------------------*/
 .faq .content h3 {
     font-weight: 400;
 }
@@ -1872,7 +1874,6 @@ About Me Section
 }
 
 .faq .faq-container .faq-item {
-    box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
     margin-bottom: 20px;
     overflow: hidden;
     padding: 5px;
@@ -1887,7 +1888,7 @@ About Me Section
     line-height: 24px;
     margin: 0 20px 0 0;
     transition: 0.3s;
-    font-size: clamp(0.7rem, 0.7292vw, 1rem); /* 12px */;
+    font-size: clamp(0.7rem, 0.7292vw, 1rem); /* 12px */
 }
 
 .faq .faq-container .faq-item .num {
@@ -1921,11 +1922,10 @@ About Me Section
 }
 
 .faq .faq-container .faq-item.faq-active .faq-content {
-    max-height: 1000px; /* set it sufficiently high to fit the content */
+    max-height: 1000px; /* Ensure this value is high enough to fit the content */
     opacity: 1;
     visibility: visible;
     padding-top: 10px;
-    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .faq .faq-container .faq-item.faq-active h3 {
@@ -1956,6 +1956,7 @@ About Me Section
         transform: rotate(90deg);
     }
 }
+
 
 
 /* Team Section - Home Page
