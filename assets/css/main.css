@@ -942,6 +942,12 @@ About Me Section
   display: inline-block;
 }
 
+.icon-box .service-item h3 {
+	font-size: clamp(0.9rem, 0.8524vw, 1.35rem);
+	color: var(--accent-color);
+  }
+
+
 .about .content a {
 	font-size: clamp(0.9rem, 0.8524vw, 1.35rem); /* 22px */
 	font-weight: 500;
