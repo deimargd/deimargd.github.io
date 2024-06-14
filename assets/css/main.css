@@ -95,7 +95,7 @@ h4, h5, h6 {
 
 .header .logo h1 {
 	color: var(--heading-color);
-	font-size: clamp(1rem,2vw,1.5rem);
+	font-size: clamp(1rem,3vw,1.5rem);
 	font-weight: 600;
 	margin: auto;
 	text-align: center;
@@ -235,7 +235,7 @@ section {
 
 	.navmenu .dropdown ul a {
 		color: var(--nav-dropdown-color);
-		font-size: clamp(0.6rem,0.72vw,1rem)
+		font-size: clamp(0.6rem,1vw,1rem)
 		padding: 10px 20px;
 		text-transform: none;
 		list-style: none;
@@ -588,7 +588,7 @@ section,
 }
 
 .section-title h2 {
-	font-size: clamp(1.432rem, 1.1046vw, 1.75rem); /* 28px*/
+	font-size: clamp(1.432rem, 2vw, 1.75rem); /* 28px*/
   /*font-weight: 700;*/
   padding: 30px;
   position: relative;
@@ -596,12 +596,12 @@ section,
 }
 
 .service-info h3 {
-	font-size: clamp(1rem, 0.9375vw, 1.25rem); /* 18px */
+	font-size: clamp(1rem, 1vw, 1.25rem); /* 18px */
 	font-weight: 500;
 	text-align: center;
 }
 .section-title p {
-	font-size: clamp(0.75rem, 0.7292vw, 1rem);/* 14px */;
+	font-size: clamp(0.75rem, 1vw, 1rem);/* 14px */;
 }
 
 .section-title h2:before,
@@ -831,17 +831,17 @@ section,
 .hero h2 {
   color: var(--contrast-color);
   margin: 0;
-  font-size: clamp(1.7rem, 3.6458vw, 4.5rem);
+  font-size: clamp(1.7rem, 4vw, 4.5rem);
   /*font-size: 70px;
   font-weight: 700;*/
 }
 
 .hero h3 {
-	font-size: clamp(1.432rem, 1.1046vw, 1.75rem); /* 28px */ 
+	font-size: clamp(1.432rem, 2vw, 1.75rem); /* 28px */ 
 }
 
 .hero p {
-	font-size: clamp(0.875rem, 0.8333vw, 1.125rem); /* 16px */
+	font-size: clamp(0.875rem, 1vw, 1.125rem); /* 16px */
   color: rgba(var(--default-color-rgb), 0.8);
   margin: 20px 0 0 0;
 }
@@ -931,15 +931,13 @@ About Me Section
   min-width: 150px;
 }
 
-.icon-box .service-item h3 {
-	font-size: clamp(0.9rem, 0.8524vw, 1.35rem);
-	font-weight: 500;
+.service-item h3 {
+	font-size: clamp(0.9rem, 2vw, 1.35rem);
   }
 
-  .icon-box .service-item a {
-	font-size: clamp(0.9rem, 0.8524vw, 1.35rem);
+.service-item a {
+	font-size: clamp(0.9rem, 2vw, 1.35rem);
 	color: var(--accent-color);
-	font-weight: 500;
   }
 
 .about .content p:last-child {
@@ -947,11 +945,11 @@ About Me Section
 }
 
 .about .par-size p{
-	font-size: clamp(0.75rem, 0.7292vw, 1rem);/* 14px */;
+	font-size: clamp(0.75rem, 1vw, 1rem);/* 14px */;
 }
 
 .about li{
-	font-size: clamp(0.75rem, 0.7292vw, 1rem);/* 14px */;
+	font-size: clamp(0.75rem, 1vw, 1rem);/* 14px */;
 }
 
 .about .content .read-more {
@@ -959,7 +957,7 @@ About Me Section
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
-  font-size: clamp(0.75rem, 0.7292vw, 1rem);/* 14px */;
+  font-size: clamp(0.75rem, 1vw, 1rem);/* 14px */;
   letter-spacing: 1px;
   padding: 12px 24px;
   border-radius: 5px; 
@@ -971,7 +969,7 @@ About Me Section
 
 
 .about .content .read-more i {
-	font-size: clamp(0.875rem, 0.8333vw, 1.125rem); /* 16px */
+	font-size: clamp(0.875rem, 1vw, 1.125rem); /* 16px */
   line-height: 0;
   transition: 0.3s;
   margin: auto;
@@ -996,13 +994,13 @@ About Me Section
 }
 
 .about .icon-box i {
-  width: clamp(2.375rem,3.125vw,3.75rem);/* 60px*/
-  height: clamp(2.375rem,3.125vw,3.75rem);/* 60px*/
+  width: clamp(2.375rem,4vw,3.75rem);/* 60px*/
+  height: clamp(2.375rem,4vw,3.75rem);/* 60px*/
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(1.125rem, 1.0417vw, 1.375rem); /* 20px*/
+  font-size: clamp(1.125rem, 2vw, 1.375rem); /* 20px*/
   line-height: 0;
   transition: all 0.4s ease-out 0s;
   background-color: rgba(var(--accent-color-rgb), 0.05);
@@ -1101,7 +1099,7 @@ About Me Section
 
 .service-details .service-box h4 {
 	border-bottom: 2px solid rgba(var(--default-color-rgb), 0.08);
-	font-size: clamp(0.7rem,0.83vw,1rem); /* 1.25rem */
+	font-size: clamp(0.7rem,1vw,1rem); /* 1.25rem */
 	/*font-weight: 700;*/
 	margin-bottom: 15px;
 	padding-bottom: 15px;
@@ -1435,7 +1433,7 @@ About Me Section
 }
 
 .portfolio-details .portfolio-info ul {
-	font-size: clamp(0.7rem, 0.7292vw, 1rem);/* 14px */
+	font-size: clamp(0.7rem, 1vw, 1rem);/* 14px */
 	list-style: none;
 	padding: 0;
 }
@@ -1889,12 +1887,12 @@ About Me Section
     line-height: 24px;
     margin: 0 20px 0 0;
     transition: 0.3s;
-    font-size: clamp(0.7rem, 0.7292vw, 1rem); /* 12px */
+    font-size: clamp(0.7rem, 1vw, 1rem); /* 12px */
 	padding-right: 20px;
 }
 
 .faq .faq-container .faq-item p {
-    font-size:clamp(0.7rem, 0.7vw, 0.9rem);
+    font-size:clamp(0.7rem, 1vw, 0.9rem);
 }
 
 .faq .faq-container .faq-item .num {
