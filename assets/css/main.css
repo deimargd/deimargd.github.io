@@ -1875,8 +1875,9 @@ About Me Section
 
 .faq .faq-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); /* Adjust minmax values as needed */
-    gap: 20px; /* Adjust gap as needed */
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 20px; /* Spacing between FAQ items */
+    align-items: stretch; /* Ensure all items stretch to the same height */
 }
 
 .faq .faq-container .faq-item {
