@@ -1871,12 +1871,11 @@ About Me Section
 
 .faq .content p {
     color: rgba(var(--default-color-rgb), 0.7);
-	font-size:clamp(0.7rem, 0.7vw, 0.9rem)
 }
 
 .faq .faq-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust minmax values as needed */
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); /* Adjust minmax values as needed */
     gap: 20px; /* Adjust gap as needed */
 }
 
@@ -1899,6 +1898,10 @@ About Me Section
     margin: 0 20px 0 0;
     transition: 0.3s;
     font-size: clamp(0.7rem, 0.7292vw, 1rem); /* 12px */
+}
+
+.faq .faq-container .faq-item p {
+    font-size:clamp(0.7rem, 0.7vw, 0.9rem);
 }
 
 .faq .faq-container .faq-item .num {
