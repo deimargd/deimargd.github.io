@@ -1873,7 +1873,15 @@ About Me Section
     color: rgba(var(--default-color-rgb), 0.7);
 }
 
+.faq .faq-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust minmax values as needed */
+    gap: 20px; /* Adjust gap as needed */
+}
+
 .faq .faq-container .faq-item {
+	display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
     overflow: hidden;
     padding: 5px;
