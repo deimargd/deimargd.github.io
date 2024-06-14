@@ -1899,7 +1899,7 @@ About Me Section
     margin: 0 20px 0 0;
     transition: 0.3s;
     font-size: clamp(0.7rem, 0.7292vw, 1rem); /* 12px */
-	padding-right: 20px;
+	padding-right: 45px;
 }
 
 .faq .faq-container .faq-item p {
@@ -1956,6 +1956,9 @@ About Me Section
     .faq .faq-container {
         grid-template-columns: repeat(2, 1fr); /* Create 2 columns for medium screens */
     }
+	.faq .faq-container .faq-item h3 {
+		padding-right: 35px;
+	}
 }
 
 @media (max-width: 768px) {
