@@ -588,7 +588,7 @@ section,
 }
 
 .section-title h2 {
-	font-size: clamp(1.432rem, 2vw, 1.75rem); /* 28px*/
+	font-size: clamp(1.25rem, 3.5vw, 1.75rem); /* 20px to 28px */
   /*font-weight: 700;*/
   padding: 30px;
   position: relative;
@@ -596,12 +596,12 @@ section,
 }
 
 .service-info h3 {
-	font-size: clamp(1rem, 1vw, 1.25rem); /* 18px */
+	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */
 	font-weight: 500;
 	text-align: center;
 }
 .section-title p {
-	font-size: clamp(0.75rem, 1vw, 1rem);/* 14px */;
+	font-size: clamp(0.75rem, 2.5vw, 1rem); /* 12px to 16px */
 }
 
 .section-title h2:before,
@@ -842,7 +842,7 @@ section,
 }
 
 .hero p {
-	font-size: clamp(0.875rem, 1vw, 1.125rem); /* 16px */
+	font-size: clamp(0.75rem, 2.5vw, 1rem); /* 12px to 16px */
   color: rgba(var(--default-color-rgb), 0.8);
   margin: 20px 0 0 0;
 }
@@ -891,23 +891,7 @@ section,
 .btn-primary:hover {
   background-color: black;
 }
-/*
-@media (max-width: 768px) {
-  .hero h2 {
-    ;  32px = 2rem 
-  }
 
-  .hero p {
-    
-  }
-  .hero .sign-up-form .form-control {
-    font-size: smaller;
-    
-  }
-.hero .sign-up-form input[type=submit] {
-  font-size: smaller;
-}
-} */
 
 /* ----------------------------
 About Me Section
@@ -933,11 +917,11 @@ About Me Section
   }
   
   .service-item h3 {
-	font-size: clamp(0.9rem, 2vw, 1.35rem);
+	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */
   }
   
   .service-item a {
-	font-size: clamp(0.9rem, 2vw, 1.35rem);
+	font-size: clamp(0.75rem, 2.5vw, 1rem); /* 12px to 16px */
 	color: var(--accent-color);
   }
   
@@ -946,11 +930,11 @@ About Me Section
   }
   
   .about .par-size p {
-	font-size: clamp(0.75rem, 1vw, 1rem);/* 14px */;
+	font-size: clamp(0.75rem, 2.5vw, 1rem); /* 12px to 16px */
   }
   
   .about li {
-	font-size: clamp(0.75rem, 1vw, 1rem);/* 14px */;
+	font-size: clamp(0.75rem, 2.5vw, 1rem); /* 12px to 16px */
   }
   
   .about .content .read-more {
@@ -958,7 +942,7 @@ About Me Section
 	color: var(--contrast-color);
 	font-family: var(--heading-font);
 	font-weight: 500;
-	font-size: clamp(0.75rem, 1vw, 1rem);/* 14px */;
+	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */
 	letter-spacing: 1px;
 	padding: 12px 24px;
 	border-radius: 5px; 
@@ -969,7 +953,7 @@ About Me Section
   }
   
   .about .content .read-more i {
-	font-size: clamp(0.875rem, 1vw, 1.125rem); /* 16px */
+	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */
 	line-height: 0;
 	transition: 0.3s;
 	margin: auto;
@@ -1000,7 +984,7 @@ About Me Section
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(1.125rem, 2vw, 1.375rem); /* 20px */
+  font-size: clamp(1.25rem, 3.5vw, 1.75rem); /* 20px to 28px o ajsutar a 20px*/
   line-height: 0;
   transition: all 0.4s ease-out 0s;
   background-color: rgba(var(--accent-color-rgb), 0.05);
@@ -1058,7 +1042,7 @@ About Me Section
   }
   
   #services .icon-box h3 {
-	font-size: clamp(0.9rem, 2vw, 1.35rem); 
+	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */ 
 	font-weight: 700;
   }
 
@@ -1079,7 +1063,7 @@ About Me Section
   /* Additional styling for icons and elements within the icon boxes */
   .services .icon-box .icon i {
 	color: rgba(var(--default-color-rgb), 0.7);
-	font-size: 48px; /* Adjust size as needed */
+	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px antes 48px */
 	margin-bottom: 15px;
 	display: inline-block;
   }
@@ -1089,7 +1073,7 @@ About Me Section
   }
   
   .services .icon-box ul li {
-	margin-bottom: 8px;
+	margin-bottom: 10px;
   }
   
   /* Optional: To ensure the content within the boxes is accurately centered */
@@ -1105,13 +1089,6 @@ About Me Section
 	justify-content: space-between;
   }
   
-  /* Optional responsive adjustments */
-  @media (max-width: 992px) {
-	/* Adjust font sizes or padding for smaller screens if necessary */
-	.services .icon-box h3, .services .icon-box ul {
-	  font-size: clamp(0.9rem, 2.5vw, 1.25rem);
-	}
-  }
   
 /* Portfolio Section
 --------------------------------------------------------------*/
@@ -1137,7 +1114,7 @@ About Me Section
   }
 
   #portfolio .icon-box h3 {
-	font-size: clamp(0.9rem, 2vw, 1.35rem);
+	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */
 	font-weight: 700;
   }
 
@@ -1166,7 +1143,7 @@ About Me Section
   /* Additional styling for icons and elements within the icon boxes */
   .portfolio .icon-box .icon i {
 	color: rgba(var(--default-color-rgb), 0.7);
-	font-size: 48px;
+	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px antes 48px*/
 	margin-bottom: 15px;
   }
   
@@ -1202,7 +1179,7 @@ About Me Section
   
   @media (max-width: 992px) {
 	.portfolio .icon-box h3, .portfolio .icon-box ul {
-	  font-size: clamp(0.9rem, 2.5vw, 1.25rem);
+	 /* font-size: clamp(0.9rem, 2.5vw, 1.25rem); */
 	}
   
 	.portfolio .icon-boxes .col-md-6 {
@@ -1222,7 +1199,7 @@ About Me Section
 	}
   
 	.portfolio .icon-box ul li {
-	  font-size: 0.875rem;
+	  /*font-size: 0.875rem;*/
 	}
   }
   
@@ -1240,7 +1217,7 @@ About Me Section
 }
 
 .client-stats-label {
-	font-size: 0.875rem; /* 14px = 0.875rem */
+	font-size: clamp(0.75rem, 2.5vw, 1rem); /* 12px to 16px */
 	margin-top: 5px;
 	text-align: center;
 }
@@ -1341,10 +1318,10 @@ About Me Section
 }
 
 .stats .stats-item p {
-	/*font-weight: 700;*/
+	font-weight: 500;
 	color: rgba(var(--accent-color), 0.6);
 	font-family: var(--heading-font);
-	font-size: clamp(0.8rem,2vw,1.2rem);
+	font-size: clamp(0.75rem, 2.5vw, 1.124rem); /* 12px to 18px */
 	margin: 0;
 	padding: 0;
 }
@@ -1594,12 +1571,17 @@ About Me Section
     line-height: 24px;
     margin: 0 20px 0 0;
     transition: 0.3s;
-    font-size: clamp(0.7rem, 1vw, 1rem); /* 12px */
+    font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */
 	padding-right: 20px;
 }
 
 .faq .faq-container .faq-item p {
-    font-size:clamp(0.7rem, 1vw, 0.9rem);
+    font-size: clamp(0.75rem, 2.5vw, 1rem); /* 12px to 16px */
+}
+
+.faq .faq-container .faq-item h4 {
+    font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */
+	color:var(--accent-color)
 }
 
 .faq .faq-container .faq-item .num {
@@ -1885,7 +1867,7 @@ About Me Section
 
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
 	color: black;
-	font-size: 1.625rem; /* 26px = 1.625rem */
+	font-size: clamp(1rem, 2.5vw, 1.25rem); /* 16px to 20px */
 	line-height: 0;
 }
 
@@ -1921,7 +1903,7 @@ About Me Section
 
 .testimonials .testimonial-item h4 {
 	color: rgba(var(--default-color-rgb), 0.5);
-	font-size: ; /* 14px = 0.875rem */
+	font-size: clamp(1rem, 2.5vw, 1.25rem); /* 16px to 20px *
 	margin: 0;
 }
 
@@ -2716,6 +2698,7 @@ section#contact.form-group {
 .footer .footer-about p {
 	
   font-family: var(--heading-font);
+  font-size: clamp(0.9rem, 2vw, 1.35rem); 
 }
 
 .footer .social-links a {
