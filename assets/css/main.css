@@ -2677,9 +2677,9 @@ section#contact .form-group {
 --------------------------------------------------------------*/
 .footer {
 	--background-color: #f4f4f4;
-	color: var(--default-color);
 	background-color: var(--background-color);
 	font-size: 0.8rem; /* 14px = 0.875rem */
+	top:0;
 	margin-top: auto;
 	padding: 20px; /* Added padding for better spacing */
   }
@@ -2703,7 +2703,6 @@ section#contact .form-group {
   .footer .footer-about p {
 	font-family: var(--heading-font);
 	font-size: clamp(0.9rem, 2vw, 1.35rem);
-	color: var(--default-color); /* Ensuring text color consistency */
   }
   
   .footer .social-links a {
