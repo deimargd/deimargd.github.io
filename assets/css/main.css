@@ -1051,6 +1051,10 @@ About Me Section
 	margin-bottom: 15px;
 	text-align: center;
   }
+
+  .services .icon-box i {
+	margin-bottom:15px;
+}
   
   .services .icon-box ul {
 	list-style-type: disc;
@@ -1112,6 +1116,10 @@ About Me Section
   .portfolio .icon-box ul {
 	text-align: left;
   }
+
+  .portfolio .icon-box i {
+	margin-bottom:15px;
+}
 
   #portfolio .icon-box h3 {
 	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */
