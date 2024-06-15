@@ -169,19 +169,19 @@
   /* Home Page Custom Header
   ------------------------------*/
   .index-page .header {
-	--background-color: rgba(var(--transparent-background-color-rgb), var(--transparent-background-color-opacity));
+	--background-color: rgba(var(--background-color), 0);
 	--heading-color: #ffffff;
-	--nav-color: rgba(var(--transparent-background-color-rgb), var(--nav-color-opacity));
-	--nav-hover-color: var(--nav-hover-color);
+	--nav-color: rgba(var(--background-color), 0.515);
+	--nav-hover-color:  #ffffff;
   }
   
   /* Home Page Custom Header on page scroll
   ------------------------------*/
-  .index-page .header {
-	--background-color: rgba(255, 255, 255, 0);
-	--heading-color: #ffffff;
-	--nav-color: rgba(255, 255, 255, 0.515);
-	--nav-hover-color: #ffffff;
+  .index-page.scrolled .header {
+	--background-color: var(--background-color);
+	--heading-color: #444444;
+	--nav-color: #444444;
+	--nav-hover-color: #d83535;
   }
   
   /*--------------------------------------------------------------
