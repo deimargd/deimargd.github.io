@@ -942,7 +942,7 @@ About Me Section
 	color: var(--contrast-color);
 	font-family: var(--heading-font);
 	font-weight: 500;
-	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */
+	font-size: clamp(0.8rem, 2.5vw, 1rem); /* 12px to 16px */
 	letter-spacing: 1px;
 	padding: 12px 24px;
 	border-radius: 5px; 
@@ -953,7 +953,7 @@ About Me Section
   }
   
   .about .content .read-more i {
-	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */
+	font-size: clamp(0.8rem, 2.5vw, 1rem); /* 12px to 16px */
 	line-height: 0;
 	transition: 0.3s;
 	margin: auto;
@@ -1579,16 +1579,16 @@ About Me Section
     line-height: 24px;
     margin: 0 20px 0 0;
     transition: 0.3s;
-    font-size: clamp(0.75rem, 2.5vw, 1rem); /* 12px to 16px */
+    font-size: clamp(0.75rem, 2.5vw, 0.85rem); /* 12px to 16px */
 	padding-right: 20px;
 }
 
 .faq .faq-container .faq-item p {
-    font-size: clamp(0.7rem, 2.5vw, 0.85rem); /* 11 to 12px approx */
+    font-size: clamp(0.7rem, 2vw, 0.85rem); /* 11 to 12px approx */
 }
 
 .faq .faq-container .faq-item h4 {
-    font-size: clamp(0.75rem, 2.5vw, 1rem); /* 12px to 16px */
+    font-size: clamp(0.75rem, 2.5vw, 0.85rem); /* 12px to 16px */
 	color:var(--accent-color)
 }
 
@@ -2792,7 +2792,7 @@ section#contact.form-group {
 }
 
 .scroll-top i {
-	font-size: 3rem; /* 24px = 1.5rem */
+	font-size: 40px; /* 24px = 1.5rem */
   color: #ffffff;
   line-height: 0;
 }
