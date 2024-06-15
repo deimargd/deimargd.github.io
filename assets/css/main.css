@@ -151,7 +151,7 @@
 	--heading-color: #444444;
 	--nav-color: #444444;
 	--nav-hover-color: #e84545;
-	box-shadow: 0 0 30px 10px rgba(var(--box-shadow-color-rgb), var(--box-shadow-opacity));
+	box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
   }
   
   /* Global Scroll Margin Top
@@ -366,7 +366,7 @@
 	}
   
 	.mobile-nav-active .navmenu {
-		background: rgba(var(--dark-background-color-rgb), var(--dark-background-color-opacity));
+	  background: rgba(33, 37, 41, 0.8);
 	  inset: 0;
 	  overflow: hidden;
 	  position: fixed;
@@ -405,7 +405,7 @@
   
 	.navmenu .dropdown ul ul,
 	.navmenu .megamenu ul ul {
-	  background-color: rgba(var(--dark-background-color-rgb), 0.1);
+	  background-color: rgba(33, 37, 41, 0.1);
 	}
   
 	.navmenu .dropdown ul,
@@ -421,14 +421,14 @@
   
 	.navmenu .dropdown > .dropdown-active,
 	.navmenu .megamenu > .dropdown-active {
-	  background-color: rgba(var(--dark-background-color-rgb), 0.03);
+	  background-color: rgba(33, 37, 41, 0.03);
 	  display: block;
 	}
   
 	.navmenu a i,
 	.navmenu a:focus i {
 	  align-items: center;
-	  background-color: rgba(var(--black-rgb), 0.1);
+	  background-color: rgba(var(black), 0.1);
 	  border-radius: 50%;
 	  display: flex;
 	  height: 30px;
@@ -498,7 +498,7 @@
 	  margin: auto 10px auto 5px;
 	}
   }
-  
+   
   
  /*--------------------------------------------------------------
 # Preloader
