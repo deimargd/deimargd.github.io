@@ -917,9 +917,8 @@
 	background-color: black;
   }
   
-
 /* ----------------------------
-About Me Section
+# About Me Section
 ------------------------------*/
 .about {
 	--background-color: #f4f4f4;
@@ -954,10 +953,7 @@ About Me Section
 	margin-bottom: 0;
   }
   
-  .about .par-size p {
-	font-size: clamp(0.75rem, 2.5vw, 1rem); /* 12px to 16px */
-  }
-  
+  .about .par-size p,
   .about li {
 	font-size: clamp(0.75rem, 2.5vw, 1rem); /* 12px to 16px */
   }
@@ -970,7 +966,7 @@ About Me Section
 	font-size: clamp(0.8rem, 2.5vw, 1rem); /* 12px to 16px */
 	letter-spacing: 1px;
 	padding: 12px 24px;
-	border-radius: 5px; 
+	border-radius: 5px;
 	transition: 0.3s;
 	display: inline-flex;
 	align-items: center;
@@ -994,57 +990,50 @@ About Me Section
   }
   
   .about .icon-box {
-	padding-top: 0px;
+	padding-top: 0;
 	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
-	transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out;
 	background-color: #fff;
 	margin-bottom: 20px;
   }
   
   .about .icon-box i {
-	width: clamp(2.375rem,4vw,3.75rem);/* 60px*/
-	height: clamp(2.375rem,4vw,3.75rem);/* 60px*/
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: clamp(1.25rem, 3.5vw, 1.75rem); /* 20px to 28px o ajsutar a 20px*/
-  line-height: 0;
-  transition: all 0.4s ease-out 0s;
-  background-color: rgba(var(--accent-color-rgb), 0.05);
-  color: var(--accent-color);
-}
-
-.about .icon-box:hover i {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-/* Adjusting the media queries */
-@media (max-width: 768px) {
-  /* Ensure image resizes and maintains margin setup */
-  .about .content img {
-    width: 50%;
-    max-width: 300px;
-    margin-bottom: 20px;
+	width: clamp(2.375rem, 4vw, 3.75rem); /* 60px */
+	height: clamp(2.375rem, 4vw, 3.75rem); /* 60px */
+	border-radius: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: clamp(1.25rem, 3.5vw, 1.75rem); /* 20px to 28px */
+	line-height: 0;
+	transition: all 0.4s ease-out;
+	background-color: rgba(var(--accent-color-rgb), 0.05);
+	color: var(--accent-color);
   }
-
-  /* Stack the two columns below this width */
-  .about .content,
-  .about .icon-boxes {
-    flex-direction: column;
-  }
-}
   
-
-
+  .about .icon-box:hover i {
+	background-color: var(--accent-color);
+	color: var(--contrast-color);
+  }
+  
+  /* Adjusting the media queries */
+  @media (max-width: 768px) {
+	.about .content img {
+	  width: 50%;
+	  max-width: 300px;
+	  margin-bottom: 20px;
+	}
+	.about .content,
+	.about .icon-boxes {
+	  flex-direction: column;
+	}
+  }
+  
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-
 .services .icon-box {
-	/* Ensures the icon-boxes grow to the same height */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -1053,7 +1042,8 @@ About Me Section
 	box-sizing: border-box;
   }
   
-  .services .icon-box h3, .services .icon-box ul {
+  .services .icon-box h3,
+  .services .icon-box ul {
 	text-align: left;
   }
   
@@ -1067,19 +1057,18 @@ About Me Section
   }
   
   #services .icon-box h3 {
-	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */ 
+	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */
 	font-weight: 700;
   }
-
-  /* Additional styling for icon and text alignment */
+  
   .services .icon-box .icon {
 	margin-bottom: 15px;
 	text-align: center;
   }
-
+  
   .services .icon-box i {
-	margin-bottom:15px;
-}
+	margin-bottom: 15px;
+  }
   
   .services .icon-box ul {
 	list-style-type: disc;
@@ -1089,23 +1078,18 @@ About Me Section
 	display: inline-block;
   }
   
-  /* Additional styling for icons and elements within the icon boxes */
   .services .icon-box .icon i {
 	color: rgba(var(--default-color-rgb), 0.7);
-	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px antes 48px */
+	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */
 	margin-bottom: 15px;
 	display: inline-block;
   }
   
   .services .icon-box ul li {
 	text-align: left;
-  }
-  
-  .services .icon-box ul li {
 	margin-bottom: 10px;
   }
   
-  /* Optional: To ensure the content within the boxes is accurately centered */
   .icon-boxes {
 	display: flex;
 	flex-wrap: wrap;
@@ -1118,13 +1102,12 @@ About Me Section
 	justify-content: space-between;
   }
   
-  
-/* Portfolio Section
---------------------------------------------------------------*/
-
-.portfolio {
+  /*--------------------------------------------------------------
+  # Portfolio Section
+  --------------------------------------------------------------*/
+  .portfolio {
 	background-color: #eeeded;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 	min-height: 100vh;
   }
   
@@ -1137,21 +1120,19 @@ About Me Section
 	height: 100%;
   }
   
-
   .portfolio .icon-box ul {
 	text-align: left;
   }
-
+  
   .portfolio .icon-box i {
-	margin-bottom:15px;
-}
-
+	margin-bottom: 15px;
+  }
+  
   #portfolio .icon-box h3 {
 	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */
 	font-weight: 700;
   }
-
-
+  
   .portfolio .icon-box .text-center {
 	text-align: center;
   }
@@ -1173,10 +1154,9 @@ About Me Section
 	flex: 1;
   }
   
-  /* Additional styling for icons and elements within the icon boxes */
   .portfolio .icon-box .icon i {
 	color: rgba(var(--default-color-rgb), 0.7);
-	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px antes 48px*/
+	font-size: clamp(1.125rem, 3vw, 1.5rem); /* 18px to 24px */
 	margin-bottom: 15px;
   }
   
@@ -1211,8 +1191,9 @@ About Me Section
   }
   
   @media (max-width: 992px) {
-	.portfolio .icon-box h3, .portfolio .icon-box ul {
-	 /* font-size: clamp(0.9rem, 2.5vw, 1.25rem); */
+	.portfolio .icon-box h3,
+	.portfolio .icon-box ul {
+	  /* font-size: clamp(0.9rem, 2.5vw, 1.25rem); */
 	}
   
 	.portfolio .icon-boxes .col-md-6 {
@@ -1236,8 +1217,8 @@ About Me Section
 	}
   }
   
-  
 
+	
 /* Our Partners Section - Home Page
 ------------------------------*/
 .client-logo, .progress-bar-container {
