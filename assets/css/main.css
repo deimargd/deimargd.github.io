@@ -2694,26 +2694,24 @@ section#contact .form-group {
   }
   
   .footer .footer-about .logo span {
-	color: var(--heading-color);
+	color: var(--accent-color);
 	font-size: 1.875rem; /* 30px = 1.875rem */
 	letter-spacing: 1px;
-	font-family: var(--heading-font);
   }
   
   .footer .footer-about p {
-	font-family: var(--heading-font);
 	font-size: clamp(0.9rem, 2vw, 1.35rem);
   }
   
-  .footer .social-links a {
+ /* .footer .social-links a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	border: 1px solid rgba(var(--default-color-rgb), 0.5);
-	font-size: 1rem; /* 16px = 1rem */
+	/*border: 1px solid rgba(var(--default-color-rgb), 0.5);
+	font-size: 1rem;
 	color: rgba(var(--default-color-rgb), 0.5);
 	margin-right: 10px;
 	transition: 0.3s;
@@ -2726,7 +2724,7 @@ section#contact .form-group {
   
   .footer h4 {
 	color: var(--heading-color);
-	font-size: 1rem; /* 16px = 1rem */
+	font-size: 1rem; /* 16px = 1rem 
 	font-weight: bold;
 	position: relative;
   }
@@ -2739,9 +2737,9 @@ section#contact .form-group {
   
   .footer .footer-links ul i {
 	padding-right: 2px;
-	font-size: 0.75rem; /* 12px = 0.75rem */
+	font-size: 0.75rem; /* 12px = 0.75rem 
 	line-height: 0;
-  }
+  } 
   
   .footer .footer-links ul li {
 	padding: 10px 0;
@@ -2762,11 +2760,11 @@ section#contact .form-group {
   
   .footer .footer-links ul a:hover {
 	color: var(--accent-color);
-  }
+  }*/
   
   .footer .copyright {
-	background-color: rgba(var(--default-color-rgb), 0.05);
-	padding: 10px 0; /* Optional: Adding padding for better spacing */
+	/*background-color: rgba(var(--default-color-rgb), 0.05); */
+	/*padding: 10px 0;  Optional: Adding padding for better spacing */
 	text-align: center; /* Optional: Centering the text */
   }
   
