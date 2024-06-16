@@ -507,23 +507,32 @@
 	  /* Ensuring social links fit on smaller screens */
 	  @media (max-width: 768px) {
 		.hamburger_social, .social {
-		  flex-wrap: nowrap; /* Prevent wrapping */
+		  display: flex;
+		  flex-wrap: wrap; /* Allow wrapping */
 		  justify-content: center; /* Center the icons */
 		  max-width: 100%; /* Ensure the icons fit */
 		  overflow: hidden; /* Prevent overflow */
 		}
-	
-		.hamburger_social a, .social a {
-		  margin: 0 5px; /* Adjust spacing between icons */
+	  
+		.social a {
+		  margin: 5px; /* Adjust spacing between icons */
+		  flex: 1 0 45%; /* 2 columns */
+		  box-sizing: border-box; /* Make sure padding and borders are included in the element's total width and height */
 		}
 	  }
-	
+	  
 	  @media (max-width: 480px) {
 		.hamburger_social, .social {
-		  flex-direction: row; /* Organize icons in a row */
+		  flex-wrap: wrap; /* Allow wrapping */
+		}
+	  
+		.social a {
+		  margin: 5px; /* Adjust spacing between icons */
+		  flex: 1 0 45%; /* 2 columns */
+		  box-sizing: border-box;
 		}
 	  }
-	}
+	  
 	
 	@media (max-width: 1300px) {
 	  .social {
