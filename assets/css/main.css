@@ -479,76 +479,104 @@
     z-index: 9998;
   }
 
-  /* Centering the logo, name, and dot on smaller screens */
-  @media (max-width: 1199px) {
-    .logo {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      justify-content: center;
-    }
+/* Centering the logo, name, and dot on smaller screens */
+@media (max-width: 1199px) {
+	.logo {
+	  position: absolute;
+	  left: 50%;
+	  transform: translateX(-50%);
+	  justify-content: center;
+	}
   }
-
+  
   /* Removing list decoration in mobile menu */
-  @media (max-width: 1199px) {
-    .navmenu ul {
-      list-style: none; /* Remove bullets */
-    }
-
-    .navmenu ul li {
-      padding: 10px 0;  /* Space out list items */
-    }
-
-    .navmenu a {
-      text-decoration: none; /* Remove underline */
-    }
-  }
-
-  /* Ensuring social links fit on smaller screens */
   @media (max-width: 768px) {
-    .hamburger_social, .social {
-      flex-wrap: nowrap; /* Prevent wrapping */
-      justify-content: center; /* Center the icons */
-      max-width: 100%; /* Ensure the icons fit */
-      overflow: hidden; /* Prevent overflow */
-    }
-
-    .hamburger_social a, .social a {
-      margin: 0 5px; /* Adjust spacing between icons */
-    }
+	.navmenu ul {
+	  list-style: none; /* Remove bullets */
+	  padding: 0;
+	}
+  
+	.navmenu ul li {
+	  padding: 10px 0;  /* Space out list items */
+	}
+  
+	.navmenu a {
+	  text-decoration: none; /* Remove underline */
+	}
+  
+	.hamburger_social {
+	  display: flex;
+	  flex-wrap: wrap; /* Allow wrapping */
+	  justify-content: center; /* Center the icons */
+	  gap: 5px; /* Add gap between icons */
+	  width: 100%; /* Ensure the icons fit */
+	}
+  
+	.hamburger_social a {
+	  margin: 5px; /* Adjust spacing between icons */
+	  flex: 0 0 calc(50% - 10px); /* 2 columns with some space */
+	  box-sizing: border-box; /* Ensure padding and borders are included in the width calculations */
+	}
   }
-
+  
+  /* Ensuring social links fit and align in a grid format on smaller screens */
+  @media (max-width: 768px) {
+	.hamburger_social, .social {
+	  display: flex;
+	  flex-wrap: wrap; /* Allow wrapping */
+	  justify-content: center; /* Center the icons */
+	  gap: 5px; /* Add gap between icons */
+	  max-width: 100%; /* Ensure the icons fit */
+	}
+  
+	.hamburger_social a, .social a {
+	  margin: 5px; /* Adjust spacing between icons */
+	  flex: 0 0 calc(50% - 10px); /* 2 columns with some space */
+	  box-sizing: border-box; /* Ensure padding and borders are included in the width calculations */
+	}
+  }
+  
   @media (max-width: 480px) {
-    .hamburger_social, .social {
-      flex-direction: row; /* Organize icons in a row */
-    }
+	.hamburger_social, .social {
+	  flex-wrap: wrap; /* Allow wrapping */
+	  justify-content: center; /* Center the icons */
+	  gap: 5px; /* Add gap between icons */
+	}
+  
+	.hamburger_social a, .social a {
+	  margin: 5px; /* Adjust spacing between icons */
+	  flex: 0 0 calc(50% - 10px); /* 2 columns with some space */
+	  box-sizing: border-box; /* Ensure padding and borders are included in the width calculations */
+	}
   }
-}
-
-@media (max-width: 1300px) {
-  .social {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 78px;
+  
+  /* Ensuring social links align in a grid format on larger screens */
+  @media (max-width: 1300px) {
+	.social {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-around;
+	  max-width: 78px;
+	}
   }
-}
-
-@media (max-width: 768px) {
-  .social {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 55px;
-    margin: auto 30px auto 5px;
+  
+  /* Adjusting social links and margins for small screens */
+  @media (max-width: 768px) {
+	.social {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center; /* Center the icons */
+	  max-width: 100%; /* Ensure the icons fit */
+	  margin: auto 30px auto 5px; /* Adjust margins as necessary */
+	}
   }
-}
-
-@media (max-width: 480px) {
-  .social {
-    margin: auto 10px auto 5px;
+  
+  /* Further adjustments for very small screens */
+  @media (max-width: 480px) {
+	.social {
+	  margin: auto 10px auto 5px; /* Adjust margins as necessary */
+	}
   }
-} 
   
    
   
