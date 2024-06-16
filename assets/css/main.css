@@ -351,6 +351,10 @@
 	.hamburger_social {
 	  display: flex;
 	  justify-content: space-around;
+	  max-width: 100%;
+	  justify-content: center;
+	flex: 1 0 20%; /* Each item takes up about one-fifth of the row for centered effect */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width calculations */
 	}
   
 	.mobile-nav-active {
@@ -471,6 +475,7 @@
 	  position: absolute;
 	  transition: 0.3s;
 	  z-index: 9998;
+	  list-style: none;
 	}
   }
   
