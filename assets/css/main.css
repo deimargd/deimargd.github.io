@@ -478,7 +478,8 @@
 		transition: 0.3s;
 		z-index: 9998;
 	  }
-	/* Centering the logo, name, and dot on smaller screens */
+
+	  /* Centering the logo, name, and dot on smaller screens */
 @media (max-width: 1199px) {
 	.logo {
 	  position: absolute;
