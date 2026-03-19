@@ -8,7 +8,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-5ZDVZK4XPD');
   </script>
   <meta charset="utf-8">
@@ -26,10 +25,17 @@
     content="Empowering businesses with expert financial insights, strategic partnerships, and proven success in 15+ countries. Specializing in startups & real estate investments.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.deimar.co/">
-  <!-- Make sure to replace with your actual URL -->
   <meta property="og:image" content="https://www.deimar.co/assets/img/DGD/Logo-DGD.webp">
-  <!-- Replace with your actual image path -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Deimar Gutierrez – Virtual CFO">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@deimargd">
+  <meta name="twitter:title" content="Deimar Gutierrez – Virtual CFO | Financial Insights">
+  <meta name="twitter:description" content="Empowering businesses with expert financial insights, strategic partnerships, and proven success in 15+ countries.">
+  <meta name="twitter:image" content="https://www.deimar.co/assets/img/DGD/Logo-DGD.webp">
+  <link rel="canonical" href="https://www.deimar.co/">
   <meta name="author" content="Deimar Gutierrez">
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -37,21 +43,46 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
 
-
-    <!-- Inline Critical CSS -->
-    <style>
-      body {
-        font-family: 'Open Sans', sans-serif;
+  <!-- Inline Critical CSS (no conflicting FAQ or progress bar styles) -->
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .logo h1 {
+      font-family: 'Playfair Display', serif;
+    }
+    /* Sticky CTA for mobile */
+    @media (max-width: 768px) {
+      .sticky-cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #ffc107;
+        text-align: center;
+        padding: 10px;
+        z-index: 1000;
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+      }
+      .sticky-cta .btn-primary {
         margin: 0;
-        padding: 0;
+        width: 90%;
+        background: #000;
+        color: #ffc107;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
       }
-      .logo h1 {
-        font-family: 'Playfair Display', serif;
+      body {
+        padding-bottom: 70px;
       }
-    </style>
-    
-  <!-- Vendor CSS Files loaded asynchronously -->
+    }
+  </style>
 
+  <!-- Vendor CSS Files loaded asynchronously -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" media="print" onload="this.media='all'">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
@@ -59,8 +90,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
   <link href="assets/css/main.css" rel="stylesheet" media="print" onload="this.media='all'">
   <link href="assets/css/pb.css" rel="stylesheet" media="print" onload="this.media='all'">
-  
-  <!-- Ensure noscript support for CSS -->
+
   <noscript>
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -71,9 +101,88 @@
     <link href="assets/css/pb.css" rel="stylesheet">
   </noscript>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <!-- JSON-LD Structured Data (optional but good for SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Deimar Gutierrez Danies",
+    "jobTitle": "Virtual CFO",
+    "description": "Virtual CFO with over 12 years of experience in financial leadership, project modeling, and strategic partnerships.",
+    "url": "https://www.deimar.co/",
+    "sameAs": [
+      "https://www.linkedin.com/in/deimar/",
+      "https://twitter.com/deimargd",
+      "https://fb.com/deimargd"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5900 Balcones Drive #29311",
+      "addressLocality": "Austin",
+      "addressRegion": "TX",
+      "postalCode": "78731",
+      "addressCountry": "US"
+    },
+    "email": "contact@deimar.co",
+    "telephone": "+573175816660"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What specific financial services do you offer for startups and established businesses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our services include financial project modeling, in-depth analytics, CFO coaching, executive decision support, strategic financial planning, and crafting compelling marketing decks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does your financial expertise empower business growth and success?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "With more than 12 years of leading finance teams and managing projects worth billions, I leverage global experience and industry-specific knowledge to drive growth, attract investments, and streamline operations for startups and established companies alike."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What industries do you have expertise in, and how does this benefit my business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I have a diverse background in Real Estate, Software, and Mining, and have worked with clients across 15+ countries. This broad experience allows me to bring a global perspective and tailored financial solutions to your unique industry challenges."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you describe your pricing structure for financial consulting services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pricing varies based on the complexity and scope of your project. I offer flexible rates and would be happy to provide a personalized quote after a preliminary assessment of your business needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I start working with you, and what's the process?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Starting is simple: book an appointment for a consultation to discuss your business objectives. From there, we'll outline a strategy and set project milestones for achieving your financial goals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you provide references or examples of your work outputs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Visit the Showcase section on my site for a collage of marketing decks and financial reports exemplifying the quality of my work. Client satisfaction is paramount, and testimonials are available to illustrate the value partners have gained from my services."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
@@ -89,45 +198,36 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li class="hamburger_social">
-            <a href="https://wa.me/+573175816660" class="ico_li" style="margin-right: 10px;"><i
-                class="bi bi-whatsapp"></i></a>
-            <a href="mailto:contact@deimar.co" class="ico_li" style="margin-right: 10px;"><i
-                class="bi bi-envelope"></i></a>
-            <a href="https://twitter.com/deimargd" class="ico_li" style="margin-right: 10px;"><i
-                class="bi bi-twitter-x"></i></a>
-            <a href="https://fb.com/deimargd" class="ico_li" style="margin-right: 10px;"><i
-                class="bi bi-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/deimar/" class="ico_li" style="margin-right: 10px;"><i
-                class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/+573175816660" class="ico_li" style="margin-right: 10px;"><i class="bi bi-whatsapp"></i></a>
+            <a href="mailto:contact@deimar.co" class="ico_li" style="margin-right: 10px;"><i class="bi bi-envelope"></i></a>
+            <a href="https://twitter.com/deimargd" class="ico_li" style="margin-right: 10px;"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://fb.com/deimargd" class="ico_li" style="margin-right: 10px;"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/deimar/" class="ico_li" style="margin-right: 10px;"><i class="bi bi-linkedin"></i></a>
           </li>
-          <li><a href="index.html#hero" class="active sec-name">Home</a></li>
-          <li><a href="index.html#about" class="sec-name">About</a></li>
-          <li><a href="index.html#services" class="sec-name">Services</a></li>
-          <li><a href="index.html#portfolio" class="sec-name">Portfolio</a></li>
-          <li><a href="index.html#testimonials" class="sec-name">Testimonials</a></li>
-          <li><a href="index.html#clients" class="sec-name">Clients</a></li>
-          <li style="display: none;"><a href="index.html#work-process" class="sec-name">How It Works</a></li>
-          <li style="display: none;"><a href="index.html#pricing" class="sec-name">Pricing</a></li>
-          <li><a href="index.html#faq" class="sec-name">FAQs</a></li>
-          <li><a href="index.html#contact" class="sec-name">Contact</a></li>
+          <li><a href="#hero" class="active sec-name">Home</a></li>
+          <li><a href="#about" class="sec-name">About</a></li>
+          <li><a href="#services" class="sec-name">Services</a></li>
+          <li><a href="#portfolio" class="sec-name">Portfolio</a></li>
+          <li><a href="#testimonials" class="sec-name">Testimonials</a></li>
+          <li><a href="#clients" class="sec-name">Clients</a></li>
+          <li><a href="#faq" class="sec-name">FAQs</a></li>
+          <li><a href="#contact" class="sec-name">Contact</a></li>
           <li><a href="https://blog.deimar.co" target="_blank" class="sec-name">Blog</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
       <!-- End Nav Menu -->
       <div class="social">
-        <a href="https://wa.me/+573175816660" class="ico_li" style="margin-right: 10px;"><i
-            class="bi bi-whatsapp"></i></a>
+        <a href="https://wa.me/+573175816660" class="ico_li" style="margin-right: 10px;"><i class="bi bi-whatsapp"></i></a>
         <a href="mailto:contact@deimar.co" class="ico_li" style="margin-right: 10px;"><i class="bi bi-envelope"></i></a>
-        <a href="https://twitter.com/deimargd" class="ico_li" style="margin-right: 10px;"><i
-            class="bi bi-twitter-x"></i></a>
+        <a href="https://twitter.com/deimargd" class="ico_li" style="margin-right: 10px;"><i class="bi bi-twitter-x"></i></a>
         <a href="https://fb.com/deimargd" class="ico_li" style="margin-right: 10px;"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/deimar/" class="ico_li" style="margin-right: 10px;"><i
-            class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/deimar/" class="ico_li" style="margin-right: 10px;"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
   </header>
   <!-- End Header -->
+
   <main id="main">
     <!-- Hero Section - Home Page -->
     <section id="hero" class="hero">
@@ -136,17 +236,13 @@
         <div class="row">
           <div class="col-lg-10 hero-txt">
             <img src="assets/img/DGD/Logo-DGD.webp" alt="DGD OPCO LLC Logo" class="hero-img-div">
-            <h2 data-aos="fade-up" data-aos-delay="100" style="font-family: playfair; color: black;">Deimar Gutierrez
-              Danies </h2>
-            <h3 data-aos="fade-up" data-aos-delay="120" style="font-family: playfair; font-weight: 500; color: black;">
-              Virtual CFO</h3>
-            <p data-aos="fade-up" data-aos-delay="140" style="color: black;">Empowering success through timely financial
-              insights and enduring partnerships.</p>
+            <h2 data-aos="fade-up" data-aos-delay="100" style="font-family: playfair; color: black;">Deimar Gutierrez Danies</h2>
+            <h3 data-aos="fade-up" data-aos-delay="120" style="font-family: playfair; font-weight: 500; color: black;">Virtual CFO</h3>
+            <p data-aos="fade-up" data-aos-delay="140" style="color: black;">Empowering success through timely financial insights and enduring partnerships.</p>
           </div>
           <div class="col-lg-5">
             <div style="text-align: center;">
-              <button onclick="window.open('https://calendly.com/meet_deimar', '_blank')" class="btn-primary"
-                data-aos="fade-up" data-aos-delay="250">Book 20-Min Free Consultation</button>
+              <button onclick="window.open('https://calendly.com/meet_deimar', '_blank')" class="btn-primary" data-aos="fade-up" data-aos-delay="250">Book 20-Min Free Consultation</button>
             </div>
           </div>
         </div>
@@ -155,179 +251,152 @@
     <!-- End Hero Section -->
 
     <!-- About Section - Home Page -->
-<section id="about" class="about">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>About Me</h2>
-  </div>
-  <!-- End Section Title -->
-
-  <!-- First Row with text -->
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row align-items-xl-center gy-5">
-      <div class="col-md-12 par-size" data-aos="fade-up" data-aos-delay="200">
-        <div class="icon-box" style="padding: 15px">
-          <p>With over 8 years of leadership experience in finance, I specialize in guiding teams across diverse
-            industries towards financial success.
-            My focus includes expanding the operations of foreign-owned startups and developing robust budgetary and
-            financial planning processes.
-          </p>
+    <section id="about" class="about">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Me</h2>
+      </div>
+      <!-- First Row with text -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+          <div class="col-md-12 par-size" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box" style="padding: 15px">
+              <p>I am a financial professional with +12 years of experience leading finance processes across diverse industries. I have a proven track record of successfully expanding the operations of foreign-owned startups to other countries. My expertise lies in building finance processes from scratch and developing robust budgetary and financial planning processes.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  
-  <!-- Second Row with picture and content -->
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row">
-      <div class="col-md-4 content">
-        <img src="assets/img/DGD/DeimarGutierrez-FondoGris.webp" style="border-radius: 50%;" alt="Picture Of Deimar Gutierrez Virtual CFO">
-      </div>
-      <div class="col-md-8">
-        <div class="row gy-12 icon-boxes">
-          <div class="col-12 par-size" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="service-item d-flex">
-                <div style="margin: auto;padding:15px" class="icon flex-shrink-0"><i class="bi bi-globe2"></i></div>
-                <div style="margin: 15px 15px 15px 0;">
-                  <h3>Global Financial Management</h3>
-                  <p class="description">With over a decade of hands-on experience spanning 15+ countries, my
-                    expertise spans Real Estate, Software, and Mining industries.</p>
+      <!-- Second Row with picture and content -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-md-4 content">
+            <img src="assets/img/DGD/DeimarGutierrez-FondoGris.webp" style="border-radius: 50%;" alt="Picture Of Deimar Gutierrez Virtual CFO" loading="lazy">
+          </div>
+          <div class="col-md-8">
+            <div class="row gy-12 icon-boxes">
+              <div class="col-12 par-size" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <div class="service-item d-flex">
+                    <div style="margin: auto;padding:15px" class="icon flex-shrink-0"><i class="bi bi-globe2"></i></div>
+                    <div style="margin: 15px 15px 15px 0;">
+                      <h3>Global Financial Management</h3>
+                      <p class="description">+15 years of global financial management experience in over 15 countries, including the Real Estate, Software, and Mining industries.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- End Icon Box -->
-          <div class="col-12 par-size" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon-box">
-              <div class="service-item d-flex">
-                <div style="margin: auto;padding:15px" class="icon flex-shrink-0"><i class="bi bi-bar-chart-line-fill"></i></div>
-                <div style="margin: 15px 15px 15px 0;">
-                  <h3>Startup Success</h3>
-                  <p class="description">Over 8 years, I've collaborated closely with startups, including renowned
-                    clients like Schon Tepler Group, Hybrid, Emerald, and LMC Corporation, driving their growth and
-                    success.</p>
+              <!-- End Icon Box -->
+              <div class="col-12 par-size" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <div class="service-item d-flex">
+                    <div style="margin: auto;padding:15px" class="icon flex-shrink-0"><i class="bi bi-bar-chart-line-fill"></i></div>
+                    <div style="margin: 15px 15px 15px 0;">
+                      <h3>Startup Success</h3>
+                      <p class="description">+9 years working with startups including clients like Schon Tepler Group, Hybrid, Emerald, Vitamin Energy, and more.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- End Icon Box -->
-          <div class="col-12 par-size" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <div class="service-item d-flex">
-                <div style="margin: auto;padding:15px" class="icon flex-shrink-0"><i class="bi bi-people-fill"></i></div>
-                <div style="margin: 15px 15px 15px 0;">
-                  <h3>Client-Centric Approach</h3>
-                  <p class="description">Serving over 70 clients over the past 2 years, with 90% of revenue coming
-                    from long-term contracts,
-                    reflects my commitment to building lasting partnerships and delivering consistent value.
-                  </p>
+              <!-- End Icon Box -->
+              <div class="col-12 par-size" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <div class="service-item d-flex">
+                    <div style="margin: auto;padding:15px" class="icon flex-shrink-0"><i class="bi bi-people-fill"></i></div>
+                    <div style="margin: 15px 15px 15px 0;">
+                      <h3>Client-Centric Approach</h3>
+                      <p class="description">Serving over 80 clients over the past 2 years, with 90% of revenue coming from long-term contracts, reflects my commitment to building lasting partnerships and delivering consistent value.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- End Icon Box -->
-          <div class="col-12 par-size" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon-box">
-              <div class="service-item d-flex">
-                <div style="margin: auto; padding: 15px;" class="icon flex-shrink-0"><i class="bi bi-award-fill"></i></div>
-                <div style="margin: 15px 15px 15px 0;">
-                  <h3>Significant Achievements</h3>
-                  <p class="description">
-                    Facilitating over $300M in underwritten investments for Real Estate
-                    multifamily projects across key US markets (AZ, CA, FL, TX),
-                    along with supervising project executions valued at $1.3B as a Contract Administrator and
-                    Project Cost Controller in the mining sector.
-                  </p>
+              <!-- End Icon Box -->
+              <div class="col-12 par-size" data-aos="fade-up" data-aos-delay="600">
+                <div class="icon-box">
+                  <div class="service-item d-flex">
+                    <div style="margin: auto; padding: 15px;" class="icon flex-shrink-0"><i class="bi bi-award-fill"></i></div>
+                    <div style="margin: 15px 15px 15px 0;">
+                      <h3>Significant Achievements</h3>
+                      <p class="description">Facilitating over $320M in underwritten investments for Real Estate projects across key US markets, Canada, and Aruba, along with supervising project executions valued at $1.3B as a Contract Administrator and Project Cost Controller in the mining sector.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Download Button -->
-  <div class="container" data-aos="fade-up" style="margin-top: 20px; align-items: center;">
-    <div class="col-md-12 content par-size text-center">
-      <a href="assets/marketing_deck/202401_Deimar%20Gutierrez_Introduction.pdf" class="read-more" download="Deimar Gutierrez - Virtual CFO.pdf">
-        <span>Download My Marketing Deck</span><i class="bi bi-arrow-right"></i>
-      </a>
-    </div>
-  </div>
-</section>
-<!-- End About Section -->
-
-
-
-
+      <!-- Download Button -->
+      <div class="container" data-aos="fade-up" style="margin-top: 20px; align-items: center;">
+        <div class="col-md-12 content par-size text-center">
+          <a href="assets/marketing_deck/202401_Deimar%20Gutierrez_Introduction.pdf" class="read-more" download="Deimar Gutierrez - Virtual CFO.pdf">
+            <span>Download My Marketing Deck</span><i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
     <!-- End About Section -->
-  <!-- Services Section - Home Page -->
-<section id="services" class="about">
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Empowering Solutions</h2>
-    <p style="padding-bottom:30px">Connect with a suite of personalized financial services, carefully crafted to
-      align with your unique business goals.</p>
-  </div>
-  <!-- End Section Title -->
-  <div class="container" data-aos="zoom-in" data-aos-delay="100">
-    <div class="row align-items-xl-center gy-5">
-      <div class="col-xl-12">
-        <div class="row gy-4 icon-boxes">
-          <div class="col-md-4 par-size" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon-box h-100 d-flex flex-column" style="padding: 15px;">
-              <div style="text-align: center;">
-                <i class="bi bi-diagram-3" style="margin-bottom: 15px"></i>
-                <h3>CFO</br>Leadership</h3>
+
+    <!-- Services Section - Home Page -->
+    <section id="services" class="about">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Empowering Solutions</h2>
+        <p style="padding-bottom:30px">Connect with a suite of personalized financial services, carefully crafted to align with your unique business goals.</p>
+      </div>
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+          <div class="col-xl-12">
+            <div class="row gy-4 icon-boxes">
+              <div class="col-md-4 par-size" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box h-100 d-flex flex-column" style="padding: 15px;">
+                  <div style="text-align: center;">
+                    <i class="bi bi-diagram-3" style="margin-bottom: 15px"></i>
+                    <h3>CFO</br>Leadership</h3>
+                  </div>
+                  <ul>
+                    <li>Tailored CFO guidance</li>
+                    <li>Executive Decision Support</li>
+                    <li>Financial Strategy Design</li>
+                  </ul>
+                </div>
               </div>
-              <ul>
-                <li>Tailored CFO guidance</li>
-                <li>Executive Decision Support</li>
-                <li>Financial Strategy Design</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4 par-size" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon-box h-100 d-flex flex-column" style="padding: 15px;">
-              <div style="text-align: center;">
-                <i class="bi bi-graph-up" style="margin-bottom: 15px"></i>
-                <h3>Finance </br>& Analytics Modeling</h3>
+              <div class="col-md-4 par-size" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box h-100 d-flex flex-column" style="padding: 15px;">
+                  <div style="text-align: center;">
+                    <i class="bi bi-graph-up" style="margin-bottom: 15px"></i>
+                    <h3>Finance </br>& Analytics Modeling</h3>
+                  </div>
+                  <ul>
+                    <li>Financial Project Modeling</li>
+                    <li>In-depth Analytics and Reporting</li>
+                    <li>Investment Memorandums and Valuations</li>
+                  </ul>
+                </div>
               </div>
-              <ul>
-                <li>Financial Project Modeling</li>
-                <li>In-depth Analytics and Reporting</li>
-                <li>Investment Memorandums and Valuations</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4 par-size" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon-box h-100 d-flex flex-column" style="padding: 15px;">
-              <div style="text-align: center;">
-                <i class="bi bi-database-check" style="margin-bottom: 15px"></i>
-                <h3>Marketing Decks</br>& Tailored Solutions</h3>
+              <div class="col-md-4 par-size" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box h-100 d-flex flex-column" style="padding: 15px;">
+                  <div style="text-align: center;">
+                    <i class="bi bi-database-check" style="margin-bottom: 15px"></i>
+                    <h3>Marketing Decks</br>& Tailored Solutions</h3>
+                  </div>
+                  <ul>
+                    <li>Custom Financial Reports</li>
+                    <li>Persuasive Marketing Decks</li>
+                    <li>Analytics-Enhanced Presentations</li>
+                  </ul>
+                </div>
               </div>
-              <ul>
-                <li>Custom Financial Reports</li>
-                <li>Persuasive Marketing Decks</li>
-                <li>Analytics-Enhanced Presentations</li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End Services Section -->
+    </section>
+    <!-- End Services Section -->
 
     <!-- Portfolio Section - Home Page -->
     <section id="portfolio" class="about">
-      <!--  Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Showcase</h2>
         <p style="padding-bottom: 30px">Explore our expertise through select projects.</p>
       </div>
-      <!-- End Section Title -->
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row align-items-xl-center gy-5">
           <div class="col-xl-12">
@@ -342,9 +411,7 @@
                     <li>Attract investors with precision-crafted plans and persuasive decks.</li>
                     <li>Delivery Estimate: ~40 Hours.</li>
                   </ul>
-                  <img src="assets/img/deck/DGD-Decks-Portfolio.webp"
-                    alt="Collage showcasing marketing decks and investment memoranda samples"
-                    style="max-width: 570px; width: 100%; height: auto; display: block; margin: auto;">
+                  <img src="assets/img/deck/DGD-Decks-Portfolio.webp" alt="Collage showcasing marketing decks and investment memoranda samples" style="max-width: 570px; width: 100%; height: auto; display: block; margin: auto;" loading="lazy">
                 </div>
               </div>
               <!-- End Icon Box -->
@@ -355,12 +422,10 @@
                     <h3>Custom Reports</br>& Dashboards</h3>
                   </div>
                   <ul style="margin-top: 15px;">
-                    <li>Tailored Reports & Dashboard Drive Informed Decision-Making </li>
+                    <li>Tailored Reports & Dashboard Drive Informed Decision-Making</li>
                     <li>Delivery Estimate: ~6 Hours (Complexity-dependent)</li>
                   </ul>
-                  <img src="assets/img/deck/DGD-Report-Porfolio.webp"
-                    alt="Collage of various reports and dashboard examples"
-                    style="max-width: 570px; width: 100%; height: auto; display: block; margin: auto;">
+                  <img src="assets/img/deck/DGD-Report-Porfolio.webp" alt="Collage of various reports and dashboard examples" style="max-width: 570px; width: 100%; height: auto; display: block; margin: auto;" loading="lazy">
                 </div>
               </div>
               <!-- End Icon Box -->
@@ -369,110 +434,24 @@
         </div>
       </div>
     </section>
-    <!-- End Services Section -->
-    <!-- Pricing Section - Home Page -->
-    <section id="pricing" class="pricing" style="min-height: 100vh;display: none;">
-      <!--  Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Choose Your Plan</h2>
-      </div>
-      <!-- End Section Title -->
-      <div class="container" data-aos="zoom-in" data-aos-delay="100">
-        <div class="row g-4">
-          <div class="col-lg-4">
-            <div class="pricing-item">
-              <h3>Free Plan</h3>
-              <div class="icon">
-                <i class="bi bi-box" style="margin-bottom: 15px"></i>
-              </div>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-            </div>
-          </div>
-          <!-- End Pricing Item -->
-          <div class="col-lg-4">
-            <div class="pricing-item featured" style="margin-bottom: 15px">
-              <h3>Business Plan</h3>
-              <div class="icon">
-                <i class="bi bi-rocket"></i>
-              </div>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-            </div>
-          </div>
-          <!-- End Pricing Item -->
-          <div class="col-lg-4">
-            <div class="pricing-item">
-              <h3>Developer Plan</h3>
-              <div class="icon">
-                <i class="bi bi-send"></i>
-              </div>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-            </div>
-          </div>
-          <!-- End Pricing Item -->
-        </div>
-      </div>
-    </section>
-    <!-- End Pricing Section -->
+    <!-- End Portfolio Section -->
+
     <!-- Testimonials Section - Home Page -->
     <section id="testimonials" class="testimonials">
       <div class="container section-title" data-aos="fade-up">
         <h2>Client Testimonials</h2>
       </div>
-      <!-- End Section Title -->
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
             <div class="swiper">
-              <script type="application/json" class="swiper-config">
-                  {
-                    "loop": true,
-                    "speed": 600,
-                    "autoplay": {
-                      "delay": 5000
-                    },
-                    "slidesPerView": "auto",
-                    "pagination": {
-                      "el": ".swiper-pagination",
-                      "type": "bullets",
-                      "clickable": true
-                    }
-                  }
-                </script>
+              <!-- Swiper config will be loaded from main.js, no inline JSON needed -->
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <p style="text-align: center;">
                       <br>
-                      "I highly recommend Deimar for any role requiring in-depth analysis, machine learning techniques,
-                      and presentation skills. Deimar has demonstrated not only his expertise in analyzing data but also
-                      his ability to support crafting compelling presentation decks. His versatility in applying machine
-                      learning techniques and seamlessly integrating analytical findings into presentations is
-                      commendable. Deimar would be a valuable asset to any team or project that requires a strong
-                      analytical mindset and the ability to communicate complex information effectively."
+                      "I highly recommend Deimar for any role requiring in-depth analysis, machine learning techniques, and presentation skills. Deimar has demonstrated not only his expertise in analyzing data but also his ability to support crafting compelling presentation decks. His versatility in applying machine learning techniques and seamlessly integrating analytical findings into presentations is commendable. Deimar would be a valuable asset to any team or project that requires a strong analytical mindset and the ability to communicate complex information effectively."
                       <br><br>
                       <b><i>Daniel Carceles</i></b>
                       <br>
@@ -485,9 +464,7 @@
                   <div class="testimonial-item">
                     <p style="text-align: center;">
                       <br><br>
-                      "A++++ CFO / Data Analyst. Highly recommend. I've met Deimar several times in person,
-                      he's a man of integrity and is exceptionally thorough. Working on multiple other Upwork projects 
-                      together and plan to work with him for many years to come."
+                      "A++++ CFO / Data Analyst. Highly recommend. I've met Deimar several times in person, he's a man of integrity and is exceptionally thorough. Working on multiple other Upwork projects together and plan to work with him for many years to come."
                       <br><br>
                       <b><i>Rich Gorman</i></b>
                       <br>
@@ -513,8 +490,7 @@
                   <div class="testimonial-item">
                     <p style="text-align: center;">
                       <br><br>
-                      "Outstanding professionalism in financing and very easy to work with. I highly recommend for all
-                      financial management projects."
+                      "Outstanding professionalism in financing and very easy to work with. I highly recommend for all financial management projects."
                       <br><br>
                       <b><i>Kipax</i></b>
                       <br>
@@ -544,457 +520,208 @@
       </div>
     </section>
     <!-- End Testimonials Section -->
-    <!-- Clients Section - Home Page -->
+
+    <!-- Clients Section - Home Page (7 logos) -->
     <section id="clients" class="clients">
       <div class="container section-title" data-aos="fade-up">
         <h2>Our Partners</h2>
       </div>
-      <!-- End Section Title -->
       <div class="container-fluid" data-aos="fade-up">
         <div class="row gy-4">
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-1.webp" class="img-fluid" alt="LMC Corporation Logo">
+            <img src="assets/img/clients/client-1.webp" class="img-fluid" alt="LMC Corporation Logo" loading="lazy">
           </div>
-          <!-- End Client Item -->
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-2.webp" class="img-fluid" alt="Schon Tepler Partners Logo">
+            <img src="assets/img/clients/client-2.webp" class="img-fluid" alt="Schon Tepler Partners Logo" loading="lazy">
           </div>
-          <!-- End Client Item -->
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-3.webp" class="img-fluid" alt="Hybrid Logo">
+            <img src="assets/img/clients/client-3.webp" class="img-fluid" alt="Hybrid Logo" loading="lazy">
           </div>
-          <!-- End Client Item -->
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-4.webp" class="img-fluid" alt="Emerald Loco">
+            <img src="assets/img/clients/client-4.webp" class="img-fluid" alt="Emerald Loco" loading="lazy">
           </div>
-          <!-- End Client Item -->
+          <!-- Add your three new logos here (adjust filenames as needed) -->
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-5.webp" class="img-fluid" alt="Client 5" loading="lazy">
+          </div>
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-6.webp" class="img-fluid" alt="Client 6" loading="lazy">
+          </div>
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-7.webp" class="img-fluid" alt="Client 7" loading="lazy">
+          </div>
         </div>
       </div>
     </section>
     <!-- End Clients Section -->
-    <!-- client profile Section - Home Page -->
+
+    <!-- Industries & Services Stats Section (updated percentages) -->
     <section id="client" class="client-stats-section">
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Industries Served</h2>
       </div>
-      <!-- Sales Per Service Progress Bars and Labels -->
       <div class="container" data-aos="fade-up">
-        <!-- First Row: Sales Per Service Progress Bars -->
         <div class="row">
-          <!-- Real Estate Progress Bar -->
           <div class="col-lg-3 col-md-6">
-            <div class="client-stats-progress-bar" aria-valuenow="59" aria-valuemin="0" aria-valuemax="100"
-            style="--value: 59;"></div>
+            <div class="client-stats-progress-bar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="--value: 40;"></div>
+            <h5 class="client-stats-label">Retail & E-comm</h5>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="client-stats-progress-bar" aria-valuenow="31" aria-valuemin="0" aria-valuemax="100" style="--value: 31;"></div>
             <h5 class="client-stats-label">Real Estate</h5>
           </div>
-          <!-- Software Progress Bar -->
           <div class="col-lg-3 col-md-6">
-            <div class="client-stats-progress-bar" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"
-              style="--value: 34;"></div>
+            <div class="client-stats-progress-bar" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" style="--value: 17;"></div>
             <h5 class="client-stats-label">Software</h5>
           </div>
-          <!-- Business Services Progress Bar -->
           <div class="col-lg-3 col-md-6">
-            <div class="client-stats-progress-bar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100"></div>
-            <h5 class="client-stats-label">Business Services</h5>
-          </div>
-          <!-- Other Progress Bar -->
-          <div class="col-lg-3 col-md-6">
-            <div class="client-stats-progress-bar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="client-stats-progress-bar" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100" style="--value: 11;"></div>
             <h5 class="client-stats-label">Other</h5>
           </div>
         </div>
       </div>
-      </div>
+
       <div class="container section-title" data-aos="fade-up">
         <h2>Services Delivered</h2>
       </div>
-      <!-- Sales Per Service Progress Bars and Labels -->
       <div class="container" data-aos="fade-up">
-        <!-- First Row: Sales Per Service Progress Bars -->
         <div class="row">
-          <!-- CFO Progress Bar -->
           <div class="col-lg-3 col-md-6">
-            <div class="client-stats-progress-bar" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100"
-              style="--value: 39"></div>
-            <h5 class="client-stats-label">CFO</h5>
-          </div>
-          <!-- Financial Project Modeling Progress Bar -->
-          <div class="col-lg-3 col-md-6">
-            <div class="client-stats-progress-bar" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"
-              style="--value: 37;"></div>
-            <h5 class="client-stats-label">Financial Project Modeling</h5>
-          </div>
-          <!-- Analytics & Reporting Progress Bar -->
-          <div class="col-lg-3 col-md-6">
-            <div class="client-stats-progress-bar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100"
-            style="--value: 23;"></div>
+            <div class="client-stats-progress-bar" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100" style="--value: 43;"></div>
             <h5 class="client-stats-label">Analytics & Reporting</h5>
           </div>
-          <!-- Other Progress Bar -->
           <div class="col-lg-3 col-md-6">
-            <div class="client-stats-progress-bar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="client-stats-progress-bar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="--value: 40;"></div>
+            <h5 class="client-stats-label">CFO</h5>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="client-stats-progress-bar" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" style="--value: 16;"></div>
+            <h5 class="client-stats-label">Financial Project Modeling</h5>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="client-stats-progress-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="--value: 0;"></div>
             <h5 class="client-stats-label">Other</h5>
           </div>
         </div>
       </div>
     </section>
-    <!-- Stats Section - Home Page -->
-    <!-- Stats Section - Home Page -->
+
+    <!-- Stats Section - Home Page (updated numbers) -->
     <section id="stats" class="stats">
-      <img src="assets/img/web/cta-bg.jpg" alt="Statistics background" data-aos="fade-in">
+      <img src="assets/img/web/cta-bg.jpg" alt="Statistics background" data-aos="fade-in" loading="lazy">
       <div class="container section-title" data-aos="fade-up">
         <h2 style="color:#fff;">Snapshot of Success</h2>
       </div>
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
-          <!-- Stats items go here -->
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1"
-                class="purecounter" style="display: inline;"></span><span
-                style="display: inline; color: #ffc107;">+</span>
+              <span data-purecounter-start="0" data-purecounter-end="80" data-purecounter-duration="1" class="purecounter" style="display: inline;"></span><span style="display: inline; color: #ffc107;">+</span>
               <p>Clients Partnered</p>
             </div>
           </div>
-          <!-- End Stats Item -->
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="75" data-purecounter-duration="1"
-                class="purecounter" style="display: inline;"></span><span
-                style="display: inline; color: #ffc107;">+</span>
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter" style="display: inline;"></span><span style="display: inline; color: #ffc107;">+</span>
               <p>Projects Delivered</p>
             </div>
           </div>
-          <!-- End Stats Item -->
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="4800" data-purecounter-duration="1"
-                class="purecounter" style="display: inline;"></span><span
-                style="display: inline; color: #ffc107;">+</span>
+              <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1" data-purecounter-separator="," class="purecounter" style="display: inline;"></span><span style="display: inline; color: #ffc107;">+</span>
               <p>Consulting Hours</p>
             </div>
           </div>
-          <!-- End Stats Item -->
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1"
-                class="purecounter" style="display: inline;"></span><span
-                style="display: inline; color: #ffc107;">%</span>
+              <span data-purecounter-start="0" data-purecounter-end="62" data-purecounter-duration="1" class="purecounter" style="display: inline;"></span><span style="display: inline; color: #ffc107;">%</span>
               <p>US Clientele</p>
             </div>
           </div>
-          <!-- End Stats Item -->
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="94" data-purecounter-duration="1"
-                class="purecounter" style="display: inline;"></span><span
-                style="display: inline; color: #ffc107;">%</span>
+              <span data-purecounter-start="0" data-purecounter-end="97" data-purecounter-duration="1" class="purecounter" style="display: inline;"></span><span style="display: inline; color: #ffc107;">%</span>
               <p>US Revenue</p>
             </div>
           </div>
-          <!-- End Stats Item -->
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="94" data-purecounter-duration="1"
-                class="purecounter" style="display: inline;"></span><span
-                style="display: inline; color: #ffc107;">%</span>
+              <span data-purecounter-start="0" data-purecounter-end="93" data-purecounter-duration="1" class="purecounter" style="display: inline;"></span><span style="display: inline; color: #ffc107;">%</span>
               <p>Recurring Client Revenue</p>
             </div>
           </div>
-          <!-- End Stats Item -->
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1"
-                class="purecounter" style="display: inline;"></span><span
-                style="display: inline; color: #ffc107;">%</span>
-              <p>Long-Term Contract Earnings</p>
+              <span data-purecounter-start="0" data-purecounter-end="93" data-purecounter-duration="1" class="purecounter" style="display: inline;"></span><span style="display: inline; color: #ffc107;">%</span>
+              <p>Long-Term Commitment</p>
             </div>
           </div>
-          <!-- End Stats Item -->
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="97" data-purecounter-duration="1"
-                class="purecounter" style="display: inline;"></span><span
-                style="display: inline; color: #ffc107;">%</span>
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter" style="display: inline;"></span><span style="display: inline; color: #ffc107;">%</span>
               <p>Satisfaction Rate</p>
             </div>
           </div>
-          <!-- End Stats Item -->
         </div>
       </div>
     </section>
     <!-- End Stats Section -->
-    <section id="work-process" style="display: none;">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <!-- Process Holder -->
-            <div class="process-wrap">
-              <div class="container section-title" data-aos="fade-up">
-                <h2>Engagement Process</h2>
-              </div>
-              <p style="text-align: center;">Discover the seamless process of partnering with a virtual CFO for
-                cost-effective financial advice and strategic planning.</p>
-              <!-- First Process -->
-              <div class="process wow fadeInRight" data-wow-duration=".2s" data-wow-delay=".2s"
-                style="visibility: visible; animation-duration: 0.2s; animation-delay: 0.2s; animation-name: fadeInRight;">
-                <!-- Process Number -->
-                <div class="process-num">
-                  <span class="first">1.</span>
-                </div>
-                <!-- Process Description -->
-                <div class="process-content">
-                  <h5>Initial Consultation/Interview</h5>
-                  <p>Discuss business needs and financial goals.</p>
-                </div>
-              </div>
-              <!-- Second Process -->
-              <div class="process wow fadeInRight" data-wow-duration=".2s" data-wow-delay=".4s"
-                style="visibility: visible; animation-duration: 0.2s; animation-delay: 0.4s; animation-name: fadeInRight;">
-                <!-- Process Number -->
-                <div class="process-num">
-                  <span>2.</span>
-                </div>
-                <!-- Process Description -->
-                <div class="process-content">
-                  <h5>Determine Scope of Work</h5>
-                  <p>Receive a proposal outlining the scope of work, fees, and timeline.</p>
-                </div>
-              </div>
-              <!-- Third Process -->
-              <div class="process wow fadeInRight" data-wow-duration=".2s" data-wow-delay=".6s"
-                style="visibility: visible; animation-duration: 0.2s; animation-delay: 0.6s; animation-name: fadeInRight;">
-                <!-- Process Number -->
-                <div class="process-num">
-                  <span>3.</span>
-                </div>
-                <!-- Process Description -->
-                <div class="process-content">
-                  <h5>Determine Scope of Work</h5>
-                  <p>Receive a proposal outlining the scope of work, fees, and timeline.</p>
-                </div>
-              </div>
-              <!-- Fourth Process -->
-              <div class="process wow fadeInRight" data-wow-duration=".2s" data-wow-delay=".8s"
-                style="visibility: visible; animation-duration: 0.2s; animation-delay: 0.8s; animation-name: fadeInRight;">
-                <!-- Process Number -->
-                <div class="process-num">
-                  <span>4.</span>
-                </div>
-                <!-- Process Description -->
-                <div class="process-content">
-                  <h5>Contract Negotiation</h5>
-                  <p>Discuss contract options, payment terms, and other obligations.</p>
-                </div>
-              </div>
-              <!-- Fifth Process -->
-              <div class="process wow fadeInRight" data-wow-duration=".2s" data-wow-delay=".8s"
-                style="visibility: visible; animation-duration: 0.2s; animation-delay: 0.8s; animation-name: fadeInRight;">
-                <!-- Process Number -->
-                <div class="process-num">
-                  <span>5.</span>
-                </div>
-                <!-- Process Description -->
-                <div class="process-content">
-                  <h5>Sign the Contract</h5>
-                  <p>Sign the contract and begin working together.</p>
-                </div>
-              </div>
-              <!-- Sixth Process -->
-              <div class="process wow fadeInRight" data-wow-duration=".2s" data-wow-delay=".8s"
-                style="visibility: visible; animation-duration: 0.2s; animation-delay: 0.8s; animation-name: fadeInRight;">
-                <!-- Process Number -->
-                <div class="process-num">
-                  <span>6.</span>
-                </div>
-                <!-- Process Description -->
-                <div class="process-content">
-                  <h5>Ongoing Support</h5>
-                  <p>Receive ongoing services as per the agreed terms.</p>
-                </div>
-              </div>
-              <!-- Seventh Process -->
-              <div class="process wow fadeInRight" data-wow-duration=".2s" data-wow-delay=".8s"
-                style="visibility: visible; animation-duration: 0.2s; animation-delay: 0.8s; animation-name: fadeInRight;">
-                <!-- Process Number -->
-                <div class="process-num">
-                  <span>7.</span>
-                </div>
-                <!-- Process Description -->
-                <div class="process-content">
-                  <h5>Referral Program:</h5>
-                  <p>Get 5% when you refer a new client-applies to their first invoice.</p>
-                  <br>
-                  <p>No
-                    additional commissions or fees apply to direct contracts between our Texas LLC and the client.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-<!-- Faq Section - Home Page -->
-<section id="faq" class="faq">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>FAQS</h2>
-  </div>
-  <!-- End Section Title -->
-  <div class="container">
-    <div class="faq-container" data-aos="fade-up" data-aos-delay="100">
-      <div class="faq-item">
-        <h3><span class="num">1.</span> What specific financial services do you offer for startups and established businesses?</h3>
-        <div class="faq-content">
-          <p>Our services include financial project modeling, in-depth analytics, CFO coaching, executive decision support, strategic financial planning, and crafting compelling marketing decks.</p>
-        </div>
-        <i class="faq-toggle bi bi-chevron-right"></i>
-      </div>
-      <div class="faq-item">
-        <h3><span class="num">2.</span> How does your financial expertise empower business growth and success?</h3>
-        <div class="faq-content">
-          <p>With more than 8 years of leading finance teams and managing projects worth billions, I leverage global experience and industry-specific knowledge to drive growth, attract investments, and streamline operations for startups and established companies alike.</p>
-        </div>
-        <i class="faq-toggle bi bi-chevron-right"></i>
-      </div>
-      <div class="faq-item">
-        <h3><span class="num">3.</span> What industries do you have expertise in, and how does this benefit my business?</h3>
-        <div class="faq-content">
-          <p>I have a diverse background in Real Estate, Software, and Mining, and have worked with clients across 15+ countries. This broad experience allows me to bring a global perspective and tailored financial solutions to your unique industry challenges.</p>
-        </div>
-        <i class="faq-toggle bi bi-chevron-right"></i>
-      </div>
-      <!-- Add more FAQ items as needed -->
-      <div class="faq-item">
-        <h3><span class="num">4.</span> Can you describe your pricing structure for financial consulting services?</h3>
-        <div class="faq-content">
-          <p>Pricing varies based on the complexity and scope of your project. I offer flexible rates and would be happy to provide a personalized quote after a preliminary assessment of your business needs.</p>
-        </div>
-        <i class="faq-toggle bi bi-chevron-right"></i>
-      </div>
-      <div class="faq-item">
-        <h3><span class="num">5.</span> How can I start working with you, and what's the process?</h3>
-        <div class="faq-content">
-          <p>Starting is simple: book an appointment for a consultation to discuss your business objectives. From there, we'll outline a strategy and set project milestones for achieving your financial goals.</p>
-        </div>
-        <i class="faq-toggle bi bi-chevron-right"></i>
-      </div>
-      <div class="faq-item">
-        <h3><span class="num">6.</span> Can you provide references or examples of your work outputs?</h3>
-        <div class="faq-content">
-          <p>Absolutely. Visit the Showcase section on my site for a collage of marketing decks and financial reports exemplifying the quality of my work. Client satisfaction is paramount, and testimonials are available to illustrate the value partners have gained from my services.</p>
-        </div>
-        <i class="faq-toggle bi bi-chevron-right"></i>
-      </div>
-    </div>
-  </div>
-  <!-- End Container -->
-</section>
-<!-- End Faq Section -->
 
-    <!-- Call-to-action Section - Home Page -->
-    <section id="call-to-action" class="call-to-action" style="display: none;">
-      <img src="assets/img/web/cta-bg.jpg" alt="Background Call to Action">
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Call-to-action Section -->
-    <!-- blog Section - Home Page -->
-    <section id="blog" class="recent-posts" style="display: none;">
-      <!--  Section Title -->
+    <!-- Faq Section - Home Page (now working) -->
+    <section id="faq" class="faq">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Insights & Articles</h2>
+        <h2>FAQS</h2>
       </div>
-      <!-- End Section Title -->
       <div class="container">
-        <div class="row gy-4">
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-              <div class="post-img">
-                <img src="assets/img/blog/blog-1.webp" alt="" class="img-fluid">
-              </div>
-              <div class="d-flex align-items-center">
-                <div class="post-meta">
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Feb 19, 2024</time>
-                  </p>
-                </div>
-              </div>
-              <h2 class="title" style="margin-top: 20px;">
-                <a href="https://blog.deimar.co/p/home.html">Why Lead Generation IS Key for Business Growth</a>
-              </h2>
-              <p>
-                <small>Nisi magni odit consequatur autem nulla dolorem, Nisi magni odit consequatur autem nulla dolorem,
-                  Nisi magni odit consequatur autem nulla dolorem
-                </small>
-              </p>
-            </article>
+        <div class="faq-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="faq-item">
+            <h3><span class="num">1.</span> What specific financial services do you offer for startups and established businesses?</h3>
+            <div class="faq-content">
+              <p>Our services include financial project modeling, in-depth analytics, CFO coaching, executive decision support, strategic financial planning, and crafting compelling marketing decks.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
-          <!-- End post list item -->
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-              <div class="post-img">
-                <img src="assets/img/blog/blog-1.webp" alt="" class="img-fluid">
-              </div>
-              <div class="d-flex align-items-center">
-                <div class="post-meta">
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Feb 19, 2024</time>
-                  </p>
-                </div>
-              </div>
-              <h2 class="title" style="margin-top: 20px;">
-                <a href="https://blog.deimar.co/">Why Lead Generation IS Key for Business Growth</a>
-              </h2>
-              <p>
-                <small>Nisi magni odit consequatur autem nulla dolorem, Nisi magni odit consequatur autem nulla dolorem,
-                  Nisi magni odit consequatur autem nulla dolorem
-                </small>
-              </p>
-            </article>
+          <div class="faq-item">
+            <h3><span class="num">2.</span> How does your financial expertise empower business growth and success?</h3>
+            <div class="faq-content">
+              <p>With more than 12 years of leading finance teams and managing projects worth billions, I leverage global experience and industry-specific knowledge to drive growth, attract investments, and streamline operations for startups and established companies alike.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
-          <!-- End post list item -->
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-              <div class="post-img">
-                <img src="assets/img/blog/blog-1.webp" alt="" class="img-fluid">
-              </div>
-              <div class="d-flex align-items-center">
-                <div class="post-meta">
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Feb 19, 2024</time>
-                  </p>
-                </div>
-              </div>
-              <h2 class="title" style="margin-top: 20px;">
-                <a href="https://blog.deimar.co/">Why Lead Generation IS Key for Business Growth</a>
-              </h2>
-              <p>
-                <small>Nisi magni odit consequatur autem nulla dolorem, Nisi magni odit consequatur autem nulla dolorem,
-                  Nisi magni odit consequatur autem nulla dolorem
-                </small>
-              </p>
-            </article>
+          <div class="faq-item">
+            <h3><span class="num">3.</span> What industries do you have expertise in, and how does this benefit my business?</h3>
+            <div class="faq-content">
+              <p>I have a diverse background in Real Estate, Software, and Mining, and have worked with clients across 15+ countries. This broad experience allows me to bring a global perspective and tailored financial solutions to your unique industry challenges.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
-          <!-- End post list item -->
+          <div class="faq-item">
+            <h3><span class="num">4.</span> Can you describe your pricing structure for financial consulting services?</h3>
+            <div class="faq-content">
+              <p>Pricing varies based on the complexity and scope of your project. I offer flexible rates and would be happy to provide a personalized quote after a preliminary assessment of your business needs.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+          <div class="faq-item">
+            <h3><span class="num">5.</span> How can I start working with you, and what's the process?</h3>
+            <div class="faq-content">
+              <p>Starting is simple: book an appointment for a consultation to discuss your business objectives. From there, we'll outline a strategy and set project milestones for achieving your financial goals.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+          <div class="faq-item">
+            <h3><span class="num">6.</span> Can you provide references or examples of your work outputs?</h3>
+            <div class="faq-content">
+              <p>Absolutely. Visit the Showcase section on my site for a collage of marketing decks and financial reports exemplifying the quality of my work. Client satisfaction is paramount, and testimonials are available to illustrate the value partners have gained from my services.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
         </div>
-        <!-- End recent posts list -->
       </div>
     </section>
-    <!-- End Recent-posts Section -->
+    <!-- End Faq Section -->
+
+    <!-- Contact Section -->
     <section id="contact" style="background-color: black; color: white;">
       <div class="container">
         <div class="row">
@@ -1027,15 +754,13 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" name="Full Name" placeholder="Your Name *" id="name"
-                      required="" data-validation-required-message="Please enter your name.">
+                    <input type="text" class="form-control" name="Full Name" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="email" class="form-control" name="Email" placeholder="Your Email *" id="email"
-                      required="" data-validation-required-message="Please enter your email address.">
+                    <input type="email" class="form-control" name="Email" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
@@ -1043,8 +768,7 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
-                    <textarea class="form-control" name="Message" placeholder="Your Message *" id="message" required=""
-                      data-validation-required-message="Please enter a message." style="height: 116px; "></textarea>
+                    <textarea class="form-control" name="Message" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message." style="height: 116px;"></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
@@ -1061,30 +785,26 @@
       </div>
     </section>
   </main>
+
+  <!-- Sticky CTA for mobile -->
+  <div class="sticky-cta d-md-none">
+    <button onclick="window.open('https://calendly.com/meet_deimar', '_blank')" class="btn-primary">Book 20-Min Free Consultation</button>
+  </div>
+
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="container copyright text-center mt-4">
-      <p>&copy; <span>Copyright 2022 - </span> <span id="curYr"></span> <strong class="px-1">DGD OPCO</strong> <span>All
-          Rights Reserved</span></p>
-      <div class="credits">
-      </div>
+      <p>&copy; <span>Copyright 2022 - </span> <span id="curYr"></span> <strong class="px-1">DGD OPCO</strong> <span>All Rights Reserved</span></p>
+      <div class="credits"></div>
     </div>
-    <!-- Start of HubSpot code snippet -->
-    <button type="button" id="hs_show_banner_button" style="background-color: #ffc107; border: 1px solid #ffc107;
-        border-radius: 3px; padding: 10px 16px; text-decoration: none; color: #fff;
-        font-family: inherit; font-size: inherit; font-weight: normal; line-height: inherit;
-        text-align: left; text-shadow: none;" onClick="(function(){
-        var _hsp = window._hsp = window._hsp || [];
-        _hsp.push(['showBanner']);
-        })()">
-      Cookie Settings
-    </button>
-    <!-- End of HubSpot code snippet -->
+    <!-- HubSpot Cookie Settings button -->
+    <button type="button" id="hs_show_banner_button" style="background-color: #ffc107; border: 1px solid #ffc107; border-radius: 3px; padding: 10px 16px; text-decoration: none; color: #fff; font-family: inherit; font-size: inherit; font-weight: normal; line-height: inherit; text-align: left; text-shadow: none;" onClick="(function(){ var _hsp = window._hsp = window._hsp || []; _hsp.push(['showBanner']); })()">Cookie Settings</button>
   </footer>
   <!-- End Footer -->
+
   <!-- Scroll Top Button -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
   <!-- Preloader -->
   <div id="preloader">
     <div></div>
@@ -1092,36 +812,24 @@
     <div></div>
     <div></div>
   </div>
-  <!--JS for copyright update year-->
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js" defer></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/php-email-form/validate.js" defer></script>
+  <!-- Template Main JS File (corrected version) -->
+  <script src="assets/js/main.js" defer></script>
+
+  <!-- Simple copyright update (no duplicate FAQ script) -->
   <script>
-    var date = new Date();
-    var year = date.getFullYear();
-    document.getElementById('curYr').innerHTML = year;
+    document.getElementById('curYr').innerHTML = new Date().getFullYear();
   </script>
-
-<!-- Defer JavaScript files to improve load performance -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js" defer></script>
-<!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
-<script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
-<script src="assets/vendor/aos/aos.js" defer></script>
-<script src="assets/vendor/php-email-form/validate.js" defer></script>
-
-<!-- <script src="assets/js/accordion.js" defer></script> -->
-
-<!-- Initialize plugins and custom scripts after page load -->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // Initialize AOS
-    AOS.init();
-
-    // Initialize any other plugins that require initiation here
-  });
-</script>
 </body>
 </html>
-
