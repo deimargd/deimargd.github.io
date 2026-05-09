@@ -1,0 +1,26 @@
+{
+	"name": "Deimar Gutiérrez — Blog",
+	"short_name": "Deimar G.",
+	"description": "Operating memos for founders — money, growth, team, and the calls behind them.",
+	"start_url": "/blog",
+	"scope": "/blog/",
+	"display": "minimal-ui",
+	"orientation": "portrait",
+	"background_color": "#faf7f2",
+	"theme_color": "#3D2B5C",
+	"lang": "en-US",
+	"icons": [
+		{
+			"src": "/blog/favicon.webp",
+			"sizes": "192x192",
+			"type": "image/webp",
+			"purpose": "any"
+		},
+		{
+			"src": "/blog/apple-touch-icon.webp",
+			"sizes": "180x180",
+			"type": "image/webp",
+			"purpose": "any maskable"
+		}
+	]
+}
