@@ -1,4 +1,0 @@
-Contact: mailto:contact@deimar.co
-Expires: 2027-05-18T00:00:00.000Z
-Preferred-Languages: en, es
-Canonical: https://deimar.co/.well-known/security.txt
